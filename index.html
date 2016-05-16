@@ -8,7 +8,6 @@
             height: 50vh;
             background-color: blue;
             text-align: center;
-            border-bottom: 1px black solid;
         }
 
         #header h1 {
@@ -16,8 +15,7 @@
         }
 
         .card {
-            height: 40vh;
-            border-bottom: 1px black solid;
+            height: 100vw;
             color: white;
         }
 
@@ -27,6 +25,12 @@
 
         .card:nth-of-type(odd) {
             background-color: red;
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                height: 50vw;
+            }
         }
     </style>
 </head>
@@ -46,14 +50,12 @@
             <div class="card col-xs-12 col-sm-6">
                 <h2>Today I Visited Here</h2>
             </div>
-
             <div class="card col-xs-12 col-sm-6">
                 <h2>Another Title Here</h2>
             </div>
             <div class="card col-xs-12 col-sm-6">
                 <h2>This Food was Good</h2>
             </div>
-
             <div class="card col-xs-12 col-sm-6">
                 <h2>People Dropped their Elephant Baby Carriages</h2>
             </div>
