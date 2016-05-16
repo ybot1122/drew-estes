@@ -3,40 +3,66 @@
 <head>
     <title>Basic Example</title>
     <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
+    <style>
+        #header {
+            height: 50vh;
+            background-color: blue;
+            text-align: center;
+            border-bottom: 1px black solid;
+        }
+
+        #header h1 {
+            font-size: 32px;
+        }
+
+        .card {
+            height: 25vh;
+            border-bottom: 1px black solid;
+            color: white;
+        }
+
+        .card:nth-of-type(even) {
+            background-color: green;
+        }
+
+        .card:nth-of-type(odd) {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
         <!-- TODO: what the fuck are the semantics for rows/nesting rows -->
-        <div class="row">
+        <div id="header" class="row">
             <div class="col-xs-12">
                 <h1>Drew Estes Blog/Website</h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-6 card">
                 <h2>Some Title Goes Here</h2>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-6 card">
                 <h2>Today I Visited Here</h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-6">
-                <h2>Some Title Goes Here</h2>
+            <div class="col-xs-6 card">
+                <h2>Another Title Here</h2>
             </div>
-            <div class="col-xs-6">
-                <h2>Today I Visited Here</h2>
+            <div class="col-xs-6 card">
+                <h2>This Food was Good</h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-6">
-                <h2>Some Title Goes Here</h2>
+            <div class="col-xs-6 card">
+                <h2>People Dropped their Elephant Baby Carriages</h2>
             </div>
-            <div class="col-xs-6">
-                <h2>Today I Visited Here</h2>
+            <div class="col-xs-6 card">
+                <h2>Monkeys operate cigarette industry</h2>
             </div>
         </div>
     </div>
