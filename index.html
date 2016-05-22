@@ -5,13 +5,19 @@
     <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
     <style>
         #header {
-            height: 50vw;
+            height: 50vh;
             max-height: 100vh;
             background-color: blue;
             background-image: url('./hero.jpg');
             background-repeat: no-repeat;
             background-position: top;
             text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            #header {
+                height: 50vw;
+            }
         }
 
         #header h1 {
@@ -52,6 +58,7 @@
         }
 
         .card.latest {
+            height: 50vh;
             font-size: 150%;
             text-align: center;
         }
