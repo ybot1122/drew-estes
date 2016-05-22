@@ -44,8 +44,10 @@
         }
 
         .card {
-            height: 100vw;
+            height: 60vw;
             color: white;
+            background-size: cover;
+            background-position: top center;
         }
 
         .card.latest {
@@ -69,8 +71,20 @@
 
         @media (min-width: 768px) {
             .card {
-                height: 50vw;
+                height: 40vw;
             }
+        }
+
+        #a {
+            background-image: url('./test1.jpg');
+        }
+
+        #b {
+            background-image: url('./test2.jpg');
+        }
+
+        #c {
+            background-image: url('./test3.jpg');
         }
     </style>
 </head>
@@ -85,13 +99,13 @@
         </div>
 
         <div class="row">
-            <div class="card latest col-xs-12 col-sm-6">
+            <div id="a" class="card latest col-xs-12 col-sm-6">
                 <h2>Latest Blog Post Title Goes Here</h2>
             </div>
-            <div class="card col-xs-12 col-sm-6">
+            <div id="b" class="card col-xs-12 col-sm-6">
                 <h2>Some Title Goes Here</h2>
             </div>
-            <div class="card col-xs-12 col-sm-6">
+            <div id="c" class="card col-xs-12 col-sm-6">
                 <h2>Today I Visited Here</h2>
             </div>
             <div class="card col-xs-12 col-sm-6">
