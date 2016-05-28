@@ -12,45 +12,23 @@
             background-repeat: no-repeat;
             background-position: top;
             text-align: center;
+            padding-top: 50px;
         }
 
         @media (min-width: 768px) {
             #header {
-                height: 50vw;
+                height: 75vh;
             }
         }
 
         #header h1 {
-            margin-top: calc(20vw - 16px);
             margin-bottom: 0px;
             padding: 0px;
             font-size: 32px;
         }
 
-        @media (min-width: 768px) {
-            #header h1 {
-                margin-bottom: 10vw;
-            }
-        }
-
-        #header h2 {
-            display: none;
-            padding: 0px;
-            margin: 0px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        #header h2:hover {
-            text-decoration: underline;
-        }
-
-        @media (min-width: 768px) {
-            #header h2 {
-                display: inline-block;
-                padding: 20px;
-                background-color: rgba(255, 255, 255, .5);
-            }
+        #main {
+            border-bottom: 15px solid gray;
         }
 
         .card {
@@ -58,19 +36,7 @@
             color: white;
             background-size: cover;
             background-position: top center;
-            border-top: 5px gray solid;
-        }
-
-        .card.latest {
-            height: 50vh;
-            font-size: 150%;
-            text-align: center;
-        }
-
-        @media (min-width: 768px) {
-            .card.latest {
-                display: none;
-            }
+            border-top: 15px gray solid;
         }
 
         .card:nth-of-type(even) {
@@ -83,8 +49,12 @@
 
         @media (min-width: 768px) {
             .card {
-                height: 40vw;
-                border-left: 5px gray solid;
+                height: 50vh;
+                border-left: 15px gray solid;
+            }
+
+            .card:nth-of-type(even) {
+                border-right: 15px gray solid;
             }
         }
 
@@ -107,15 +77,13 @@
 </head>
 <body>
     <div class="container-fluid">
-        <!-- TODO: what the fuck are the semantics for rows/nesting rows -->
         <div id="header" class="row">
             <div class="col-xs-12">
                 <h1>Drew Estes Blog/Website</h1>
-                <h2>Latest Blog Post Title Goes Here</h2>
             </div>
         </div>
 
-        <div class="row">
+        <div id="main" class="row">
             <div id="a" class="card col-xs-12 col-sm-6">
                 <h2>Some Title Goes Here</h2>
             </div>
