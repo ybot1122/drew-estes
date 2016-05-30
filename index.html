@@ -5,14 +5,18 @@
     <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <style>
+
+        body {
+            font-size: 12px;
+        }
+
         #header {
+            position: relative;
             height: 50vh;
-            width: 100vw;
             background-color: blue;
             background-image: url('./hero.jpg');
             background-repeat: no-repeat;
-            background-position: top;
-            text-align: center;
+            background-position: 100% 6%;
         }
 
         @media (min-width: 768px) {
@@ -22,9 +26,16 @@
         }
 
         #header h1 {
+            position: absolute;
+            top: calc(48% - 1.5em);
+            width: 100vw;
+            text-align: center;
             margin: 0px;
-            padding: 0px;
-            font-size: 32px;
+            padding: 20px;
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, .6);
+            color: white;
+            letter-spacing: 5px;
         }
 
         #main {
@@ -85,9 +96,7 @@
 <body>
     <div class="container-fluid">
         <div id="header" class="row">
-            <div class="col-xs-12">
-                <h1>Drew Estes Blog/Website</h1>
-            </div>
+            <h1>Drew Estes Website</h1>
         </div>
 
         <div id="main" class="row">
