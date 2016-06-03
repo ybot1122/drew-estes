@@ -43,16 +43,33 @@
             letter-spacing: 5px;
         }
 
+        /** BORDER RULES { **/
         #main {
-            border-bottom: 15px solid gray;
+            border-bottom: 15px solid black;
         }
 
+        .card {
+            border-top: 15px solid black;
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                height: 50vh;
+                border-left: 15px solid black;
+            }
+
+            .card:nth-of-type(even) {
+                border-right: 15px solid black;
+            }
+        }
+        /** BORDER RULES } **/
+
+        /** CARD RULES { **/
         .card {
             height: 50vh;
             color: white;
             background-size: cover;
             background-position: top center;
-            border-top: 15px gray solid;
             padding: 0px;
         }
 
@@ -81,17 +98,7 @@
         .card:nth-of-type(odd) {
             background-color: red;
         }
-
-        @media (min-width: 768px) {
-            .card {
-                height: 50vh;
-                border-left: 15px gray solid;
-            }
-
-            .card:nth-of-type(even) {
-                border-right: 15px gray solid;
-            }
-        }
+        /** CARD RULES } **/
 
         #a {
             background-image: url('./images/h_city.jpg');
