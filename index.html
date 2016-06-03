@@ -32,12 +32,21 @@
 
         #header h1 {
             position: absolute;
-            top: calc(48% - 1.5em);
-            width: 100vw;
+            top: 50%;
+
+            /** CSS3 EXPERIMENTAL { **/
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            /** CSS3 EXPERIMENTAL } **/
+
+            width: 100%;
             text-align: center;
             margin: 0px;
             padding: 20px;
-            font-size: 3em;
+            font-size: 5em;
             background-color: rgba(0, 0, 0, .6);
             color: white;
             letter-spacing: 5px;
@@ -78,7 +87,7 @@
             letter-spacing: 5px;
             padding: 20px;
             margin: 20px 0px 0px 0px;
-            font-size: 4.5em;
+            font-size: 4em;
             text-shadow: 2px 2px #000000;
             font-variant: small-caps;
         }
