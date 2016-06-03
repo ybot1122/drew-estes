@@ -58,12 +58,21 @@
 
         .card > h2 {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.6);
-            margin-top: 5vw;
-            font-size: 2em;
             letter-spacing: 5px;
             padding: 20px;
+            margin: 20px 0px 0px 0px;
+            font-size: 4.5em;
+            text-shadow: 2px 2px #000000;
+            font-variant: small-caps;
         }
+
+        .card > h2::first-letter {
+            font-size: 150%;
+            vertical-align: baseline;
+            font-style: italic;
+            letter-spacing: 5px;
+        }
+
 
         .card:nth-of-type(even) {
             background-color: green;
