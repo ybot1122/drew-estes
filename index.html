@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="./animations.css" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <style>
-        /** BORDER RULES { **/
         #main {
             border-top: 25px solid black;
         }
@@ -25,9 +24,7 @@
                 border-right: 25px solid black;
             }
         }
-        /** BORDER RULES } **/
 
-        /** CARD RULES { **/
         .card {
             height: 50vh;
             color: white;
@@ -38,7 +35,7 @@
         }
 
         .card > h2 {
-            display: inline-block;
+            display: block;
             letter-spacing: 5px;
             padding: 20px;
             margin: 20px 0px 0px 0px;
@@ -47,7 +44,14 @@
             font-variant: small-caps;
         }
 
-        /** CARD RULES } **/
+        .card > h3 {
+            text-align: center;
+            display: inline-block;
+            clear: both;
+            padding: 25px;
+            background-color: rgba(0, 0, 0, .3);
+            border: 5px solid black;
+        }
     </style>
 </head>
 <body>
