@@ -34,7 +34,7 @@
     }
 }
 
-.card:hover > h2 {
+.card:hover > .card-contents > h2 {
     -webkit-animation-name: pulse;
     animation-name: pulse;
 }
@@ -47,7 +47,7 @@
  * Copyright (c) 2016 Daniel Eden
  */
 
-.card:hover > h2 {
+.card:hover > .card-contents > h2 {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;

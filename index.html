@@ -26,6 +26,7 @@
         }
 
         .card {
+            position: relative;
             height: 50vh;
             color: white;
             background-size: cover;
@@ -34,11 +35,24 @@
             text-align: center;
         }
 
-        .card > h2 {
-            display: block;
+        .card-contents {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+
+            /** CSS3 EXPERIMENTAL { **/
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            /** CSS3 EXPERIMENTAL } **/
+        }
+
+        .card-contents > h2 {
+            padding: 0px 0px 30px 0px;
+            margin: 0px;
             letter-spacing: 5px;
-            padding: 20px;
-            margin: 20px 0px 0px 0px;
             font-size: 4em;
             font-weight: bold;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -46,16 +60,14 @@
             font-variant: small-caps;
         }
 
-        .card > h3 {
-            text-align: center;
-            display: inline-block;
-            max-width: 80%;
-            clear: both;
-            padding: 25px;
+        .card-contents > h3 {
+            width: 90%;
+            padding: 20px;
+            margin: 0px auto 0px auto;
             background-color: rgba(0, 0, 0, .3);
             border: 5px solid black;
-            font-variant: small-caps;
             letter-spacing: 2px;
+            font-variant: small-caps;
         }
     </style>
 </head>
@@ -67,22 +79,30 @@
     <div id="main" class="container-fluid">
         <div class="row">
             <div id="a" class="card col-xs-12 col-sm-6">
-                <h2>Articles</h2>
-                <h3>Random thoughts and blurbs on real life stuff</h3>
+                <div class="card-contents">
+                    <h2>Articles</h2>
+                    <h3>Random thoughts and blurbs on real life stuff</h3>
+                </div>
             </div>
             <div id="b" class="card col-xs-12 col-sm-6">
-                <h2>Travel</h2>
-                <h3>Learnings and discoveries made on the road</h3>
+                <div class="card-contents">
+                    <h2>Travel</h2>
+                    <h3>Learnings and discoveries made on the road</h3>
+                </div>
             </div>
         </div>
         <div class="row">
             <div id="c" class="card col-xs-12 col-sm-6">
-                <h2>About</h2>
-                <h3>Who what where when and why Drew Estes?</h3>
+                <div class="card-contents">
+                    <h2>About</h2>
+                    <h3>Who what where when and why Drew Estes?</h3>
+                </div>
             </div>
             <div id="d" class="card col-xs-12 col-sm-6">
-                <h2>Elephants</h2>
-                <h3>Creators and shapers of the jungle, godly</h3>
+                <div class="card-contents">
+                    <h2>Elephants</h2>
+                    <h3>Creators and shapers of the jungle, godly</h3>
+                </div>
             </div>
         </div>
     </div>
