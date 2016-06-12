@@ -1,32 +1,37 @@
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
-@-webkit-keyframes pulse {
+@-webkit-keyframes slideOutUp {
     from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 
     to {
-        -webkit-transform: scale3d(1.15, 1.15, 1.15);
-        transform: scale3d(1.15, 1.15, 1.15);
+        visibility: hidden;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
 }
 
-@keyframes pulse {
+@keyframes slideOutUp {
     from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 
     to {
-        -webkit-transform: scale3d(1.15, 1.15, 1.15);
-        transform: scale3d(1.15, 1.15, 1.15);
+        visibility: hidden;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
 }
 
-.card:hover > .card-contents > h2 {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
+.slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+}
+
+.card:hover {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
 }
 
 /*!
@@ -37,7 +42,7 @@
  * Copyright (c) 2016 Daniel Eden
  */
 
-.card:hover > .card-contents > h2 {
+.card:hover {
     -webkit-animation-duration: .75s;
     animation-duration: .75s;
     -webkit-animation-fill-mode: both;
