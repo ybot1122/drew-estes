@@ -11,16 +11,18 @@
             border-top: 25px solid black;
         }
 
-        .card {
+        .card-frame {
+            padding: 0px;
+            margin: 0px;
             border-bottom: 25px solid black;
         }
 
         @media (min-width: 768px) {
-            .card {
+            .card-frame {
                 border-left: 25px solid black;
             }
 
-            .card:nth-of-type(even) {
+            .card-frame:nth-of-type(odd) {
                 border-right: 25px solid black;
             }
         }
@@ -78,10 +80,12 @@
 
     <div id="main" class="container-fluid">
         <div class="row">
-            <div id="a" class="card col-xs-12 col-sm-6">
-                <div class="card-contents">
-                    <h2>Articles</h2>
-                    <h3>Random thoughts and blurbs on real life stuff</h3>
+            <div class="card-frame col-xs-12 col-sm-6">
+                <div id="a" class="card">
+                    <div class="card-contents">
+                        <h2>Articles</h2>
+                        <h3>Random thoughts and blurbs on real life stuff</h3>
+                    </div>
                 </div>
             </div>
             <div id="b" class="card col-xs-12 col-sm-6">
