@@ -19,15 +19,18 @@
 
         @media (min-width: 768px) {
             .card-frame {
+                z-index: 10;
                 border-left: 25px solid black;
             }
 
             .card-frame:nth-of-type(even) {
+                z-index: 9;
                 border-right: 25px solid black;
             }
         }
 
         .card {
+            z-index: 10;
             position: relative;
             height: 50vh;
             color: white;
