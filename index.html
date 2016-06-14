@@ -8,7 +8,53 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <style>
         #main {
-            border-top: 25px solid black;
+        }
+
+        #most-recent {
+            position: relative;
+            height: 80px;
+            background-color: black;
+            color: silver;
+            padding: 5px;
+        }
+
+        #most-recent > * {
+            text-align: center;
+        }
+
+        #most-recent > .title {
+            margin: 0px;
+            padding: 0px;
+            font-size: 1.25em;
+        }
+
+        #most-recent > .date {
+            display: inline-block;
+            width: 50%;
+            font-size: .75em;
+        }
+
+        #most-recent > .author {
+            display: inline-block;
+            width: 50%;
+            font-size: .75em;
+        }
+
+        #most-recent h3 {
+            display: none;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        @media (min-width: 768px) {
+            #most-recent .title {
+                display: block;
+            }
+
+            #most-recent h3 {
+                display: block;
+            }
         }
 
         .card-frame {
@@ -80,12 +126,20 @@
             border-radius: 15px;
             letter-spacing: 2px;
             font-variant: small-caps;
+            font-size: 1.25em;
         }
     </style>
 </head>
 <body>
     <div id="header">
         <h1>Drew Estes Website</h1>
+    </div>
+
+    <div id="most-recent">
+        <div class="title">The Power of Questions</div>
+        <div class="date">June 6, 2016</div>
+        <div class="author">Drew Estes</div>
+        <h3>How can your curiosity lead you to be smarter, more creative, and more successful in your career?</h3>
     </div>
 
     <div id="main" class="container-fluid">

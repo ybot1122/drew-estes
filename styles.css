@@ -5,7 +5,7 @@ body {
 
 #header {
     position: relative;
-    height: 50vh;
+    height: calc(50vh - 80px);
     background-image: url('./hero.jpg');
     background-repeat: no-repeat;
     background-position: 100% 6%;
