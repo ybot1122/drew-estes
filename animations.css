@@ -2,24 +2,24 @@
 @-webkit-keyframes slideOutUp {
     from {
         -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
     }
 
     to {
         -webkit-transform: translate3d(10px, -10px, 0);
-        transform: translate3d(10px, -10px, 0);
+                transform: translate3d(10px, -10px, 0);
     }
 }
 
 @keyframes slideOutUp {
     from {
         -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
     }
 
     to {
         -webkit-transform: translate3d(10px, -10px, 0);
-        transform: translate3d(10px, -10px, 0);
+                transform: translate3d(10px, -10px, 0);
     }
 }
 
@@ -27,24 +27,24 @@
 @-webkit-keyframes slideInDown {
     from {
         -webkit-transform: translate3d(10px, -10px, 0);
-        transform: translate3d(10px, -10px, 0);
+                transform: translate3d(10px, -10px, 0);
     }
 
     to {
         -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
     }
 }
 
 @keyframes slideInDown {
     from {
         -webkit-transform: translate3d(10px, -10px, 0);
-        transform: translate3d(10px, -10px, 0);
+                transform: translate3d(10px, -10px, 0);
     }
 
     to {
         -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
     }
 }
 
@@ -88,27 +88,29 @@
 
 .card {
     -webkit-animation-duration: .75s;
-    animation-duration: .75s;
+            animation-duration: .75s;
+
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 
 .card {
     -webkit-animation-name: slideInDown;
-    animation-name: slideInDown;
+            animation-name: slideInDown;
 }
 
 .card:hover {
     -webkit-animation-name: slideOutUp;
-    animation-name: slideOutUp;
+            animation-name: slideOutUp;
 }
 
 .card > .card-contents > h3 {
-    -webkit-transition: background .75s ease-out;
-    -moz-transition: background .75s ease-out;
-    -o-transition: background .75s ease-out;
-    transition: background .75s ease-out;
     background: rgba(0, 0, 0, .3);
+
+    -webkit-transition: background .75s ease-out;
+       -moz-transition: background .75s ease-out;
+         -o-transition: background .75s ease-out;
+            transition: background .75s ease-out;
 }
 
 .card:hover > .card-contents > h3 {

@@ -26,15 +26,6 @@ body {
 #header h1 {
     position: absolute;
     top: 50%;
-
-    /** CSS3 EXPERIMENTAL { **/
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    /** CSS3 EXPERIMENTAL } **/
-
     width: 100%;
     text-align: center;
     margin: 0px;
@@ -43,6 +34,12 @@ body {
     color: white;
     letter-spacing: 5px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 #a {
