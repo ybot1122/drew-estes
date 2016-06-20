@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Drew Estes Website</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="./animations.css" />
     <link rel="stylesheet" type="text/css" href="./rolling.css" />
@@ -83,8 +84,8 @@
             letter-spacing: 5px;
             font-size: 4em;
             font-weight: bold;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            /* text-shadow: 2px 2px 5px rgba(0, 0, 0, .8), -2px -2px 5px #000000; */
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+                1px 1px 0 #000;
             font-variant: small-caps;
         }
 
@@ -182,12 +183,22 @@
                 delete imagesToPreload[2];
                 delete imagesToPreload[3];
                 delete imagesToPreload[4];
+                // static 250ms delay, always
                 setTimeout(function() {
                     document.getElementById("header").style.display = "block";
                     document.getElementById("main").style.display = "block";
-                    // TODO: keep preloader hidden, and reuse throughout user flow?
-                    document.body.removeChild(document.getElementById("preload"));
+                    document.body.removeChild(
+                        document.getElementById("preload")
+                    );
 
+                    var nav = function() {
+                        window.location.href = "./list.html";
+                    }
+
+                    document.getElementById("a").onclick 
+                        = document.getElementById("b").onclick
+                        = document.getElementById("c").onclick
+                        = document.getElementById("d").onclick = nav;
                 }, 250);
             }
         }
