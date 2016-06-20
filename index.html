@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="./animations.css" />
+    <link rel="stylesheet" type="text/css" href="./rolling.css" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <style>
+        /** preload state **/
+        #main, #header {
+            display: none;
+
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+               -moz-animation: fadein 2s; /* Firefox < 16 */
+                -ms-animation: fadein 2s; /* Internet Explorer */
+                 -o-animation: fadein 2s; /* Opera < 12.1 */
+                    animation: fadein 2s;
+        }
+
+        #preload {
+            position: absolute;
+            top: calc(50vh - 100px);
+            left: calc(50vw - 100px);
+        }
+        /** end preload state **/
+
         #main {
         }
 
@@ -78,9 +97,9 @@
             text-align: center;
 
             /** CSS3 **/
-            -moz-box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, .6);
             -webkit-box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, .6);
-            box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, .6);
+               -moz-box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, .6);
+                    box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, .6);
             /** CSS3 **/
         }
 
@@ -89,13 +108,11 @@
             top: 50%;
             width: 100%;
 
-            /** CSS3 EXPERIMENTAL { **/
-            transform: translateY(-50%);
             -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            /** CSS3 EXPERIMENTAL } **/
+               -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                 -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
         }
 
         .card-contents > h2 {
@@ -113,7 +130,6 @@
             width: 300px;
             padding: 20px;
             margin: 0px auto 0px auto;
-            background-color: rgba(0, 0, 0, .3);
             border: 5px solid black;
             border-radius: 15px;
             letter-spacing: 2px;
@@ -123,6 +139,14 @@
     </style>
 </head>
 <body>
+    <!-- http://loading.io/ -->
+    <div id="preload" class="uil-rolling-css">
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <div id="header">
         <h1>Drew Estes Website</h1>
     </div>
@@ -175,5 +199,52 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // preload images
+        var imagesToPreload = [
+            new Image(),
+            new Image(),
+            new Image(),
+            new Image(),
+            new Image()
+        ];
+
+        var imageFilenames = [
+            "./hero.jpg",
+            "./images/h_city.jpg",
+            "./images/h_temple_hdr.jpg",
+            "./images/h_cow.jpg",
+            "./images/h_city.jpg"
+        ];
+
+        var loadedCount = 0;
+
+        var incrementLoadedCount = function() {
+            this.onload = this.onerror = this.onabort = null;
+            loadedCount++;
+            console.log(loadedCount);
+            if (loadedCount === imagesToPreload.length) {
+                // TODO: iterator instead of hardcoded deletions
+                delete imagesToPreload[0];
+                delete imagesToPreload[1];
+                delete imagesToPreload[2];
+                delete imagesToPreload[3];
+                delete imagesToPreload[4];
+                setTimeout(function() {
+                    document.getElementById("header").style.display = "block";
+                    document.getElementById("main").style.display = "block";
+                    // TODO: keep preloader hidden, and reuse throughout user flow?
+                    document.body.removeChild(document.getElementById("preload"));
+
+                }, 250);
+            }
+        }
+
+        imagesToPreload.forEach(function(img, ind) {
+            img.onload = img.onerror = img.onabort = incrementLoadedCount;
+            img.src = imageFilenames[ind];
+        });
+    </script>
 </body>
 </html>
