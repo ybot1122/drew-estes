@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <style>
         /** preload state **/
-        #main, #header {
+        #main, #header, #most-recent {
             display: none;
 
             -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -24,6 +24,7 @@
             top: calc(50vh - 100px);
             left: calc(50vw - 100px);
         }
+
         /** end preload state **/
 
         #main {
@@ -234,6 +235,7 @@
                 setTimeout(function() {
                     document.getElementById("header").style.display = "block";
                     document.getElementById("main").style.display = "block";
+                    document.getElementById("most-recent").style.display = "block";
                     // TODO: keep preloader hidden, and reuse throughout user flow?
                     document.body.removeChild(document.getElementById("preload"));
 
