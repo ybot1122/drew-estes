@@ -41,46 +41,46 @@
             font-variant: small-caps;
         }
 
-        #most-recent > .container-fluid {
+        #most-recent > .title {
             position: absolute;
             top: 15px;
+            left: 0px;
             width: 100%;
-            text-align: center;
-        }
 
-        #most-recent .title {
             text-align: center;
             font-size: 1.5em;
             letter-spacing: 5px;
             white-space: nowrap;
-            margin-bottom: 5px;
+            margin: 0px 0px 5px 0px;
+            padding: 0px 5px 0px 5px;
         }
 
-        #most-recent .date {
+        #most-recent > .date {
+            position: absolute;
+            bottom: 15px;
+            right: 50%;
+            width: calc(50% - 10px);
+
             text-align: right;
             font-size: 1em;
             letter-spacing: 2px;
+            padding-right: 10px;
+            border-right: 1px silver solid;
         }
 
-        #most-recent .author {
+        #most-recent > .author {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+
             text-align: left;
             font-size: 1em;
             letter-spacing: 2px;
-        }
-
-        #most-recent h3 {
-            display: none;
-            text-align: center;
-            padding: 0px;
-            margin: 0px;
+            padding-left: 10px;
         }
 
         @media (min-width: 768px) {
             #most-recent .title {
-                display: block;
-            }
-
-            #most-recent h3 {
                 display: block;
             }
         }
@@ -172,15 +172,9 @@
     </div>
 
     <div id="most-recent">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="title col-xs-12">The Power of Questions Extended</div>
-            </div>
-            <div class="row">
-                <div class="date col-xs-6">June 6, 2016</div>
-                <div class="author col-xs-6">Drew Estes</div>
-            </div>
-        </div>
+        <div class="title">The Power of Questions Extended</div>
+        <div class="date">June 6, 2016</div>
+        <div class="author">Drew Estes</div>
     </div>
 
     <div id="main" class="container-fluid">
