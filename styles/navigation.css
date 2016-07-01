@@ -56,3 +56,7 @@
     #navigation #most-recent > .info > .author {
       padding: 0px 0px 0px 10px;
     }
+
+#navigation #sharing {
+  padding: 10px 15px 10px 0px;
+}
