@@ -72,6 +72,12 @@
     border: 1px white solid;
   }
 
+  #navigation #sharing > button:active,
+  #navigation #sharing > button:focus {
+    outline: none;
+    border: 1px white solid;
+  }
+
   @media (min-width: 768px) {
     #navigation #sharing > button {
       height: 100%;
@@ -84,9 +90,7 @@
     border: 3px white inset;
   }
 
-  #navigation #sharing > button:hover,
-  #navigation #sharing > button:active,
-  #navigation #sharing > button:focus {
+  #navigation #sharing > button:hover {
     outline: none;
     border: 3px white inset;
   }
