@@ -1,60 +1,64 @@
 body {
-    font-size: 12px;
-    background-color: #e6e6ff;
+  font-size: 12px;
+  background-color: #e6e6ff;
 }
 
 #header {
-    position: relative;
-    height: 50vh;
-    background-image: url('../hero.jpg');
-    background-repeat: no-repeat;
-    background-position: 100% 6%;
-    border-bottom: 25px black solid;
+  position: relative;
+  height: 50vh;
+  background-image: url('../hero.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 6%;
+  border-bottom: 25px black solid;
 }
 
 @media (min-width: 768px) {
-    #header {
-        height: 75vh;
-    }
+  #header {
+    height: 75vh;
+  }
 }
 
 @media (min-width: 2048px) {
-    #header {
-        background-size: cover;
-    }
+  #header {
+    background-size: cover;
+  }
+}
+
+h1, h2 {
+  font-family: 'Taviraj', serif;
 }
 
 #header h1 {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    margin: 0px;
-    padding: 20px;
-    font-size: 5em;
-    color: white;
-    letter-spacing: 5px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  font-size: 6em;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 
-    -webkit-transform: translateY(-50%);
-       -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-         -o-transform: translateY(-50%);
-            transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #a {
-    background-image: url('../images/h_city.jpg');
+  background-image: url('../images/h_city.jpg');
 }
 
 #b {
-    background-image: url('../images/h_temple_hdr.jpg');
+  background-image: url('../images/h_temple_hdr.jpg');
 }
 
 #c {
-    background-image: url('../images/h_cow.jpg');
+  background-image: url('../images/h_cow.jpg');
 }
 
 #d {
-    background-image: url('../images/h_peacock.jpg');
+  background-image: url('../images/h_peacock.jpg');
 }
