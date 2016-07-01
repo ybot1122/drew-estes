@@ -6,7 +6,7 @@ body {
 #header {
     position: relative;
     height: 50vh;
-    background-image: url('./hero.jpg');
+    background-image: url('../hero.jpg');
     background-repeat: no-repeat;
     background-position: 100% 6%;
     border-bottom: 25px black solid;
@@ -44,17 +44,17 @@ body {
 }
 
 #a {
-    background-image: url('./images/h_city.jpg');
+    background-image: url('../images/h_city.jpg');
 }
 
 #b {
-    background-image: url('./images/h_temple_hdr.jpg');
+    background-image: url('../images/h_temple_hdr.jpg');
 }
 
 #c {
-    background-image: url('./images/h_cow.jpg');
+    background-image: url('../images/h_cow.jpg');
 }
 
 #d {
-    background-image: url('./images/h_peacock.jpg');
+    background-image: url('../images/h_peacock.jpg');
 }
