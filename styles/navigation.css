@@ -59,4 +59,34 @@
 
 #navigation #sharing {
   padding: 10px 15px 10px 0px;
+  height: 80px;
+  text-align: center;
 }
+
+  #navigation #sharing > button {
+    height: 50%;
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px 0px 5px 0px;
+    background-color: black;
+    border: 1px white solid;
+  }
+
+  @media (min-width: 768px) {
+    #navigation #sharing > button {
+      height: 100%;
+      margin-top: 0px;
+    }
+  }
+
+  #navigation #sharing > button::-moz-focus-inner {
+    outline: none;
+    border: 3px white inset;
+  }
+
+  #navigation #sharing > button:hover,
+  #navigation #sharing > button:active,
+  #navigation #sharing > button:focus {
+    outline: none;
+    border: 3px white inset;
+  }
