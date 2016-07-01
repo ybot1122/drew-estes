@@ -4,3 +4,35 @@
   color: white;
   font-variant: small-caps;
 }
+
+#navigation .title {
+  font-size: 1.5em;
+  margin-top: 10px;
+  line-height: 30px;
+  height: 30px;
+  letter-spacing: 1px;
+}
+
+  #navigation .title > .compact {
+    display: inline-block;
+  }
+
+  #navigation .title > .full {
+    display: none;
+  }
+
+#navigation .info {
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 30px;
+  height: 30px;
+}
+
+  #navigation .info > .date {
+    padding: 0px 10px 0px 0px;
+    border-right: 1px solid white;
+  }
+
+  #navigation .info > .author {
+    padding: 0px 0px 0px 10px;
+  }
