@@ -20,6 +20,20 @@
     padding: 0px 5px 0px 5px;
 }
 
+#most-recent > .title > .full {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #most-recent > .title > .full {
+        display: block;
+    }
+
+    #most-recent > .title > .compact {
+        display: none;
+    }
+}
+
 #most-recent > .date {
     position: absolute;
     bottom: 15px;

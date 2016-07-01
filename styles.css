@@ -9,6 +9,7 @@ body {
     background-image: url('./hero.jpg');
     background-repeat: no-repeat;
     background-position: 100% 6%;
+    border-bottom: 25px black solid;
 }
 
 @media (min-width: 768px) {
