@@ -1,4 +1,4 @@
-#most-recent {
+#navigation-outer {
     position: relative;
     height: 80px;
     background-color: black;
@@ -6,40 +6,37 @@
     font-variant: small-caps;
 }
 
-#most-recent > .title {
+#navigation-inner {
     position: absolute;
-    top: 15px;
-    left: 0px;
-    width: 100%;
+    top: 50%;
 
-    text-align: center;
-    font-size: 1.25em;
-    letter-spacing: 5px;
-    white-space: nowrap;
-    margin: 0px 0px 5px 0px;
-    padding: 0px 5px 0px 5px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
-#most-recent > .title > .full {
+#most-reecent > .compact {
+    font-size: 1.25em;
+}
+
+#most-recent > .full {
+    font-size: 1.5em;
     display: none;
 }
 
 @media (min-width: 768px) {
-    #most-recent > .title > .full {
-        display: block;
+    #most-recent > .full {
+        display: inline-block;
     }
 
-    #most-recent > .title > .compact {
+    #most-recent > .compact {
         display: none;
     }
 }
 
 #most-recent > .date {
-    position: absolute;
-    bottom: 15px;
-    right: 50%;
-    width: calc(50% - 10px);
-
     text-align: right;
     font-size: 1em;
     letter-spacing: 2px;
@@ -48,18 +45,8 @@
 }
 
 #most-recent > .author {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-
     text-align: left;
     font-size: 1em;
     letter-spacing: 2px;
     padding-left: 10px;
-}
-
-@media (min-width: 768px) {
-    #most-recent > .title {
-        font-size: 1.5em;
-    }
 }
