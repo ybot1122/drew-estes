@@ -3,37 +3,90 @@
   background-color: black;
   color: white;
   font-variant: small-caps;
+}
+
+#navigation #most-recent {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  #navigation #most-recent {
+    text-align: center;
+  }
+}
+
+  #navigation #most-recent > .title {
+    font-size: 1.5em;
+    margin-top: 10px;
+    line-height: 30px;
+    height: 30px;
+    letter-spacing: 1px;
+  }
+
+    #navigation #most-recent > .title > .compact {
+      display: inline-block;
+    }
+
+    #navigation #most-recent > .title > .full {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      #navigation #most-recent > .title > .compact {
+        display: none;
+      }
+
+      #navigation #most-recent > .title > .full {
+        display: inline-block;
+      }
+    }
+
+  #navigation #most-recent > .info {
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 30px;
+    height: 30px;
+  }
+
+    #navigation #most-recent > .info > .date {
+      padding: 0px 10px 0px 0px;
+      border-right: 1px solid white;
+    }
+
+    #navigation #most-recent > .info > .author {
+      padding: 0px 0px 0px 10px;
+    }
+
+#navigation #sharing {
+  padding: 10px 15px 10px 0px;
+  height: 80px;
   text-align: center;
 }
 
-#navigation .title {
-  font-size: 1.5em;
-  margin-top: 10px;
-  line-height: 30px;
-  height: 30px;
-  letter-spacing: 1px;
-}
-
-  #navigation .title > .compact {
-    display: inline-block;
+  #navigation #sharing > button {
+    height: 50%;
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px 0px 5px 0px;
+    background-color: black;
+    border: 1px white solid;
   }
 
-  #navigation .title > .full {
-    display: none;
+  @media (min-width: 768px) {
+    #navigation #sharing > button {
+      height: 100%;
+      margin-top: 0px;
+    }
   }
 
-#navigation .info {
-  font-size: 1em;
-  margin-bottom: 10px;
-  line-height: 30px;
-  height: 30px;
-}
-
-  #navigation .info > .date {
-    padding: 0px 10px 0px 0px;
-    border-right: 1px solid white;
+  #navigation #sharing > button::-moz-focus-inner {
+    outline: none;
+    border: 3px white inset;
   }
 
-  #navigation .info > .author {
-    padding: 0px 0px 0px 10px;
+  #navigation #sharing > button:hover,
+  #navigation #sharing > button:active,
+  #navigation #sharing > button:focus {
+    outline: none;
+    border: 3px white inset;
   }
