@@ -6,6 +6,7 @@ body {
 #header {
   position: relative;
   height: 50vh;
+  min-height: 400px;
   background-image: url('../hero.jpg');
   background-repeat: no-repeat;
   background-position: 100% 6%;
