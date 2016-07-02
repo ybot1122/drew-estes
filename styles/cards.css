@@ -61,4 +61,21 @@
     letter-spacing: 2px;
     font-variant: small-caps;
     font-size: 1.25em;
+    background: rgba(0, 0, 0, .7);
+}
+
+#a {
+  background-image: url('../images/h_city.jpg');
+}
+
+#b {
+  background-image: url('../images/h_temple_hdr.jpg');
+}
+
+#c {
+  background-image: url('../images/h_cow.jpg');
+}
+
+#d {
+  background-image: url('../images/h_peacock.jpg');
 }
