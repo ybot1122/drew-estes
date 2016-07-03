@@ -29,6 +29,16 @@
     cursor: pointer;
 }
 
+.card:after {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    content: "";
+
+    -webkit-box-shadow: inset 0px 0px 195px 65px rgba(0, 0, 0, 0.8);
+       -moz-box-shadow: inset 0px 0px 195px 65px rgba(0, 0, 0, 0.8);
+            box-shadow: inset 0px 0px 195px 65px rgba(0, 0, 0, 0.8);
+}
+
 .card-contents {
     position: absolute;
     top: 50%;
