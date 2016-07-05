@@ -26,7 +26,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Taviraj', serif;
+  font-family: 'Montserrat', serif;
 }
 
 #header h1 {
@@ -37,9 +37,8 @@ h1, h2 {
   margin: 0px;
   padding: 20px;
   font-size: 6em;
-  color: white;
+  color: black;
   letter-spacing: 5px;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 
   -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
