@@ -29,6 +29,25 @@
     cursor: pointer;
 }
 
+.card:after {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    content: "";
+    opacity: 1.0;
+
+    -webkit-box-shadow: inset 0px 0px 195px 65px rgba(0, 0, 0, 0.8);
+       -moz-box-shadow: inset 0px 0px 195px 65px rgba(0, 0, 0, 0.8);
+            box-shadow: inset 0px 0px 195px 65px rgba(0, 0, 0, 0.8);
+
+   -webkit-transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+           transition: opacity .25s ease-in-out;
+}
+
+.card:hover:after {
+    opacity: 0;
+}
+
 .card-contents {
     position: absolute;
     top: 50%;
@@ -61,4 +80,21 @@
     letter-spacing: 2px;
     font-variant: small-caps;
     font-size: 1.25em;
+    background: rgba(0, 0, 0, .7);
+}
+
+#a {
+  background-image: url('../images/h_city.jpg');
+}
+
+#b {
+  background-image: url('../images/h_temple_hdr.jpg');
+}
+
+#c {
+  background-image: url('../images/h_cow.jpg');
+}
+
+#d {
+  background-image: url('../images/h_peacock.jpg');
 }
