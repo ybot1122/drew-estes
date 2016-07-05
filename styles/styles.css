@@ -9,7 +9,7 @@ body {
   min-height: 400px;
   background-image: url('../hero.jpg');
   background-repeat: no-repeat;
-  background-position: 100% 6%;
+  background-position: 100% 0%;
   border-bottom: 25px black solid;
 }
 
