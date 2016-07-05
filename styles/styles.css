@@ -46,3 +46,17 @@ h1, h2 {
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+#header h1 > span {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #header h1 > span {
+    display: inline-block;
+  }
+}
+
+#header h1 > span:first-of-type {
+  color: white;
+}
