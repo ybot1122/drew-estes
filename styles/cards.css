@@ -21,6 +21,7 @@
     color: white;
     background-size: cover;
     background-position: top center;
+    background-repeat: none;
     padding: 0px;
     text-align: center;
     cursor: pointer;
@@ -51,10 +52,8 @@
     left: 10%;
     min-width: 320px;
     width: 80%;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 20px 50px 20px;
 
-    border-top: 5px solid white;
-    border-bottom: 5px solid black;
     border-radius: 15px;
 
     -webkit-transform: translateY(-50%);
@@ -70,12 +69,10 @@
     letter-spacing: 5px;
     font-size: 4em;
     font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-        1px 1px 0 #000;
-    font-variant: small-caps;
 }
 
 .card-contents > h3 {
+    max-width: 320px;
     width: 100%;
     padding: 20px;
     margin: 0px auto 0px auto;
@@ -91,14 +88,34 @@
   background-image: url('../images/h_city.jpg');
 }
 
+    #a > .card-contents {
+        border-left: 5px solid black;
+        border-top: 5px solid black;
+    }
+
 #b {
   background-image: url('../images/h_temple_hdr.jpg');
 }
+
+    #b > .card-contents {
+        border-right: 5px solid black;
+        border-top: 5px solid black;
+    }
 
 #c {
   background-image: url('../images/h_cow.jpg');
 }
 
+    #c > .card-contents {
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+    }
+
 #d {
   background-image: url('../images/h_peacock.jpg');
 }
+
+    #d > .card-contents {
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
