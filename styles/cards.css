@@ -53,6 +53,7 @@
     min-width: 320px;
     width: 80%;
     padding: 50px 20px 50px 20px;
+    background: rgba(0, 0, 0, .4);
 
     border-radius: 15px;
 
@@ -81,7 +82,7 @@
     font-variant: small-caps;
     font-size: 1.25em;
     color: black;
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
 }
 
 #a {
@@ -94,7 +95,7 @@
     }
 
 #b {
-  background-image: url('../images/h_temple_hdr.jpg');
+  background-image: url('../images/s_treehouse.jpg');
 }
 
     #b > .card-contents {
