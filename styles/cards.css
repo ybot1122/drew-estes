@@ -10,6 +10,11 @@
 
     .card-frame:nth-of-type(even) {
         z-index: 9;
+        border-left: 3px white solid;
+    }
+
+    .row:last-child > .card-frame > .card {
+        border-bottom: none;
     }
 }
 
@@ -25,6 +30,7 @@
     padding: 0px;
     text-align: center;
     cursor: pointer;
+    border-bottom: 3px white solid;
 }
 
 .card:after {
