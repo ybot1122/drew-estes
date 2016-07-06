@@ -5,19 +5,11 @@ body {
 
 #header {
   position: relative;
-  height: 50vh;
+  height: calc(100vh - 80px);
   min-height: 400px;
   background-image: url('../hero.jpg');
   background-repeat: no-repeat;
   background-position: 100% 0%;
-  border-bottom: 3px white solid;
-}
-
-@media (min-width: 768px) {
-  #header {
-    height: 75vh;
-    border-bottom: none;
-  }
 }
 
 @media (min-width: 2048px) {
@@ -58,6 +50,10 @@ h1, h2 {
   }
 }
 
-#header h1 > span:first-of-type {
+#header h1 > span:last-of-type {
   color: white;
+}
+
+#main {
+  margin-bottom: 10px;
 }

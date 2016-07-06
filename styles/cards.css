@@ -10,27 +10,31 @@
 
     .card-frame:nth-of-type(even) {
         z-index: 9;
-        border-left: 3px white solid;
     }
 
-    .row:last-child > .card-frame > .card {
-        border-bottom: none;
+    .card-frame:nth-of-type(even) > .card {
+        margin-left: 5px;
+    }
+
+    .card-frame:nth-of-type(odd) > .card {
+        margin-right: 5px;
     }
 }
 
 .card {
     z-index: 10;
     position: relative;
-    height: 50vh;
-    min-height: 400px;
+    height: calc(50vh - 15px);
+    min-height: 300px;
     color: white;
     background-size: cover;
     background-position: top center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     padding: 0px;
     text-align: center;
     cursor: pointer;
-    border-bottom: 3px white solid;
+    border-radius: 70px;
+    margin: 10px 10px 0px 10px;
 }
 
 .card:after {
