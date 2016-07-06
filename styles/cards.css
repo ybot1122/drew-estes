@@ -55,10 +55,10 @@
 .card-contents {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 5%;
     min-width: 320px;
-    width: 80%;
-    padding: 50px 20px 50px 20px;
+    width: 90%;
+    padding: 50px 30px 50px 30px;
     background: rgba(0, 0, 0, .4);
 
     border-radius: 15px;
@@ -76,6 +76,9 @@
     letter-spacing: 5px;
     font-size: 4em;
     font-weight: bold;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 15px;
+    color: black;
 }
 
 .card-contents > h3 {
@@ -83,12 +86,10 @@
     width: 100%;
     padding: 20px;
     margin: 0px auto 0px auto;
-    border-radius: 15px;
     letter-spacing: 2px;
     font-variant: small-caps;
     font-size: 1.25em;
-    color: black;
-    background: rgba(255, 255, 255, .8);
+    color: white;
 }
 
 #a {
