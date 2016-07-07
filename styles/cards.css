@@ -59,9 +59,8 @@
     position: absolute;
     top: 50%;
     left: 5%;
-    min-width: 320px;
     width: 90%;
-    padding: 50px 30px 50px 30px;
+    padding: 50px 5px 50px 5px;
     background: rgba(0, 0, 0, .4);
 
     border-radius: 15px;
@@ -71,6 +70,13 @@
         -ms-transform: translateY(-50%);
          -o-transform: translateY(-50%);
             transform: translateY(-50%);
+}
+
+@media (min-width: 360px) {
+    .card-contents {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .card-contents > h2 {
