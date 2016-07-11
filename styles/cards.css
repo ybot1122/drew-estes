@@ -36,9 +36,14 @@
     text-align: center;
     cursor: pointer;
     margin: 50px 0px 0px 0px;
-    border-radius: 15px;
+    border-radius: 0px;
 }
 
+@media (min-width: 768px) {
+    .card {
+        border-radius: 15px;
+    }
+}
 .card:after {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -77,8 +82,8 @@
 
 @media (min-width: 360px) {
     .card-contents {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -86,7 +91,7 @@
     padding: 0px;
     margin: 0px auto 30px auto;
     letter-spacing: 5px;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: bold;
     background: rgba(255, 255, 255, .7);
     border-radius: 15px;
