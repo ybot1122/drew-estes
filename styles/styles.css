@@ -1,6 +1,12 @@
 body {
-  font-size: 12px;
+  font-size: 10px;
   background-color: black;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 #header {
@@ -42,16 +48,13 @@ h1, h2 {
 
 #header h1 > span {
   display: block;
+  color: white;
 }
 
 @media (min-width: 768px) {
   #header h1 > span {
     display: inline-block;
   }
-}
-
-#header h1 > span:last-of-type {
-  color: white;
 }
 
 #main {
