@@ -13,11 +13,13 @@
     }
 
     .card-frame:nth-of-type(even) > .card {
-        margin-left: 5px;
+        margin-left: 25px;
+        margin-right: 50px;
     }
 
     .card-frame:nth-of-type(odd) > .card {
-        margin-right: 5px;
+        margin-left: 50px;
+        margin-right: 25px;
     }
 }
 
@@ -33,7 +35,8 @@
     padding: 0px;
     text-align: center;
     cursor: pointer;
-    margin: 10px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
+    border-radius: 15px;
 }
 
 .card:after {
