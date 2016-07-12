@@ -62,3 +62,7 @@ h1, h2 {
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+.hoverable {
+  /** helper class to be appended to a dom element for hover effects **/
+}

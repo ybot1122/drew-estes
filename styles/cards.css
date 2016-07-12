@@ -60,7 +60,7 @@
            transition: opacity .25s ease-in-out;
 }
 
-.card:hover:after {
+.card.hoverable:hover:after {
     opacity: 0;
 }
 
