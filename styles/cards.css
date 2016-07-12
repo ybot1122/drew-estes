@@ -54,7 +54,9 @@
     -webkit-box-shadow: inset 0px 0px 75px 15px rgba(0, 0, 0, 0.8);
        -moz-box-shadow: inset 0px 0px 75px 15px rgba(0, 0, 0, 0.8);
             box-shadow: inset 0px 0px 75px 15px rgba(0, 0, 0, 0.8);
+}
 
+.card.hoverable:after {
    -webkit-transition: opacity .25s ease-in-out;
       -moz-transition: opacity .25s ease-in-out;
            transition: opacity .25s ease-in-out;
