@@ -16,9 +16,17 @@
   }
 }
 
+  #navigation #most-recent > .latest {
+    font-size: 1em;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 5px;
+    letter-spacing: 5px;
+    font-style: italic;
+  }
+
   #navigation #most-recent > .title {
     font-size: 1.5em;
-    margin-top: 10px;
     line-height: 30px;
     height: 30px;
     letter-spacing: 1px;
@@ -27,9 +35,9 @@
 
   #navigation #most-recent > .info {
     font-size: 1em;
-    margin-bottom: 10px;
-    line-height: 30px;
-    height: 30px;
+    line-height: 20px;
+    height: 20px;
+    letter-spacing: 1px;
   }
 
     #navigation #most-recent > .info > .date {
