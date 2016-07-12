@@ -29,8 +29,6 @@ h1, h2 {
 }
 
 #header h1 {
-  position: absolute;
-  top: 50%;
   width: 100%;
   text-align: center;
   margin: 0px;
@@ -38,12 +36,6 @@ h1, h2 {
   font-size: 6em;
   color: black;
   letter-spacing: 5px;
-
-  -webkit-transform: translateY(-50%);
-     -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 #header h1 > span {
@@ -59,4 +51,14 @@ h1, h2 {
 
 #main {
   margin-bottom: 50px;
+}
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }

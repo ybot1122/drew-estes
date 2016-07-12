@@ -83,7 +83,7 @@
     }
 }
 
-.card-contents > h2 {
+.card-contents h2 {
     padding: 0px;
     margin: 0px auto 30px auto;
     letter-spacing: 5px;
@@ -94,7 +94,7 @@
     color: black;
 }
 
-.card-contents > h3 {
+.card-contents h3 {
     max-width: 320px;
     width: 100%;
     padding: 20px;
@@ -103,6 +103,10 @@
     font-variant: small-caps;
     font-size: 1.25em;
     color: white;
+}
+
+.card-contents > div {
+  width: calc(100% - 40px);
 }
 
 #a {
