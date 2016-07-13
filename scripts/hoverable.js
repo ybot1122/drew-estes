@@ -1,4 +1,4 @@
-var hoverableEnabled = true;
+var hoverableEnabled = window.touchstart === undefined;
 
 if (hoverableEnabled) {
   var cards = document.getElementsByClassName("card");
