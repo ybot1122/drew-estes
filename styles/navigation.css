@@ -16,9 +16,16 @@
   }
 }
 
+  #navigation #most-recent > .latest {
+    font-size: 1em;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+  }
+
   #navigation #most-recent > .title {
     font-size: 1.5em;
-    margin-top: 10px;
     line-height: 30px;
     height: 30px;
     letter-spacing: 1px;
@@ -27,9 +34,9 @@
 
   #navigation #most-recent > .info {
     font-size: 1em;
-    margin-bottom: 10px;
-    line-height: 30px;
-    height: 30px;
+    line-height: 20px;
+    height: 20px;
+    letter-spacing: 1px;
   }
 
     #navigation #most-recent > .info > .date {
@@ -63,10 +70,29 @@
     border: 1px white solid;
   }
 
+  #navigation #sharing > ul {
+    display: none;
+  }
+
   @media (min-width: 768px) {
     #navigation #sharing > button {
-      height: 100%;
-      margin-top: 0px;
+      display: none;
+    }
+
+    #navigation #sharing > ul {
+      display: block;
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #navigation #sharing > ul > li {
+      display: inline-block;
+      width: 20%;
+      height: 60px;
+      line-height: 60px;
+      padding: 0px;
+      margin: 0px;
     }
   }
 
