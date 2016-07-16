@@ -13,15 +13,10 @@ body {
   position: relative;
   height: calc(100vh - 80px);
   min-height: 400px;
-  background-image: url('../hero.jpg');
+  background-image: url('../images/h_peacock.jpg');
   background-repeat: no-repeat;
-  background-position: 100% 0%;
-}
-
-@media (min-width: 2048px) {
-  #header {
-    background-size: cover;
-  }
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 h1, h2 {
