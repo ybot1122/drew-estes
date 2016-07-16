@@ -11,9 +11,8 @@ body {
 
 #header {
   position: relative;
-  height: calc(100vh - 80px);
+  height: calc(50vh);
   min-height: 400px;
-  background-image: url('../images/h_peacock.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
