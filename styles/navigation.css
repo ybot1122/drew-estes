@@ -1,8 +1,11 @@
 #navigation {
-  height: 80px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: black;
   color: white;
   font-variant: small-caps;
+  border-bottom: 2px white solid;
 }
 
 /** most-recent **/
