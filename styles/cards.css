@@ -1,6 +1,7 @@
 .card-frame {
     padding: 0px;
     margin: 0px;
+    border-bottom: 2px white solid;
 }
 
 @media (min-width: 768px) {
@@ -13,20 +14,18 @@
     }
 
     .card-frame:nth-of-type(even) > .card {
-        margin-left: 25px;
-        margin-right: 50px;
+        border-left: 1px white solid;
     }
 
     .card-frame:nth-of-type(odd) > .card {
-        margin-left: 50px;
-        margin-right: 25px;
+        border-right: 1px white solid;
     }
 }
 
 .card {
     z-index: 10;
     position: relative;
-    height: calc(50vh - 15px);
+    height: 50vh;
     min-height: 300px;
     color: white;
     background-size: cover;
@@ -35,14 +34,13 @@
     padding: 0px;
     text-align: center;
     cursor: pointer;
-    margin: 50px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0px
     border-radius: 0px;
 }
 
 @media (min-width: 768px) {
     .card {
-        border-radius: 15px;
     }
 }
 

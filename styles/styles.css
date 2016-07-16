@@ -17,6 +17,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  border-bottom: 2px white solid;
 }
 
 h1, h2 {
@@ -42,10 +43,6 @@ h1, h2 {
   #header h1 > span {
     display: inline-block;
   }
-}
-
-#main {
-  margin-bottom: 50px;
 }
 
 .v-center {
