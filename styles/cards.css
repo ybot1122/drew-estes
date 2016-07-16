@@ -30,7 +30,7 @@
     min-height: 300px;
     color: white;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     padding: 0px;
     text-align: center;
@@ -45,6 +45,7 @@
         border-radius: 15px;
     }
 }
+
 .card:after {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -111,7 +112,7 @@
 }
 
 #a {
-  background-image: url('../images/h_city.jpg');
+  background-image: url('../images/v_hallway.jpg');
 }
 
     #a > .card-contents {
@@ -120,7 +121,7 @@
     }
 
 #b {
-  background-image: url('../images/s_treehouse.jpg');
+  background-image: url('../images/v_monkeytree.jpg');
 }
 
     #b > .card-contents {
@@ -129,7 +130,7 @@
     }
 
 #c {
-  background-image: url('../images/h_cow.jpg');
+  background-image: url('../images/v_crab.jpg');
 }
 
     #c > .card-contents {
