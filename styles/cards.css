@@ -1,6 +1,7 @@
 .card-frame {
     padding: 0px;
     margin: 0px;
+    border-bottom: 2px white solid;
 }
 
 @media (min-width: 768px) {
@@ -13,38 +14,36 @@
     }
 
     .card-frame:nth-of-type(even) > .card {
-        margin-left: 25px;
-        margin-right: 50px;
+        border-left: 1px white solid;
     }
 
     .card-frame:nth-of-type(odd) > .card {
-        margin-left: 50px;
-        margin-right: 25px;
+        border-right: 1px white solid;
     }
 }
 
 .card {
     z-index: 10;
     position: relative;
-    height: calc(50vh - 15px);
+    height: 50vh;
     min-height: 300px;
     color: white;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     padding: 0px;
     text-align: center;
     cursor: pointer;
-    margin: 50px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0px
     border-radius: 0px;
 }
 
 @media (min-width: 768px) {
     .card {
-        border-radius: 15px;
     }
 }
+
 .card:after {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -68,14 +67,13 @@
 
 .card-contents {
     position: relative;
-    top: 5%;
-    left: 5%;
-    height: 90%;
-    width: 90%;
+    top: calc(50% - 100px);
+    left: 0px;
+    height: 200px;
+    width: 100%;
     margin: 0px;
     padding: 50px 10px 50px 10px;
-    background: rgba(0, 0, 0, .4);
-    border-radius: 15px;
+    background: rgba(0, 0, 0, .6);
 }
 
 @media (min-width: 360px) {
@@ -87,13 +85,12 @@
 
 .card-contents h2 {
     padding: 0px;
-    margin: 0px auto 30px auto;
+    margin: 0px auto 0px auto;
     letter-spacing: 5px;
     font-size: 3.5em;
     font-weight: bold;
-    background: rgba(255, 255, 255, .7);
     border-radius: 15px;
-    color: black;
+    color: white;
 }
 
 .card-contents h3 {
@@ -112,37 +109,18 @@
 }
 
 #a {
-  background-image: url('../images/h_city.jpg');
+  background-image: url('../images/v_hallway.jpg');
 }
-
-    #a > .card-contents {
-        border-left: 5px solid black;
-        border-top: 5px solid black;
-    }
 
 #b {
-  background-image: url('../images/s_treehouse.jpg');
+  background-image: url('../images/v_monkeytree.jpg');
 }
-
-    #b > .card-contents {
-        border-right: 5px solid black;
-        border-top: 5px solid black;
-    }
 
 #c {
-  background-image: url('../images/h_cow.jpg');
+  background-image: url('../images/v_crab.jpg');
 }
-
-    #c > .card-contents {
-        border-bottom: 5px solid black;
-        border-left: 5px solid black;
-    }
 
 #d {
-  background-image: url('../images/h_peacock.jpg');
+  background-image: url('../images/v_monkey.jpg');
 }
 
-    #d > .card-contents {
-        border-bottom: 5px solid black;
-        border-right: 5px solid black;
-    }

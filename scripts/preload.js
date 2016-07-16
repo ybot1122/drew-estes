@@ -8,11 +8,11 @@ var imagesToPreload = [
 ];
 
 var imageFilenames = [
-    "./hero.jpg",
-    "./images/h_city.jpg",
-    "./images/s_treehouse.jpg",
-    "./images/h_cow.jpg",
-    "./images/h_city.jpg"
+    "./images/v_monkeytree.jpg",
+    "./images/v_crab.jpg",
+    "./images/v_hallway.jpg",
+    "./images/h_peacock.jpg",
+    "./images/v_monkey.jpg"
 ];
 
 var loadedCount = 0;
