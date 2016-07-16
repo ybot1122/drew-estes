@@ -11,8 +11,7 @@ body {
 
 #header {
   position: relative;
-  height: calc(50vh);
-  min-height: 400px;
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
