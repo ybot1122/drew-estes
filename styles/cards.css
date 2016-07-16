@@ -25,8 +25,8 @@
 .card {
     z-index: 10;
     position: relative;
-    height: 50vh;
-    min-height: 300px;
+    height: 25vh;
+    min-height: 150px;
     color: white;
     background-size: cover;
     background-position: center center;
@@ -41,6 +41,7 @@
 
 @media (min-width: 768px) {
     .card {
+        height: 50vh;
     }
 }
 
@@ -67,13 +68,13 @@
 
 .card-contents {
     position: relative;
-    top: calc(50% - 100px);
+    top: calc(50% - 75px);
     left: 0px;
-    height: 200px;
+    height: 150px;
     width: 100%;
     margin: 0px;
     padding: 50px 10px 50px 10px;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .3);
 }
 
 @media (min-width: 360px) {
@@ -105,7 +106,7 @@
 }
 
 .card-contents > div {
-  width: calc(100% - 40px);
+  width: 100%;
 }
 
 #a {
