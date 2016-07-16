@@ -70,13 +70,12 @@
 .card-contents {
     position: relative;
     top: calc(50% - 140px);
-    left: 5%;
+    left: 0px;
     height: 280px;
-    width: 90%;
+    width: 100%;
     margin: 0px;
     padding: 50px 10px 50px 10px;
-    background: rgba(0, 0, 0, .4);
-    border-radius: 15px;
+    background: rgba(0, 0, 0, .6);
 }
 
 @media (min-width: 360px) {
@@ -115,34 +114,15 @@
   background-image: url('../images/v_hallway.jpg');
 }
 
-    #a > .card-contents {
-        border-left: 5px solid black;
-        border-top: 5px solid black;
-    }
-
 #b {
   background-image: url('../images/v_monkeytree.jpg');
 }
-
-    #b > .card-contents {
-        border-right: 5px solid black;
-        border-top: 5px solid black;
-    }
 
 #c {
   background-image: url('../images/v_crab.jpg');
 }
 
-    #c > .card-contents {
-        border-bottom: 5px solid black;
-        border-left: 5px solid black;
-    }
-
 #d {
   background-image: url('../images/v_monkey.jpg');
 }
 
-    #d > .card-contents {
-        border-bottom: 5px solid black;
-        border-right: 5px solid black;
-    }
