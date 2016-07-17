@@ -80,27 +80,6 @@
     background: rgba(0, 0, 0, .3);
 }
 
-.card-contents h2 {
-    padding: 0px;
-    margin: 0px auto 0px auto;
-    letter-spacing: 5px;
-    font-size: 3.5em;
-    font-weight: bold;
-    border-radius: 15px;
-    color: white;
-}
-
-.card-contents h3 {
-    max-width: 320px;
-    width: 100%;
-    padding: 20px;
-    margin: 0px auto 0px auto;
-    letter-spacing: 2px;
-    font-variant: small-caps;
-    font-size: 1.25em;
-    color: white;
-}
-
 .card-contents > div {
   width: 100%;
 }
