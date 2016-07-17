@@ -16,6 +16,22 @@
 }
 
 #mailing-list > .mail-form label {
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
+  width: calc(50% - 5px);
+  max-width: 250px;
+}
+
+#mailing-list > .mail-form label:first-child {
+  margin-right: 5px;
+}
+
+#mailing-list > .mail-form input {
+  border: 1px black solid;
+  padding: 3px;
+  width: 100%;
+}
+
+#mailing-list > .mail-form input[type=submit] {
+  padding: 5px;
 }
