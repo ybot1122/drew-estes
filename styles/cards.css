@@ -73,15 +73,8 @@
     height: 150px;
     width: 100%;
     margin: 0px;
-    padding: 50px 10px 50px 10px;
+    padding: 0px;
     background: rgba(0, 0, 0, .3);
-}
-
-@media (min-width: 360px) {
-    .card-contents {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 }
 
 .card-contents h2 {
