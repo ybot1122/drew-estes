@@ -26,6 +26,7 @@ h1, h2 {
 
 #header h1 {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   margin: 0px;
   padding: 5px;
