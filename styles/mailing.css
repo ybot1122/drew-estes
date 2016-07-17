@@ -1,6 +1,21 @@
 #mailing-list {
+  position: relative;
   height: 50vh;
   background: url("../images/hero.jpg");
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+#mailing-list > .mail-form {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#mailing-list > .mail-form label {
+  display: block;
+  margin-bottom: 10px;
 }
