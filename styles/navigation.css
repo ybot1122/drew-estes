@@ -5,7 +5,8 @@
   background-color: black;
   color: white;
   font-variant: small-caps;
-  border-bottom: 2px white solid;
+  border-top: 3px white solid;
+  border-bottom: 5px white solid;
 }
 
 /** most-recent **/
