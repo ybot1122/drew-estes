@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/mailing.css" />
     <style>
         /** preload state **/
-        #main, #header, #most-recent {
+        #main, #most-recent, #mailing-list {
             display: none;
 
             -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -29,23 +29,22 @@
         }
 
         #preload {
-            position: absolute;
-            top: calc(50vh - 100px);
-            left: calc(50vw - 100px);
+            margin: 20px auto 20px auto;
         }
     </style>
 </head>
 <body>
+
+    <div id="header">
+        <img src="images/logo.jpg" /><h1><span>Quack</span><span>Rabbit</span></h1>
+    </div>
+
     <!-- http://loading.io/ -->
     <div id="preload" class="uil-rolling-css">
         <div>
             <div></div>
             <div></div>
         </div>
-    </div>
-
-    <div id="header">
-        <img src="images/logo.jpg" /><h1><span>Quack</span><span>Rabbit</span></h1>
     </div>
 
     <div id="main" class="container-fluid">

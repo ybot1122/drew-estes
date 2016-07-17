@@ -4,6 +4,8 @@ var imagesToPreload = [
     new Image(),
     new Image(),
     new Image(),
+    new Image(),
+    new Image(),
     new Image()
 ];
 
@@ -12,7 +14,9 @@ var imageFilenames = [
     "./images/v_crab.jpg",
     "./images/v_hallway.jpg",
     "./images/h_peacock.jpg",
-    "./images/v_monkey.jpg"
+    "./images/v_monkey.jpg",
+    "./images/hero.jpg",
+    "./images/logo.jpg"
 ];
 
 var loadedCount = 0;
@@ -20,7 +24,6 @@ var loadedCount = 0;
 var incrementLoadedCount = function() {
     this.onload = this.onerror = this.onabort = null;
     loadedCount++;
-    console.log(loadedCount);
     if (loadedCount === imagesToPreload.length) {
         // TODO: iterator instead of hardcoded deletions
         delete imagesToPreload[0];
@@ -30,9 +33,9 @@ var incrementLoadedCount = function() {
         delete imagesToPreload[4];
         // static 250ms delay, always
         setTimeout(function() {
-            document.getElementById("header").style.display = "block";
             document.getElementById("main").style.display = "block";
             document.getElementById("most-recent").style.display = "block";
+            document.getElementById("mailing-list").style.display = "block";
 
             document.body.removeChild(
                 document.getElementById("preload")
