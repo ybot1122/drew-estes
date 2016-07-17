@@ -1,25 +1,20 @@
-#navigation {
-  height: 100px;
+#most-recent {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: black;
   font-variant: small-caps;
   border-top: 3px white solid;
   border-bottom: 5px white solid;
-}
-
-/** most-recent **/
-#navigation #most-recent {
   text-align: left;
 }
 
 @media (min-width: 768px) {
-  #navigation #most-recent {
+  #most-recent {
     text-align: center;
   }
 }
 
-  #navigation #most-recent > .latest {
+  #most-recent > .latest {
     font-size: 1em;
     line-height: 20px;
     height: 20px;
@@ -27,7 +22,7 @@
     letter-spacing: 1px;
   }
 
-  #navigation #most-recent > .title {
+  #most-recent > .title {
     font-size: 1.5em;
     line-height: 30px;
     height: 30px;
@@ -35,18 +30,18 @@
     overflow: hidden;
   }
 
-  #navigation #most-recent > .info {
+  #most-recent > .info {
     font-size: 1em;
     line-height: 20px;
     height: 20px;
     letter-spacing: 1px;
   }
 
-    #navigation #most-recent > .info > .date {
+    #most-recent > .info > .date {
       padding: 0px 10px 0px 0px;
       border-right: 1px solid white;
     }
 
-    #navigation #most-recent > .info > .author {
+    #most-recent > .info > .author {
       padding: 0px 0px 0px 10px;
     }
