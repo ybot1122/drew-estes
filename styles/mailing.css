@@ -1,0 +1,44 @@
+#mailing-list {
+  position: relative;
+  height: 50vh;
+  background: url("../images/hero.jpg");
+  background-position: center top;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+#mailing-list > .mail-form {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#mailing-list > .mail-form label {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: calc(50% - 5px);
+  max-width: 250px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#mailing-list > .mail-form label:first-child {
+  margin-right: 5px;
+}
+
+#mailing-list > .mail-form label > input {
+  border: 1px black solid;
+  padding: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+#mailing-list > .mail-form input[type=submit] {
+  display: block;
+  border: 1px black solid;
+  margin: 0px auto 0px auto;
+  width: 150px;
+  padding: 5px;
+}
