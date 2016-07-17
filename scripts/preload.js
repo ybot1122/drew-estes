@@ -49,7 +49,7 @@ var incrementLoadedCount = function() {
                 = document.getElementById("b").onclick
                 = document.getElementById("c").onclick
                 = document.getElementById("d").onclick = nav;
-        }, 250);
+        }, 2000);
     }
 }
 
