@@ -16,6 +16,8 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   border-bottom: 2px white solid;
+  text-align: center;
+  padding: 5px;
 }
 
 h1, h2 {
@@ -23,13 +25,28 @@ h1, h2 {
 }
 
 #header h1 {
-  width: 100%;
+  display: inline-block;
   text-align: center;
   margin: 0px;
   padding: 5px;
   font-size: 2.5em;
   color: black;
   letter-spacing: 5px;
+}
+
+#header > img {
+  width: 150px;
+  height: 150px;
+  margin: 0px auto 0px auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #header > img {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: -200px;
+  }
 }
 
 #header h1 > span {
