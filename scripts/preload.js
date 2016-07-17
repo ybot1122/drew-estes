@@ -32,6 +32,7 @@ var incrementLoadedCount = function() {
         setTimeout(function() {
             document.getElementById("header").style.display = "block";
             document.getElementById("main").style.display = "block";
+            document.getElementById("most-recent").style.display = "block";
 
             document.body.removeChild(
                 document.getElementById("preload")
