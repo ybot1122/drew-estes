@@ -39,10 +39,6 @@ a, a:hover, a:active, a:visited, a:focus, a:link {
   cursor: pointer;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 /* helper classes */
 .v-center {
   position: absolute;
