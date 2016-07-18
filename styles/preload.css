@@ -1,6 +1,4 @@
 #main, #most-recent, #mailing-list {
-    display: none;
-
     -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeIn 2s; /* Firefox < 16 */
         -ms-animation: fadeIn 2s; /* Internet Explorer */

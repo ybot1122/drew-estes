@@ -1,3 +1,9 @@
+
+// hide content
+document.getElementById("main").style.display = "none";
+document.getElementById("most-recent").style.display = "none";
+document.getElementById("mailing-list").style.display = "none";
+
 // preload images
 var imagesToPreload = [
     new Image(),
@@ -18,6 +24,7 @@ var imageFilenames = [
 ];
 
 var loadedCount = 0;
+
 
 var incrementLoadedCount = function() {
     this.onload = this.onerror = this.onabort = null;
