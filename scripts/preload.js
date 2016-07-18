@@ -5,16 +5,14 @@ var imagesToPreload = [
     new Image(),
     new Image(),
     new Image(),
-    new Image(),
     new Image()
 ];
 
 var imageFilenames = [
-    "./images/v_monkeytree.jpg",
+    "./images/v_monkeytree-min.jpg",
     "./images/v_crab.jpg",
-    "./images/v_hallway.jpg",
-    "./images/h_peacock.jpg",
-    "./images/v_monkey.jpg",
+    "./images/v_hallway-min.jpg",
+    "./images/v_monkey-min.jpg",
     "./images/hero.jpg",
     "./images/logo.jpg"
 ];
@@ -50,7 +48,7 @@ var incrementLoadedCount = function() {
                     = document.getElementById("c").onclick
                     = document.getElementById("d").onclick = nav;
             }, 500); // .5 sec for loader to fade out
-        }, 2000); // 250 ms hardcoded delay
+        }, 250); // 250 ms hardcoded delay
     }
 }
 
