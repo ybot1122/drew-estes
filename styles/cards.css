@@ -5,11 +5,11 @@
 }
 
 @media (min-width: 768px) {
-    .card-frame:nth-of-type(even) > .card {
+    .card-frame:nth-of-type(even) .card {
         border-left: 1px white solid;
     }
 
-    .card-frame:nth-of-type(odd) > .card {
+    .card-frame:nth-of-type(odd) .card {
         border-right: 1px white solid;
     }
 }
@@ -25,7 +25,6 @@
     padding: 0px;
     margin: 0px 0px 0px 0px;
     text-align: center;
-    cursor: pointer;
     border-radius: 0px;
 }
 
@@ -35,6 +34,10 @@
         max-height: 50vh;
         height: 50vw;
     }
+}
+
+.card h3 {
+    color: white;
 }
 
 .card:after {

@@ -46,14 +46,6 @@ var incrementLoadedCount = function() {
                 document.getElementById("main").style.display = "block";
                 document.getElementById("most-recent").style.display = "block";
                 document.getElementById("mailing-list").style.display = "block";
-                var nav = function() {
-                    window.location.href = "./list.html";
-                }
-
-                document.getElementById("a").onclick 
-                    = document.getElementById("b").onclick
-                    = document.getElementById("c").onclick
-                    = document.getElementById("d").onclick = nav;
             }, 500); // .5 sec for loader to fade out
         }, 250); // 250 ms hardcoded delay
     }
