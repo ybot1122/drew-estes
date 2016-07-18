@@ -9,44 +9,23 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/base/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./styles/base/grid.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/base/animations.css" />
 
-    <link rel="stylesheet" type="text/css" href="./styles/rolling.css" />
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
     <link rel="stylesheet" type="text/css" href="./styles/cards.css" />
     <link rel="stylesheet" type="text/css" href="./styles/mostrecent.css" />
     <link rel="stylesheet" type="text/css" href="./styles/header.css" />
     <link rel="stylesheet" type="text/css" href="./styles/mailing.css" />
-    <style>
-        /** preload state **/
-        #main, #header, #most-recent {
-            display: none;
-
-            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-               -moz-animation: fadein 2s; /* Firefox < 16 */
-                -ms-animation: fadein 2s; /* Internet Explorer */
-                 -o-animation: fadein 2s; /* Opera < 12.1 */
-                    animation: fadein 2s;
-        }
-
-        #preload {
-            position: absolute;
-            top: calc(50vh - 100px);
-            left: calc(50vw - 100px);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./styles/preload.css" />
 </head>
 <body>
-    <!-- http://loading.io/ -->
-    <div id="preload" class="uil-rolling-css">
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
 
     <div id="header">
         <img src="images/logo.jpg" /><h1><span>Quack</span><span>Rabbit</span></h1>
     </div>
+
+    <!-- http://loading.io/ -->
+    <div id="preload" class="uil-rolling-css"><p></p><p>Loading</p></div>
 
     <div id="main" class="container-fluid">
         <div class="row">
