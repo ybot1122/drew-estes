@@ -37,6 +37,7 @@ var incrementLoadedCount = function() {
             document.getElementById("most-recent").style.display = "block";
             document.getElementById("mailing-list").style.display = "block";
 
+            document.getElementById("preload").className = "done";
             document.body.removeChild(
                 document.getElementById("preload")
             );

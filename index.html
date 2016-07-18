@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="./styles/base/grid.css" />
     <link rel="stylesheet" type="text/css" href="./styles/base/animations.css" />
 
-    <link rel="stylesheet" type="text/css" href="./styles/rolling.css" />
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
     <link rel="stylesheet" type="text/css" href="./styles/cards.css" />
     <link rel="stylesheet" type="text/css" href="./styles/mostrecent.css" />
@@ -30,7 +29,31 @@
         }
 
         #preload {
-            margin: 20px auto 20px auto;
+            text-align: center;
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #preload.done {
+            -webkit-animation: fadeOut 2s; /* Safari, Chrome and Opera > 12.1 */
+               -moz-animation: fadeOut 2s; /* Firefox < 16 */
+                -ms-animation: fadeOut 2s; /* Internet Explorer */
+                 -o-animation: fadeOut 2s; /* Opera < 12.1 */
+                    animation: fadeOut 2s;
+        }
+
+        #preload > p:first-child {
+            display: inline-block;
+            border: 1px white solid;
+            border-image: linear-gradient(90deg, blue, red, blue);
+            border-image-slice: 1;
+            padding: 10px;
+            -webkit-animation:  rotateClockwise 2s linear infinite;
+            -moz-animation:     rotateClockwise 2s linear infinite;
+            -ms-animation:      rotateClockwise 2s linear infinite;
+            -o-animation:       rotateClockwise 2s linear infinite;
+            animation:          rotateClockwise 2s linear infinite;
         }
     </style>
 </head>
@@ -41,12 +64,7 @@
     </div>
 
     <!-- http://loading.io/ -->
-    <div id="preload" class="uil-rolling-css">
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    <div id="preload" class="uil-rolling-css"><p></p><p>Loading</p></div>
 
     <div id="main" class="container-fluid">
         <div class="row">
