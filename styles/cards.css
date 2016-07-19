@@ -4,7 +4,7 @@
 }
 
 #main .row:first-child .card, #main .row:last-child .card-frame:first-child .card {
-    border-bottom: 2px solid white;
+    border-bottom: 2px black solid;
 }
 
 @media (min-width: 768px) {
@@ -13,11 +13,11 @@
     }
 
     .card-frame:nth-of-type(even) .card {
-        border-left: 1px white solid;
+        border-left: 1px black solid;
     }
 
     .card-frame:nth-of-type(odd) .card {
-        border-right: 1px white solid;
+        border-right: 1px black solid;
     }
 }
 
