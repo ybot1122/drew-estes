@@ -1,10 +1,17 @@
 .card-frame {
     padding: 0px;
     margin: 0px;
+}
+
+#main .row:first-child .card, #main .row:last-child .card-frame:first-child .card {
     border-bottom: 2px solid white;
 }
 
 @media (min-width: 768px) {
+    #main .row:last-child .card-frame:first-child .card {
+        border-bottom: 0px;
+    }
+
     .card-frame:nth-of-type(even) .card {
         border-left: 1px white solid;
     }
