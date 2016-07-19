@@ -1,9 +1,17 @@
 #most-recent {
-  padding: 0px 10px 0px 10px;
+  padding: 20px 10px 20px 10px;
   background-color: black;
   font-variant: small-caps;
   text-align: center;
 }
+    #most-recent h3 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    #most-recent h2 {
+      max-width: 600px;
+    }
 
     #most-recent .date {
       padding: 0px 10px 0px 0px;
