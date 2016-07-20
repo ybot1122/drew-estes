@@ -61,4 +61,6 @@
   margin: 0px auto 0px auto;
   width: 150px;
   padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
