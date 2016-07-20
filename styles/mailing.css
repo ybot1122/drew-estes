@@ -6,7 +6,7 @@
   background: url("../images/hero.jpg");
   background-position: center top;
   background-size: cover;
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -16,7 +16,7 @@
   min-width: 230px;
   width: 50%;
   max-width: 50vh;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -49,6 +49,7 @@
 }
 
 #mailing-list > .mail-form label > input {
+  color: black;
   border: 1px black solid;
   padding: 3px;
   width: 100%;
@@ -56,6 +57,7 @@
 }
 
 #mailing-list > .mail-form input[type=submit] {
+  color: black;
   display: block;
   border: 1px black solid;
   margin: 0px auto 0px auto;

@@ -1,7 +1,7 @@
 body {
   font-size: 10px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -33,7 +33,6 @@ h3 {
 }
 
 a, a:hover, a:active, a:visited, a:focus, a:link {
-  color: #A9D0F5;
   padding: 0px;
   margin: 0px;
   cursor: pointer;

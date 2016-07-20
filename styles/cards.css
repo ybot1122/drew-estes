@@ -43,6 +43,10 @@
     }
 }
 
+.card h2 {
+    color: white;
+}
+
 .card h3 {
     color: white;
 }
@@ -76,7 +80,7 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .7);
 }
 
 .card-contents > div {

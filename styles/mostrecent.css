@@ -1,6 +1,5 @@
 #most-recent {
   padding: 20px 10px 20px 10px;
-  background-color: black;
   font-variant: small-caps;
   text-align: center;
 }
@@ -15,7 +14,7 @@
 
     #most-recent .date {
       padding: 0px 10px 0px 0px;
-      border-right: 1px solid white;
+      border-right: 1px solid black;
     }
 
     #most-recent .author {
