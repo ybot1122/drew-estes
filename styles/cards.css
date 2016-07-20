@@ -3,15 +3,6 @@
     margin: 0px;
 }
 
-#main .row:first-child .card, #main .row:last-child .card-frame:first-child .card {
-}
-
-@media (min-width: 768px) {
-    #main .row:last-child .card-frame:first-child .card {
-        border-bottom: 0px;
-    }
-}
-
 .card {
     position: relative;
     min-height: 150px;
@@ -90,7 +81,7 @@
 }
 
 #b {
-  background-image: url('../images/v_monkeytree-min.jpg');
+  background-image: url('../images/h_cow.jpg');
 }
 
 #c {
@@ -98,6 +89,6 @@
 }
 
 #d {
-  background-image: url('../images/v_monkey-min.jpg');
+  background-image: url('../images/h_city.jpg');
 }
 

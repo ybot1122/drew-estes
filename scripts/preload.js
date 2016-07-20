@@ -18,7 +18,7 @@ var imageFilenames = [
     "./images/v_monkeytree-min.jpg",
     "./images/v_crab.jpg",
     "./images/v_hallway-min.jpg",
-    "./images/v_monkey-min.jpg",
+    "./images/h_city.jpg",
     "./images/hero.jpg",
     "./images/logo.jpg"
 ];
