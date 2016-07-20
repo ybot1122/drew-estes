@@ -4,53 +4,52 @@
 }
 
 #main .row:first-child .card, #main .row:last-child .card-frame:first-child .card {
-    border-bottom: 2px black solid;
 }
 
 @media (min-width: 768px) {
     #main .row:last-child .card-frame:first-child .card {
         border-bottom: 0px;
     }
-
-    .card-frame:nth-of-type(even) .card {
-        border-left: 1px black solid;
-    }
-
-    .card-frame:nth-of-type(odd) .card {
-        border-right: 1px black solid;
-    }
 }
 
 .card {
     position: relative;
-    min-height: 50vw;
-    max-height: 100vw;
-    height: 25vh;
+    min-height: 150px;
+    max-height: 20vh;
+    height: 50vw;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding: 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 5px;
     text-align: center;
     border-radius: 0px;
 }
 
 @media (min-width: 768px) {
     .card {
-        min-height: 150px;
+        min-height: 200px;
         max-height: 50vh;
-        height: 50vw;
+        height: 25vw;
     }
 }
 
 .card h2 {
     color: white;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .card h3 {
+    height: 55px;
+    padding: 10px;
     color: white;
 }
 
+@media (min-width: 768px) {
+    .card h3 {
+        height: 105px;
+    }
+}
 .card:after {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -80,7 +79,6 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background: rgba(0, 0, 0, .7);
 }
 
 .card-contents > div {
