@@ -20,19 +20,26 @@ h2 {
     padding: 0px;
     margin: 0px auto 0px auto;
     letter-spacing: 5px;
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: bold;
     font-variant: small-caps;
 }
 
+/** SPECIAL CASE BREAKPOINT **/
+@media (min-width: 360px) {
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
 h3 {
-    max-width: 320px;
     width: 100%;
     padding: 20px;
     margin: 0px auto 0px auto;
     letter-spacing: 1px;
     font-weight: 100;
     font-size: 1.05em;
+    text-align: center;
 }
 
 a, a:hover, a:active, a:visited, a:focus, a:link {

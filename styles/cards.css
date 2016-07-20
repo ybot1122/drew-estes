@@ -3,6 +3,16 @@
     margin: 0px;
 }
 
+.card-frame h3 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .card-frame h3 {
+        display: block;
+    }
+}
+
 .card {
     position: relative;
     min-height: 150px;
@@ -30,16 +40,6 @@
     background-color: rgba(0, 0, 0, .3);
 }
 
-.card h3 {
-    height: 55px;
-    padding: 15px 0px 0px 0px;
-    color: white;
-}
-
-@media (min-width: 768px) {
-    .card h3 {
-    }
-}
 .card:after {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
