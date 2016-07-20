@@ -2,9 +2,16 @@
   padding: 20px 10px 20px 10px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  #most-recent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
     #most-recent h3 {
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     #most-recent h2 {
