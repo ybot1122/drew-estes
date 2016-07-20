@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/base/styles.css" />
 
     <link rel="stylesheet" type="text/css" href="./styles/cards.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/mostrecent.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/frontpagepost.css" />
     <link rel="stylesheet" type="text/css" href="./styles/headerfooter.css" />
     <link rel="stylesheet" type="text/css" href="./styles/mailing.css" />
     <link rel="stylesheet" type="text/css" href="./styles/preload.css" />
@@ -82,22 +82,32 @@
 
     <div id="engage" class="container-fluid">
         <div class="row">
-            <div id="most-recent" class="col-xs-12 col-sm-6 col-md-8">
-                <h3>Latest Post</h3>
-                <h2>The Power of Questions Extended Double Triple</h2>
+            <div id="most-recent" class="frontpage-post col-xs-12 col-md-12">
+                <h3 class="featured-post-label">Latest Post</h3>
+                <h2>The Power of Questions Extended</h2>
                 <h3><span class="date">June 6, 2016</span><span class="author">Drew Estes</span></h3>
             </div>
-
-            <div id="mailing-list" class="col-xs-12 col-sm-6 col-md-4">
-                <div class="mail-form">
-                    <h2>Subscribe!</h2>
-                    <h3>Join our mailing list today</h3>
-                    <form action="#">
-                        <label>Name <input type="text" /></label><label>Email <input type="text" /></label>
-                        <input type="submit" value="Submit" />
-                    </form>
-                </div>
+            <div id="featured" class="frontpage-post col-xs-12 col-md-12">
+                <h3 class="featured-post-label">Featured Post</h3>
+                <h2>The Implications of Wanderlust</h2>
+                <h3><span class="date">April 21, 2016</span><span class="author">Drew Estes</span></h3>
             </div>
+            <div id="random" class="frontpage-post col-xs-12 col-md-12">
+                <h3 class="featured-post-label">Random Post</h3>
+                <h2>Why You Hear More About Paris Than Syria</h2>
+                <h3><span class="date">Nov 17, 2015</span><span class="author">Drew Estes</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="mailing-list">
+        <div class="mail-form">
+            <h2>Subscribe!</h2>
+            <h3>Join our mailing list today</h3>
+            <form action="#">
+                <label>Name <input type="text" /></label><label>Email <input type="text" /></label>
+                <input type="submit" value="Submit" />
+            </form>
         </div>
     </div>
 

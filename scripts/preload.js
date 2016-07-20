@@ -1,7 +1,7 @@
 
 // hide content
 document.getElementById("main").style.display = "none";
-document.getElementById("most-recent").style.display = "none";
+document.getElementById("engage").style.display = "none";
 document.getElementById("mailing-list").style.display = "none";
 
 // preload images
@@ -44,7 +44,7 @@ var incrementLoadedCount = function() {
                     document.getElementById("preload")
                 );
                 document.getElementById("main").style.display = "block";
-                document.getElementById("most-recent").style.display = "block";
+                document.getElementById("engage").style.display = "block";
                 document.getElementById("mailing-list").style.display = "block";
             }, 500); // .5 sec for loader to fade out
         }, 250); // 250 ms hardcoded delay

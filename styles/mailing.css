@@ -1,15 +1,12 @@
 #mailing-list {
   position: relative;
-  background: url("../images/hero.jpg");
-  background-position: left top;
-  background-attachment: fixed;
   color: white;
   text-align: center;
 }
 
 #mailing-list > .mail-form {
   height: 240px;
-  margin: 100px auto 30px auto;
+  margin: 20px auto 30px auto;
   min-width: 230px;
   width: 50%;
   max-width: 50vh;

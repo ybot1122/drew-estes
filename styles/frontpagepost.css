@@ -1,0 +1,38 @@
+.frontpage-post {
+  text-align: center;
+  background: url("../images/hero.jpg");
+  background-position: left top;
+  background-attachment: fixed;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .frontpage-post {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 370px;
+  }
+}
+
+.frontpage-post > .featured-post-label {
+  width: auto;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-bottom: 18px;
+  border-bottom: 1px black solid;
+  font-style: italic;
+}
+
+.frontpage-post > h2 {
+  max-width: 600px;
+}
+
+.frontpage-post .date {
+  padding: 0px 10px 0px 0px;
+  border-right: 1px solid black;
+}
+
+.frontpage-post .author {
+  padding: 0px 0px 0px 10px;
+}
