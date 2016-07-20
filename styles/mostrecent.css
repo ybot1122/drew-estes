@@ -1,17 +1,20 @@
 #most-recent {
-  padding: 20px 10px 20px 10px;
   text-align: center;
+  background: url("../images/hero.jpg");
+  background-position: left top;
+  background-attachment: fixed;
+  padding-top: 70px;
 }
 
 @media (min-width: 768px) {
   #most-recent {
+    padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    height: 370px;
   }
 }
     #most-recent h3 {
-      margin-top: 10px;
-      margin-bottom: 10px;
     }
 
     #most-recent h2 {

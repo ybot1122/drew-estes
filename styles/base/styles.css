@@ -48,6 +48,20 @@ a, a:hover, a:active, a:visited, a:focus, a:link {
   cursor: pointer;
 }
 
+/* parent divs */
+#main {
+
+}
+
+#engage {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  #engage {
+  }
+}
+
 /* helper classes */
 .v-center {
   position: absolute;
