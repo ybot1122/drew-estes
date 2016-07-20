@@ -32,13 +32,12 @@
 
 .card h3 {
     height: 55px;
-    padding: 10px;
+    padding: 15px 0px 0px 0px;
     color: white;
 }
 
 @media (min-width: 768px) {
     .card h3 {
-        height: 105px;
     }
 }
 .card:after {
@@ -81,7 +80,7 @@
 }
 
 #b {
-  background-image: url('../images/h_cow.jpg');
+  background-image: url('../images/vishnu.jpg');
 }
 
 #c {

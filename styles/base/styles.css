@@ -12,7 +12,7 @@ body {
   }
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Montserrat', serif;
 }
 
@@ -20,8 +20,9 @@ h2 {
     padding: 0px;
     margin: 0px auto 0px auto;
     letter-spacing: 5px;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
+    font-variant: small-caps;
 }
 
 h3 {
@@ -29,9 +30,9 @@ h3 {
     width: 100%;
     padding: 20px;
     margin: 0px auto 0px auto;
-    letter-spacing: 2px;
-    font-variant: small-caps;
-    font-size: 1.25em;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 1.05em;
 }
 
 a, a:hover, a:active, a:visited, a:focus, a:link {
