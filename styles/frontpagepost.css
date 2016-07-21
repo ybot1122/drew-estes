@@ -1,17 +1,31 @@
 .frontpage-post {
   text-align: center;
-  background: url("../images/hero.jpg");
-  background-position: left top;
-  background-attachment: fixed;
   margin-bottom: 30px;
+}
+
+#most-recent.frontpage-post {
+  background: url("../images/excerpt.jpg");
+  background-size: cover;
+}
+
+#featured.frontpage-post {
+  background: url("../images/excerpt.jpg");
+  background-size: cover;
+}
+
+#random.frontpage-post {
+  background: url("../images/excerpt.jpg");
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
   .frontpage-post {
-    padding-top: 70px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    height: 370px;
+    padding-bottom: 30px;
+    border-left: 5px white solid;
+    border-right: 5px white solid;
   }
 }
 
