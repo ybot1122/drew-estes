@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 768px) {
-  #header > img {
+  #header:not(.textless) > img {
     display: inline-block;
     margin-right: 50px;
     margin-left: -200px;
