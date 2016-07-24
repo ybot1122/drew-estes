@@ -1,3 +1,18 @@
+.back-button {
+  display: inline-block;
+  background: white;
+  position: relative;
+  left: 5px;
+}
+
+.back-button.top {
+  top: 5px;
+}
+
+.back-button.bottom {
+  bottom: 5px;
+}
+
 #article {
   max-width: 748px;
   margin: auto;
