@@ -1,10 +1,9 @@
 #article {
-  max-width: 500px;
+  max-width: 748px;
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
-
-  font-size: 18px;
+  font-size: 2em;
 }
 
 #article > h2 {
@@ -30,8 +29,13 @@
 
 #article > p {
   font-size: 1em;
-  margin: 0px;
+  margin: 0px 0px 2em 0px;
   padding: 0px;
-  line-height: 175%;
+  font-size: .75em;
+  line-height: 1.75em;
 }
 
+#article > .subtitle {
+  border-bottom: 1px black dashed;
+  padding-bottom: 40px;
+}
