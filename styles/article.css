@@ -36,6 +36,8 @@
 }
 
 #article > .subtitle {
+  border-top: 1px black dashed;
+  padding-top: 40px;
   border-bottom: 1px black dashed;
   padding-bottom: 40px;
 }
@@ -43,4 +45,12 @@
 #article > img {
   width: 100%;
   margin-bottom: 30px;
+}
+
+#article > p > span.italicized {
+  font-style: italic;
+}
+
+#article > p > span.bold {
+  font-weight: bold;
 }
