@@ -1,0 +1,84 @@
+.back-button {
+  display: inline-block;
+  background: white;
+  position: relative;
+  left: 5px;
+}
+
+.back-button.top {
+  top: 5px;
+}
+
+.back-button.bottom {
+  bottom: 5px;
+}
+
+#article {
+  max-width: 748px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 2em;
+}
+
+#article > h2:first-child {
+  text-align: center;
+}
+
+#article > h2:not(:first-child) {
+  font-size: 1.5em;
+  margin-bottom: 10px
+}
+
+#article > h3 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 0px;
+  font-size: .75em;
+  text-align: center;
+}
+
+#article > h3 > .date {
+  padding: 0px 10px 0px 0px;
+  border-right: 1px solid black;
+}
+
+#article > h3 > .author {
+  padding: 0px 0px 0px 10px;
+}
+
+#article > p {
+  font-size: 1em;
+  margin: 0px 0px 2em 0px;
+  padding: 0px;
+  font-size: .75em;
+  line-height: 1.75em;
+}
+
+#article > .subtitle {
+  border-top: 1px black dashed;
+  padding-top: 40px;
+  border-bottom: 1px black dashed;
+  padding-bottom: 40px;
+}
+
+#article > img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#article > p > span.italicized {
+  font-style: italic;
+}
+
+#article > p > span.bold {
+  font-weight: bold;
+}
+
+#article > p > span.underline {
+  text-decoration: underline;
+}
+
+#article > blockquote {
+  margin: 0px 5px 30px 15px;
+}
