@@ -39,3 +39,8 @@
   border-bottom: 1px black dashed;
   padding-bottom: 40px;
 }
+
+#article > img {
+  width: 100%;
+  margin-bottom: 30px;
+}

@@ -23,6 +23,15 @@
   display: block;
 }
 
+#header.textless > img {
+  width: 75px;
+  height: 70px;
+}
+
+#header.textless {
+  margin-bottom: 0px;
+}
+
 @media (min-width: 768px) {
   #header:not(.textless) > img {
     display: inline-block;
