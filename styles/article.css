@@ -6,8 +6,13 @@
   font-size: 2em;
 }
 
-#article > h2 {
+#article > h2:first-child {
   text-align: center;
+}
+
+#article > h2:not(:first-child) {
+  font-size: 1.5em;
+  margin-bottom: 10px
 }
 
 #article > h3 {
@@ -53,4 +58,12 @@
 
 #article > p > span.bold {
   font-weight: bold;
+}
+
+#article > p > span.underline {
+  text-decoration: underline;
+}
+
+#article > blockquote {
+  margin: 0px 5px 30px 15px;
 }
