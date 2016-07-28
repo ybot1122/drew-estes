@@ -91,8 +91,21 @@
   height: 10px;
   vertical-align: super;
   text-align: center;
+  overflow: hidden;
+  font-size: 0px;
+}
+
+.fact-popup.open {
+  width: auto;
+  position: absolute;
+  height: auto;
+  font-size: .75em;
+  padding: 10px;
+  border-radius: 0px;
 }
 
 .fact-popup:hover {
   background: blue;
 }
+
+
