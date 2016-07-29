@@ -88,8 +88,8 @@
   position: relative;
   background: gray;
   border-radius: 100%;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   vertical-align: top;
   text-align: center;
   font-size: 0px;
@@ -117,8 +117,3 @@
 .fact-popup.open.right > span {
   left: 15px;
 }
-
-.fact-popup:hover {
-  background: blue;
-}
-
