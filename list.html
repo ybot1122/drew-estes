@@ -52,15 +52,16 @@
             if (!e || !e.target || !e.target.type === "click") {
                 throw "Invalid input";
             }
+            console.log(e);
+            console.log(e.target);
             var cname = e.target.className;
             if (cname.includes("open")) {
                 e.target.className = "fact-popup";
             } else if (cname.includes("fact-popup")) {
+                var text = e.target.children[0];
                 e.target.className = "fact-popup open";
-                if (e.clientX + 200 > document.body.clientWidth) {
-                    e.target.className += " left";
-                } else {
-                    e.target.className += " right";
+                if (e.clientX + 210 > document.body.clientWidth) {
+                    text.style.left = (document.body.clientWidth - (e.clientX + 200) - 10) + "px";
                 }
             }
         }

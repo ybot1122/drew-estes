@@ -84,8 +84,8 @@
 }
 
 .fact-popup {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   background: gray;
   border-radius: 100%;
   width: 15px;
@@ -101,19 +101,11 @@
 
 .fact-popup.open > span {
   position: absolute;
-  bottom: 150%;
+  bottom: 20px;
   background: white;
   border: 1px black solid;
   padding: 3px;
   width: 200px;
   font-size: 12px;
   line-height: 16px;
-}
-
-.fact-popup.open.left > span {
-  right: 100%;
-}
-
-.fact-popup.open.right > span {
-  left: 15px;
 }
