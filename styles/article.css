@@ -90,7 +90,7 @@
   border-radius: 100%;
   width: 10px;
   height: 10px;
-  vertical-align: super;
+  vertical-align: top;
   text-align: center;
   font-size: 0px;
 }
