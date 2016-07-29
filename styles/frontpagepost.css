@@ -32,9 +32,13 @@
   font-style: italic;
 }
 
-.frontpage-post > h2 {
+.frontpage-post > .title {
   display: table-row;
   vertical-align: middle;
+}
+
+.frontpage-post > .title > h2 {
+  width: 100%;
   max-width: 600px;
 }
 
