@@ -4,6 +4,7 @@ body {
   font-size: 10px;
   background-color: white;
   color: black;
+  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {

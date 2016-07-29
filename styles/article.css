@@ -101,7 +101,7 @@
 
 .fact-popup.open > span {
   position: absolute;
-  bottom: calc(100% + 10px);
+  bottom: 150%;
   background: white;
   border: 1px black solid;
   padding: 3px;
@@ -117,11 +117,6 @@
 .fact-popup.open.right > span {
   left: 15px;
 }
-
-.fact-popup.open.top > span {
-  left: -150px;
-}
-
 
 .fact-popup:hover {
   background: blue;
