@@ -47,7 +47,19 @@
     </div>
 
     <script>
-        
+        var facts = document.getElementsByClassName("fact-popup");
+        var toggle = function(e) {
+            var cname = e.target.className;
+            if (cname.includes("open")) {
+                e.target.className = "fact-popup";
+            } else {
+                e.target.className = "fact-popup open";
+            }
+        }
+
+        for (var i = 0; i < facts.length; i++) {
+            facts[i].addEventListener("click", toggle);
+        }
     </script>
 </body>
 </html>
