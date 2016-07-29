@@ -49,12 +49,25 @@
     <script>
         var facts = document.getElementsByClassName("fact-popup");
         var toggle = function(e) {
+            if (!e || !e.target || !e.target.type === "click") {
+                throw "Invalid input";
+            }
             console.log(e);
+
             var cname = e.target.className;
             if (cname.includes("open")) {
                 e.target.className = "fact-popup";
             } else if (cname.includes("fact-popup")) {
                 e.target.className = "fact-popup open";
+                if (e.clientX + 200 > document.body.clientWidth) {
+                    if (e.clientX - 200 < 0) {
+                        e.target.className += " top";
+                    } else {
+                        e.target.className += " left";
+                    }
+                } else {
+                    e.target.className += " right";
+                }
             }
         }
 
