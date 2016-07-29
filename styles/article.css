@@ -85,13 +85,13 @@
 
 .fact-popup {
   display: inline-block;
+  position: relative;
   background: gray;
   border-radius: 100%;
   width: 10px;
   height: 10px;
   vertical-align: super;
   text-align: center;
-  overflow: hidden;
   font-size: 0px;
 }
 
@@ -101,15 +101,16 @@
 
 .fact-popup.open > span {
   position: absolute;
+  left: 15px;
   background: white;
   border: 1px black solid;
   padding: 3px;
   width: 200px;
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .fact-popup:hover {
   background: blue;
 }
-
 
