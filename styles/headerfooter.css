@@ -5,6 +5,12 @@
   padding: 20px;
 }
 
+@media (min-width: 768px) {
+  #header {
+    margin-bottom: 40px;
+  }
+}
+
 #header h1 {
   display: inline-block;
   vertical-align: middle;
