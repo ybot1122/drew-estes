@@ -1,16 +1,25 @@
 .frontpage-post {
+  position: relative;
   text-align: center;
   margin-bottom: 30px;
   width: 100%;
-  height: 250px;
+  height: 300px;
   padding-left: 10px;
   padding-right: 10px;
   display: table;
 }
 
+.excerpt {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .frontpage-post {
     height: 500px;
+  }
+
+  .excerpt {
+    display: block;
   }
 }
 
@@ -29,23 +38,30 @@
   background-size: cover;
 }
 
-.frontpage-post > .feature-type {
-  width: auto;
-  display: inline-block;
-  padding-bottom: 2px;
-  margin-bottom: 18px;
-  border-bottom: 1px black solid;
-  font-style: italic;
-}
-
 .frontpage-post > .title {
-  display: table-row;
+  display: table-cell;
   vertical-align: middle;
 }
 
 .frontpage-post > .title > h2 {
   width: 100%;
   max-width: 600px;
+}
+
+.frontpage-post > .feature-type {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-style: italic;
+}
+
+.frontpage-post > h3:last-of-type {
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
 }
 
 .frontpage-post > h3 > .date {
