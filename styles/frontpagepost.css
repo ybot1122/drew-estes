@@ -15,12 +15,18 @@
 }
 
 .excerpt {
+  padding: 10px;
   display: none;
   height: 500px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
+
 @media (min-width: 768px) {
+  .apple {
+    margin-right: 20px;
+  }
+
   .frontpage-post {
     height: 500px;
   }
