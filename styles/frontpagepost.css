@@ -1,40 +1,57 @@
+#engage {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .frontpage-post {
+  position: relative;
   text-align: center;
   margin-bottom: 30px;
   width: 100%;
-  height: 250px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 300px;
   display: table;
+  color: white;
+}
+
+.excerpt {
+  display: none;
+  height: 500px;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .frontpage-post {
+    height: 500px;
+  }
+
+  .excerpt {
+    display: block;
+  }
 }
 
 #most-recent.frontpage-post {
-  background: url("../images/excerpt.jpg");
+  background-image: url('../images/s_treehouse.jpg');
+  background-position: center center;
   background-size: cover;
 }
 
 #featured.frontpage-post {
-  background: url("../images/excerpt.jpg");
+  background: url("../images/hyderabad.jpg");
   background-size: cover;
+  background-position: center center;
 }
 
 #random.frontpage-post {
-  background: url("../images/excerpt.jpg");
+  background: url("../images/h_temple_hdr.jpg");
+  background-position: center center;
   background-size: cover;
 }
 
-.frontpage-post > .feature-type {
-  width: auto;
-  display: inline-block;
-  padding-bottom: 2px;
-  margin-bottom: 18px;
-  border-bottom: 1px black solid;
-  font-style: italic;
-}
-
 .frontpage-post > .title {
-  display: table-row;
+  display: table-cell;
   vertical-align: middle;
+  padding: 10px;
 }
 
 .frontpage-post > .title > h2 {
@@ -42,11 +59,31 @@
   max-width: 600px;
 }
 
+.frontpage-post > .feature-type {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-style: italic;
+}
+
+.frontpage-post > h3:last-of-type {
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+}
+
 .frontpage-post > h3 > .date {
   padding: 0px 10px 0px 0px;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
 }
 
 .frontpage-post > h3 > .author {
   padding: 0px 0px 0px 10px;
+}
+
+.frontpage-post > .title {
+  background: rgba(0, 0, 0, 0.6);
 }
