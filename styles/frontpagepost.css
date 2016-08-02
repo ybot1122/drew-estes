@@ -8,6 +8,12 @@
   display: table;
 }
 
+@media (min-width: 768px) {
+  .frontpage-post {
+    height: 500px;
+  }
+}
+
 #most-recent.frontpage-post {
   background: url("../images/excerpt.jpg");
   background-size: cover;
