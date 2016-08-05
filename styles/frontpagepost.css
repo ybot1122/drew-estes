@@ -21,10 +21,16 @@
   overflow-y: hidden;
 }
 
+.fp-col {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 @media (min-width: 768px) {
-  .apple {
-    margin-right: 20px;
+
+  .fp-col {
+  padding-left: 15px;
+  padding-right: 0px;
   }
 
   .frontpage-post {
