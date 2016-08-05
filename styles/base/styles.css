@@ -1,6 +1,5 @@
 body {
   margin: auto;
-  max-width: 1800px;
   font-size: 10px;
   background-color: white;
   color: black;
@@ -48,8 +47,8 @@ a, a:hover, a:active, a:visited, a:focus, a:link {
 }
 
 /* parent divs */
-#main {
-
+#main, #engage {
+  max-width: 1800px;
 }
 
 #engage {
