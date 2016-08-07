@@ -12,8 +12,12 @@ body {
   }
 }
 
-h1, h2, h3 {
-  font-family: 'Montserrat', serif;
+h1, h2 {
+  font-family: 'Montserrat', Calibri, Arial;
+}
+
+div, p, h3 {
+  font-family: 'Lora', Georgia, Cambria;
 }
 
 h2 {
