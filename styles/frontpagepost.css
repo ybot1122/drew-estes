@@ -19,10 +19,19 @@
 }
 
 .excerpt {
-  padding: 10px;
+  position: relative;
   display: none;
   height: 500px;
-  overflow-y: hidden;
+  font-size: 1.25em;
+}
+
+.excerpt::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.excerpt p {
+  margin: 0px 0px 15px 0px;
 }
 
 .fp-col {
