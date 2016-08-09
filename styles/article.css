@@ -62,9 +62,17 @@
 }
 
 #article > .subtitle {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  #article > .subtitle {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 1.5em;
+  }
 }
 
 #article > img {
