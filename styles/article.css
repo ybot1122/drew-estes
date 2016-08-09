@@ -14,11 +14,17 @@
 }
 
 #article {
-  max-width: 748px;
+  max-width: 800px;
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 2em;
+}
+
+#article li {
+  font-size: .75em;
+  line-height: 1.75em;
+  padding-bottom: 10px;
 }
 
 #article > h2:first-child {
@@ -58,22 +64,22 @@
 #article > .subtitle {
   padding-top: 40px;
   padding-bottom: 40px;
+  font-size: 1.5em;
 }
 
 #article > img {
   width: 100%;
-  margin-bottom: 30px;
 }
 
-#article > p > span.italicized {
+#article span.italicized {
   font-style: italic;
 }
 
-#article > p > span.bold {
+#article span.bold {
   font-weight: bold;
 }
 
-#article > p > span.underline {
+#article span.underline {
   text-decoration: underline;
 }
 
@@ -106,4 +112,11 @@
   width: 200px;
   font-size: 12px;
   line-height: 16px;
+}
+
+#article .caption {
+  font-size: .5em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
