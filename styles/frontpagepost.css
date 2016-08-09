@@ -18,7 +18,21 @@
   padding: 10px;
   display: none;
   height: 500px;
+<<<<<<< Updated upstream
   overflow-y: hidden;
+=======
+  font-size: 1.4em;
+  line-height: 1.75em;
+}
+
+.excerpt::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.excerpt p {
+  margin: 0px 0px 15px 0px;
+>>>>>>> Stashed changes
 }
 
 .fp-col {
