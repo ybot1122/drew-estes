@@ -55,22 +55,39 @@
   }
 }
 
-#most-recent.frontpage-post {
-  background-image: url('../images/s_treehouse.jpg');
+#power-of-questions {
+  background: url('../images/s_treehouse.jpg');
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#featured.frontpage-post {
-  background: url("../images/hyderabad.jpg");
-  background-size: cover;
+#implications-of-wanderlust {
+  background: url('../images/hyderabad.jpg');
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#random.frontpage-post {
-  background: url("../images/h_temple_hdr.jpg");
+#ways-people-influence-decisions {
+  background: url('../images/articles/influence-decisions/drumpf.jpg');
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hear-more-about-paris {
+  background: url('../images/articles/syria-paris/eiffel.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#win-an-argument {
+  background: url('../images/articles/win-an-argument/canthearyou.gif');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .frontpage-post > .title {
