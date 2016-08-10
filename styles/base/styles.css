@@ -55,12 +55,21 @@ a, a:hover, a:active, a:visited, a:focus, a:link {
   max-width: 1800px;
 }
 
+#compact-nav {
+  margin-top: 30px;
+}
+
 #engage {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {
   #engage {
+    margin-top: 50px;
+  }
+
+  #compact-nav {
+    margin-top: 50px;
   }
 }
 
