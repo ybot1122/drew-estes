@@ -16,9 +16,13 @@
 #article {
   max-width: 800px;
   margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 2em;
+}
+
+#article ul, #article ol {
+  padding-left: 30px;
 }
 
 #article li {
@@ -91,7 +95,7 @@
   text-decoration: underline;
 }
 
-#article > blockquote {
+#article blockquote {
   margin: 0px 5px 30px 15px;
 }
 
