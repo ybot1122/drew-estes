@@ -79,11 +79,11 @@
   width: 100%;
 }
 
-#article span.italicized {
+#article span.italicized, #article span.i {
   font-style: italic;
 }
 
-#article span.bold {
+#article span.bold, #article span.b {
   font-weight: bold;
 }
 
