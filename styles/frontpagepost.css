@@ -92,6 +92,27 @@
   background-repeat: no-repeat;
 }
 
+#chapter1 {
+  background: url('../images/travel/chapter1/hero.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#chapter2 {
+  background: url('../images/travel/chapter2/hero.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#chapter3 {
+  background: url('../images/travel/chapter3/hero.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .frontpage-post > .title {
   display: table-cell;
   vertical-align: middle;
