@@ -39,12 +39,13 @@
 #article ul, #article ol {
   padding-left: 30px;
   margin-bottom: 2em;
+  margin-top: 0px;
 }
 
 #article li {
   font-size: 1.35em;
   line-height: 1.75em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #article > p {
@@ -59,7 +60,7 @@
 }
 
 #article .caption {
-  font-size: .5em;
+  font-size: 1em;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -85,6 +86,9 @@
   text-decoration: underline;
 }
 
+#article .top-margin {
+  margin-top: 2em;
+}
 
 /** FACT POPUPS **/
 .fact-popup {
