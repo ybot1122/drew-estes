@@ -51,30 +51,5 @@
         <p>(C) QuackRabbit All Rights Reserved</p>
         <p>we will sue your bitch ass</p>
     </div>
-
-    <script>
-        var facts = document.getElementsByClassName("fact-popup");
-        var toggle = function(e) {
-            if (!e || !e.target || !e.target.type === "click") {
-                throw "Invalid input";
-            }
-            console.log(e);
-            console.log(e.target);
-            var cname = e.target.className;
-            if (cname.includes("open")) {
-                e.target.className = "fact-popup";
-            } else if (cname.includes("fact-popup")) {
-                var text = e.target.children[0];
-                e.target.className = "fact-popup open";
-                if (e.clientX + 210 > document.body.clientWidth) {
-                    text.style.left = (document.body.clientWidth - (e.clientX + 200) - 10) + "px";
-                }
-            }
-        }
-
-        for (var i = 0; i < facts.length; i++) {
-            facts[i].addEventListener("click", toggle);
-        }
-    </script>
 </body>
 </html>

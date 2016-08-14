@@ -3,19 +3,12 @@
     margin: 0px;
 }
 
-.card-frame h3 {
-    display: none;
-}
-
 @media (min-width: 768px) {
 
     #main {
         max-width: 768px;
     }
 
-    .card-frame h3 {
-        display: block;
-    }
 }
 
 .card {
