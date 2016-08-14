@@ -59,3 +59,13 @@
   font-size: 1em;
   padding: 10px;
 }
+
+#footer a {
+  padding-left: 3px;
+  padding-right: 2px;
+  border-right: 1px black solid;
+}
+
+#footer a:last-child {
+  border-right: none;
+}
