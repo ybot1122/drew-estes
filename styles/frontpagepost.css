@@ -132,6 +132,7 @@
   text-align: center;
   display: inline-block;
   font-style: italic;
+  font-size: 1.35em;
 }
 
 .frontpage-post > h3:last-of-type {
