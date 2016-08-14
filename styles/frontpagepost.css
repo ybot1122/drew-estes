@@ -25,6 +25,7 @@
   overflow-y: hidden;
   font-size: 1.35em;
   line-height: 1.5em;
+  padding-top: 15px;
 }
 
 .excerpt::first-letter {
@@ -126,7 +127,7 @@
 .frontpage-post > .feature-type {
   position: absolute;
   left: 0px;
-  top: 10px;
+  top: 20px;
   width: 100%;
   text-align: center;
   display: inline-block;
@@ -136,7 +137,7 @@
 .frontpage-post > h3:last-of-type {
   position: absolute;
   left: 0px;
-  bottom: 10px;
+  bottom: 20px;
 }
 
 .frontpage-post > h3 > .date {

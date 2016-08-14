@@ -1,86 +1,78 @@
-.back-button {
-  display: inline-block;
-  background: white;
-  position: relative;
-  left: 5px;
-}
-
-.back-button.top {
-  top: 5px;
-}
-
-.back-button.bottom {
-  bottom: 5px;
-}
-
 #article {
   max-width: 800px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 2em;
 }
 
-#article ul, #article ol {
-  padding-left: 30px;
-}
-
-#article li {
-  font-size: .75em;
-  line-height: 1.75em;
-  padding-bottom: 10px;
-}
-
-#article > h2:first-child {
+/** TITLE **/
+#article > .title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-#article > h2:not(:first-child) {
-  font-size: 1em;
-  margin-bottom: 10px
+/** ARTICLE INFO **/
+#article > .info {
+  margin-bottom: 20px;
 }
 
-#article > h3 {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding: 0px;
-  font-size: .75em;
-  text-align: center;
-}
-
-#article > h3 > .date {
+#article > .info > .date {
   padding: 0px 10px 0px 0px;
   border-right: 1px solid black;
 }
 
-#article > h3 > .author {
+#article > .info > .author {
   padding: 0px 0px 0px 10px;
 }
 
+/** SUBTITLE **/
+#article > .subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/** GENERAL ELEMENTS **/
+#article > h2 {
+  margin-bottom: 5px;
+}
+
+#article ul, #article ol {
+  padding-left: 30px;
+  margin-bottom: 2em;
+}
+
+#article li {
+  font-size: 1.35em;
+  line-height: 1.75em;
+  margin-bottom: 5px;
+}
+
 #article > p {
-  font-size: 1em;
   margin: 0px 0px 2em 0px;
   padding: 0px;
-  font-size: .75em;
+  font-size: 1.35em;
   line-height: 1.75em;
-}
-
-#article > .subtitle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 1em;
-}
-
-@media (min-width: 768px) {
-  #article > .subtitle {
-    font-size: 1.5em;
-  }
 }
 
 #article > img {
   width: 100%;
 }
 
+#article .caption {
+  font-size: .5em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#article blockquote {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 0px 5px 2em 15px;
+  font-style: italic;
+}
+
+/** FONT FORMATTING **/
 #article span.italicized, #article span.i {
   font-style: italic;
 }
@@ -93,10 +85,8 @@
   text-decoration: underline;
 }
 
-#article blockquote {
-  margin: 0px 5px 30px 15px;
-}
 
+/** FACT POPUPS **/
 .fact-popup {
   position: relative;
   display: inline-block;
@@ -124,9 +114,3 @@
   line-height: 16px;
 }
 
-#article .caption {
-  font-size: .5em;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}

@@ -31,10 +31,19 @@
 #header.textless > img {
   width: 75px;
   height: 70px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #header.textless {
   margin-bottom: 0px;
+}
+
+#header.textless a {
+  font-size: 1.5em;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 @media (min-width: 768px) {
@@ -49,23 +58,4 @@
   text-align: center;
   font-size: 1em;
   padding: 10px;
-}
-
-#compact-nav {
-  position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#compact-nav a {
-  font-size: 1.5em;
-  display: inline-block;
-  width: 50%;
-}
-
-#compact-nav a:first-child {
-}
-
-#compact-nav a:last-child {
-  text-align: right;
 }
