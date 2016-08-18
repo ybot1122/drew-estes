@@ -142,11 +142,16 @@
 }
 
 .frontpage-post > h3 > .date {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
   padding: 0px 10px 0px 0px;
-  border-right: 1px solid white;
 }
 
 .frontpage-post > h3 > .author {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
   padding: 0px 0px 0px 10px;
 }
 
