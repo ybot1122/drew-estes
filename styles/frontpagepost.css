@@ -2,13 +2,12 @@
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
 }
 
 .frontpage-post {
   position: relative;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 100%;
   height: 300px;
   display: table;
