@@ -1,0 +1,10 @@
+#about {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+#about p {
+	font-size: 1.35em;
+}
