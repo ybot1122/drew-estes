@@ -5,6 +5,6 @@
   margin-top: 30px;
 }
 
-#about p {
+#about p, li {
 	font-size: 1.35em;
 }
