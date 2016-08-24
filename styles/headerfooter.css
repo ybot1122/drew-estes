@@ -22,14 +22,14 @@
   letter-spacing: 5px;
 }
 
-#header > img {
+#header img {
   width: 150px;
   height: 145px;
   margin: 5px auto 0px auto;
   display: block;
 }
 
-#header.textless > img {
+#header.textless img {
   width: 75px;
   height: 70px;
   display: inline-block;
@@ -41,7 +41,7 @@
   margin-bottom: 0px;
 }
 
-#header.textless a {
+#header.textless a:not(.logo-link) {
   font-size: 1.5em;
   display: inline-block;
   vertical-align: bottom;
@@ -49,7 +49,7 @@
 }
 
 @media (min-width: 768px) {
-  #header:not(.textless) > img {
+  #header:not(.textless) img {
     display: inline-block;
     margin-right: 50px;
     margin-left: -200px;
