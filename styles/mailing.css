@@ -8,7 +8,12 @@
   width: 95%;
   max-width: 500px;
   padding: 20px;
-  border: 1px black solid;
+}
+
+@media (min-width: 768px) {
+  #mailing-list {
+    border: 1px black solid;
+  }
 }
 
 #mailing-list h2 {
