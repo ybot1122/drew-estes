@@ -10,12 +10,6 @@
   padding: 20px;
 }
 
-@media (min-width: 768px) {
-  #mailing-list {
-    border: 1px black solid;
-  }
-}
-
 #mailing-list h2 {
   margin-bottom: 15px;
 }
@@ -39,6 +33,11 @@
   min-width: 200px;
 }
 
+#mailing-list input:hover {
+  border-color: black;
+}
+
 #mailing-list input[type='submit'] {
+  width: 50%;
   margin-top: 5px;
 }
