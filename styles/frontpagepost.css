@@ -18,6 +18,10 @@
   color: white;
 }
 
+.bio {
+  margin-bottom: 10px;
+}
+
 .excerpt, .bio {
   position: relative;
   overflow-y: hidden;
@@ -29,11 +33,6 @@
 .excerpt {
   height: 500px;
   display: none;
-}
-
-.excerpt::first-letter, .bio::first-letter {
-  font-size: 2em;
-  font-style: italic;
 }
 
 .excerpt p, .bio p {
