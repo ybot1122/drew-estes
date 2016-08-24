@@ -22,6 +22,7 @@ div, p, h3, li {
 
 h1 {
   font-size: 3em;
+  padding: 5px;
   text-align: center;
 }
 
