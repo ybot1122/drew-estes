@@ -18,22 +18,25 @@
   color: white;
 }
 
-.excerpt {
+.excerpt, .bio {
   position: relative;
-  display: none;
-  height: 500px;
   overflow-y: hidden;
   font-size: 1.35em;
   line-height: 1.5em;
   padding-top: 15px;
 }
 
-.excerpt::first-letter {
+.excerpt {
+  height: 500px;
+  display: none;
+}
+
+.excerpt::first-letter, .bio::first-letter {
   font-size: 2em;
   font-style: italic;
 }
 
-.excerpt p {
+.excerpt p, .bio p {
   margin: 0px 0px 15px 0px;
 }
 
@@ -108,6 +111,27 @@
 
 #chapter3 {
   background: url('../images/travel/chapter3/hero-lo.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#team-drew {
+  background: url('../images/team/drew-min.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#team-lizzie {
+  background: url('../images/team/lizzie-min.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#team-toby {
+  background: url('../images/team/toby-min.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
