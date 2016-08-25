@@ -1016,3 +1016,9 @@ hr {
 .affix {
   position: fixed;
 }
+
+/** custom added **/
+.no-gutter {
+  padding-left: 0px;
+  padding-right: 0px;
+}
