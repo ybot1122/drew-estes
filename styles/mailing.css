@@ -8,6 +8,7 @@
   width: 95%;
   max-width: 500px;
   padding: 20px;
+  border: 1px black solid;
 }
 
 #mailing-list h2 {
