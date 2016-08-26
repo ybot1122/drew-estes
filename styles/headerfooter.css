@@ -13,7 +13,7 @@
 }
 
 #header h1 {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   text-align: center;
   margin: 0px;
@@ -51,8 +51,6 @@
 @media (min-width: 768px) {
   #header:not(.textless) img {
     display: inline-block;
-    margin-right: 50px;
-    margin-left: -200px;
   }
 }
 
