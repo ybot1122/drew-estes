@@ -41,6 +41,7 @@ h3 {
 }
 
 a, a:hover, a:active, a:visited, a:focus, a:link {
+  color: #337ab7;
   padding: 0px;
   margin: 0px;
   cursor: pointer;

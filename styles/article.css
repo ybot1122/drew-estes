@@ -18,13 +18,13 @@
 }
 
 #article > .info > .date {
-  padding: 0px 10px 0px 0px;
+  padding: 0px;
   width: 50%;
   display: inline-block;
 }
 
 #article > .info > .author {
-  padding: 0px 0px 0px 10px;
+  padding: 0px;
   width: 50%;
   display: inline-block;
 }
