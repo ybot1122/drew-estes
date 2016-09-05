@@ -94,6 +94,13 @@
   background-repeat: no-repeat;
 }
 
+#magic-marble-box {
+  background: url('../images/articles/magic-marble-box/hero.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #chapter1 {
   background: url('../images/travel/chapter1/hero-lo.jpeg');
   background-position: center center;
