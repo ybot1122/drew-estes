@@ -60,7 +60,18 @@
 }
 
 #article > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+}
+
+#article > img.half-image {
+  width: 50%;
+}
+
+#article > img.captionless {
+  margin-bottom: 2em;
 }
 
 #article .caption {
