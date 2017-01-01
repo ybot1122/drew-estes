@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 class BigQuote extends Component {
   render() {
+    const author = (this.props.author) ? <div className="quote-author">&ndash; {this.props.author}</div> : null;
     return (
       <div className="blockquote">
         <blockquote>
           <div>{this.props.children}</div>
-          <div className="quote-author">&ndash; {this.props.author}</div>
+          {author}
         </blockquote>
       </div>
     );
@@ -14,7 +15,7 @@ class BigQuote extends Component {
 }
 
 BigQuote.propTypes = {
-  author: React.PropTypes.string.isRequired
+  author: React.PropTypes.string
 }
 
 export default BigQuote;

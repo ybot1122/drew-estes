@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import BigQuote from './BigQuote';
+
 import ArticleMetadata from './articlemetadata.json';
 
 import _getReadableDate from './utils/getReadableDate';
@@ -56,7 +58,12 @@ class Article extends Component {
         const children = this._parseHtmlTree(data[i].child);
         const props = Object.assign({}, data[i].attr, { key: i });
         console.log(props);
-        result.push(React.createElement(data[i].tag, props, children));
+
+        if (data[i].tag === 'blockquote') {
+          result.push(React.createElement(BigQuote, props, children));
+        } else {
+          result.push(React.createElement(data[i].tag, props, children));
+        }
       } else if (data[i].node === 'text') {
         result.push(data[i].text);
       }

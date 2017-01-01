@@ -11,12 +11,14 @@ class ArticlesList extends Component {
     var result = [];
     for (let i = 0; i < data.length; i++) {
       result.push(
-        <ArticleCard title={data[i].title} url={data[i].url} publishDate={data[i].published} key={i} isCompact>
-        </ArticleCard>
+        <div className="row">
+          <ArticleCard title={data[i].title} url={data[i].url} publishDate={data[i].published} key={i} isCompact>
+          </ArticleCard>
+        </div>
       );
     }
     return (
-      <div>{result}</div>
+      <div className="container-fluid">{result}</div>
     );
   }
 }
