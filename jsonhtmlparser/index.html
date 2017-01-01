@@ -1,0 +1,60 @@
+<head>
+  <title>Parser</title>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/blowsie/Pure-JavaScript-HTML5-Parser/master/htmlparser.js"></script>
+  <script src="./html2json.js"></script>
+  <style>
+    textarea {
+      width: 400px;
+      height: 400px;
+      display: block;
+      margin: auto;
+    }
+
+    #submit {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      height: 50px;
+    }
+
+    #result {
+      width: 400px;
+      margin: auto;
+      border: 1px black solid;
+      min-height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hello</h1>
+
+  <textarea id="inputHtml"></textarea>
+  <input type="submit" id="submit" />
+  <div id="result"></div>
+
+  <script>
+
+    $('#submit').click(function() {
+      var input = $('#inputHtml').val();
+      input = input.replace(/\r?\n|\r/g);
+      var result = html2json(input);
+      var arr = result.child;
+      var final = [];
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i].node === 'text' && (arr[i].text === "undefined" || !arr[i].text.trim())) {
+          continue;
+        }
+        final.push(arr[i]);
+      }
+      console.log(final);
+      $('#result').html(JSON.stringify(final));
+    });
+
+  </script>
+
+</body>
