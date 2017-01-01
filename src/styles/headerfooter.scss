@@ -1,0 +1,50 @@
+#header {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  padding: 10px 0px 10px 0px;
+  background: white;
+
+  h1 {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #logo {
+    width: 50px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-button {
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  .logo-container {
+    display: block;
+    width: 180px;
+    margin: 0px auto;
+    text-align: center;
+    a {
+      color: #333333;
+    }
+  }
+
+  .nav-container {
+    margin: 10px auto 0px auto;
+    text-align: center;    
+  }
+}
+
+#footer {
+  text-align: center;
+}
