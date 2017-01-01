@@ -39,17 +39,27 @@ class Article extends Component {
 
   _parseHtmlTree(data) {
     if (!data) return null;
-    console.log(data);
-    let result = [];
+    const result = [];
     for (let i = 0; i < data.length; i++) {
       if (data[i].node === 'element') {
-        let children = this._parseHtmlTree(data[i].child);
-        result.push(React.createElement(data[i].tag, { key: i }), children);
+        if (data[i].attr && data[i].attr.class) {
+          data[i].attr.className = data[i].attr.class;
+          delete data[i].attr.class;
+        }
+        const children = this._parseHtmlTree(data[i].child);
+        const props = Object.assign({}, data[i].attr, { key: i });
+        console.log(props);
+        result.push(React.createElement(data[i].tag, props, children));
       } else if (data[i].node === 'text') {
         result.push(data[i].text);
       }
     }
-    console.log(result);
+    if (result.length === 0) {
+      return null;
+    }
+    if (result.length === 1) {
+      return result[0];
+    }
     return result;
   }
 

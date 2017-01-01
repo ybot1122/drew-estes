@@ -41,7 +41,9 @@
 
     $('#submit').click(function() {
       var input = $('#inputHtml').val();
-      input = input.replace(/\r?\n|\r/g);
+      input = input.replace(/\r?\n|\r/g, "");
+      input = input.replace(/^\s+/mg, "");
+      console.log(input);
       var result = html2json(input);
       var arr = result.child;
       var final = [];
