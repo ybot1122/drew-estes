@@ -13,7 +13,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/1.png",
+      "src": "images/articles/magic-marble-box/1.png",
       "class": "captionless"
     }
   },
@@ -58,7 +58,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/2.png",
+      "src": "images/articles/magic-marble-box/2.png",
       "class": "half-image"
     }
   },
@@ -99,7 +99,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/3.png",
+      "src": "images/articles/magic-marble-box/3.png",
       "class": "captionless"
     }
   },
@@ -117,7 +117,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/4.png",
+      "src": "images/articles/magic-marble-box/4.png",
       "class": "captionless"
     }
   },
@@ -125,7 +125,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/5.png",
+      "src": "images/articles/magic-marble-box/5.png",
       "class": "captionless"
     }
   },
@@ -268,7 +268,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/6.png",
+      "src": "images/articles/magic-marble-box/6.png",
       "class": "captionless"
     }
   },
@@ -286,7 +286,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/7.png",
+      "src": "images/articles/magic-marble-box/7.png",
       "class": "captionless"
     }
   },
@@ -714,7 +714,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "../images/articles/magic-marble-box/8.png",
+      "src": "images/articles/magic-marble-box/8.png",
       "class": "captionless"
     }
   },
