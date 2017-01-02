@@ -1,3 +1,10 @@
+@mixin inset {
+  background: #fff;
+  border: 1px #ddd solid;
+  margin: 10px 5px;
+  padding: 0px 15px 5px 15px;
+}
+
 body {
   font-size: 14px;
   font-family: Roboto;
@@ -29,11 +36,7 @@ body {
   }
 
   .article {
-    background: #fff;
-    border: 1px #ddd solid;
-    margin: 10px 5px;
-    padding: 5px 15px;
-
+    @include inset;
     .read-more, .date-published {
       display: inline-block;
     }
@@ -45,7 +48,7 @@ body {
     &.compact {
       .date-published {
         margin: 0px;
-        padding: 0px 0px 20px 10px;
+        padding: 0px 0px 20px 0px;
       }
       .title {
         margin-bottom: 5px;
@@ -75,6 +78,7 @@ body {
   }
 
   #team {
+    @include inset;
     text-align: center;
     img {
       height: 200px;
@@ -85,9 +89,7 @@ body {
   }
 
   #solo-article {
-    padding: 0px 25px 0px 25px;
-    background: #fff;
-    border: 1px #ddd solid;
+    @include inset;
 
     img {
       width: 100%;
@@ -96,6 +98,11 @@ body {
     .caption {
       text-align: center;
       padding: 5px;
+      font-size: 10px;
+    }
+
+    hr {
+      border-color: #aaa;
     }
   }
 }

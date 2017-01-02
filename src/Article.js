@@ -91,8 +91,8 @@ class Article extends Component {
     return (
       <div id="solo-article">
         <h1>{this.state.metadata.title}</h1>
-        <h2>{this.state.metadata.author}</h2>
-        <h2>{_getReadableDate(this.state.metadata.published)}</h2>
+        <h3>{this.state.metadata.author}</h3>
+        <h3>{_getReadableDate(this.state.metadata.published)}</h3>
         <div>
           {this._parseHtmlTree(this.state.content)}
         </div>
