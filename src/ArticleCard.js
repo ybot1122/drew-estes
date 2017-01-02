@@ -13,6 +13,7 @@ class ArticleCard extends Component {
           <div className="article compact">
             <h1 className="title"><a href={url}>{this.props.title}</a></h1>
             <p className="date-published">{_getReadableDate(this.props.publishDate)}</p>
+            {this.props.children}
           </div>
         </div>
       );

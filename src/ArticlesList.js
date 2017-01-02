@@ -11,8 +11,9 @@ class ArticlesList extends Component {
     var result = [];
     for (let i = 0; i < data.length; i++) {
       result.push(
-        <div className="row">
-          <ArticleCard title={data[i].title} url={data[i].url} publishDate={data[i].published} key={i} isCompact>
+        <div className="row" key={i}>
+          <ArticleCard title={data[i].title} url={data[i].url} publishDate={data[i].published} isCompact>
+            <img src={process.env.PUBLIC_URL + '../images/articles/' + data[i].imageDir + '/' + data[i].heroImg} alt="hero" />
           </ArticleCard>
         </div>
       );

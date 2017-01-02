@@ -41,6 +41,24 @@ body {
     &:not(.compact) .date-published {
       float: right;
     }
+
+    &.compact {
+      .date-published {
+        margin: 0px;
+        padding: 0px 0px 20px 10px;
+      }
+      .title {
+        margin-bottom: 5px;
+      }
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      max-height: 200px;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   .blockquote {
@@ -72,7 +90,12 @@ body {
     border: 1px #ddd solid;
 
     img {
-      max-width: 100%;
+      width: 100%;
+    }
+
+    .caption {
+      text-align: center;
+      padding: 5px;
     }
   }
 }

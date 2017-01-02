@@ -3,54 +3,72 @@
     "title": "How to Win An Argument",
     "author": "Drew Estes",
     "published": 1446537600000,
-    "url": "how-to-win-an-argument"
+    "url": "how-to-win-an-argument",
+    "imageDir": "win-an-argument",
+    "heroImg": "canthearyou.gif"
   },
   "why-you-hear-more-about-paris-than-syria": {
     "title": "Why You Hear More About Paris Than Syria",
     "author": "Drew Estes",
     "published": 1447747200000,
-    "url": "why-you-hear-more-about-paris-than-syria"
+    "url": "why-you-hear-more-about-paris-than-syria",
+    "imageDir": "syria-paris",
+    "heroImg": "hero-hi.png"
   },
   "the-3-surprising-ways-people-influence-your-decisions": {
     "title": "The 3 Surprising Ways People Influence Your Decisions",
     "author": "Drew Estes",
     "published": 1455609600000,
-    "url": "the-3-surprising-ways-people-influence-your-decisions"
+    "url": "the-3-surprising-ways-people-influence-your-decisions",
+    "imageDir": "influence-decisions",
+    "heroImg": "drumpf.jpeg"
   },
   "the-implications-of-wanderlust": {
     "title": "The Implications of Wanderlust",
     "author": "Drew Estes",
     "published": 1461222000000,
-    "url": "the-implications-of-wanderlust"
+    "url": "the-implications-of-wanderlust",
+    "imageDir": "implications-wanderlust",
+    "heroImg": "hero-hi.jpg"
   },
   "the-power-of-questions": {
     "title": "The Power of Questions",
     "author": "Drew Estes",
     "published": 1465196400000,
-    "url": "the-power-of-questions"
+    "url": "the-power-of-questions",
+    "imageDir": "power-of-questions",
+    "heroImg": "hero-hi.jpg"
   },
   "the-magic-marble-box": {
     "title": "The Magic Marble Box",
     "author": "Drew Estes",
     "published": 1472972400000,
-    "url": "the-magic-marble-box"
+    "url": "the-magic-marble-box",
+    "imageDir": "magic-marble-box",
+    "heroImg": "hero.png"
   },
   "taste-of-south-india": {
     "title": "3 Month Recap - A Taste of South India",
     "author": "Drew Estes",
     "published": 1461740400000,
-    "url": "taste-of-south-india"
+    "url": "taste-of-south-india",
+    "imageDir": "chapter3",
+    "heroImg": "hero-hi.jpg"
   },
   "city-of-dawn": {
     "title": "Chapter 2: The City of Dawn",
     "author": "Drew Estes",
     "published": 1462950000000,
-    "url": "city-of-dawn"
+    "url": "city-of-dawn",
+    "imageDir": "chapter2",
+    "heroImg": "hero-hi.jpeg"
   },
   "great-banyan-tree": {
     "title": "Chapter 1: Journey to The Great Banyan Tree",
     "author": "Drew Estes",
     "published": 1469170800000,
-    "url": "great-banyan-tree"
+    "url": "great-banyan-tree",
+    "imageDir": "chapter1",
+    "heroImg": "hero-hi.jpeg"
   }
 }
