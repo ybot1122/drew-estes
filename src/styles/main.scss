@@ -1,3 +1,5 @@
+@import '_grow-shadow';
+
 @mixin inset {
   background: #fff;
   border: 1px #ddd solid;
@@ -117,6 +119,19 @@ body {
     input {
       width: 100%;
       padding: 3px;
+    }
+  }
+
+  .support-connect {
+    width: 100%;
+    td {
+      width: 25%;
+      padding: 15px;
+    }
+
+    img {
+      @include grow-shadow;
+      width: 100%;
     }
   }
 }

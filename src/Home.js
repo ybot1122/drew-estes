@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 import Author from './Author';
 import ArticleCard from './ArticleCard';
 import MailingListForm from './MailingListForm';
+import SupportPatreon from './SupportPatreon';
 
 import ArticleMetadata from './articlemetadata.json';
-
-import patreonLogo from './images/patreon_logo.png';
 
 class Home extends Component {
   render() {
@@ -31,10 +30,7 @@ class Home extends Component {
             <MailingListForm />
           </div>
           <div className="col-xs-12 col-sm-6 no-gutter">
-            <div className="article">
-              <h3>Support on Patreon</h3>
-              <img src={patreonLogo} alt="patreon logo" />
-            </div>
+            <SupportPatreon />
           </div>
         </div>
       </div>

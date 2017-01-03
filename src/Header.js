@@ -14,7 +14,7 @@ class Header extends Component {
           <Link to="/" className="nav-button">Home</Link>
           <Link to="/about" className="nav-button">About</Link>
           <Link to="/articles" className="nav-button">Articles</Link>
-          <Link to="/about" className="nav-button">Support</Link>
+          <Link to="/support" className="nav-button">Support</Link>
         </div>
       </div>
     );

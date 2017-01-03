@@ -7,6 +7,7 @@ import Home from './Home';
 import About from './About';
 import ArticlesList from './ArticlesList';
 import Article from './Article';
+import Support from './Support';
 
 import './styles/normalize.css';
 import './styles/grid.css';
@@ -18,6 +19,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="about" component={About} />
+      <Route path="support" component={Support} />
       <Route path="articles">
         <IndexRoute component={ArticlesList} />
         <Route path=":articleTitle" component={Article} />
