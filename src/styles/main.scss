@@ -78,7 +78,6 @@ body {
   }
 
   #team {
-    @include inset;
     text-align: center;
     img {
       height: 200px;
