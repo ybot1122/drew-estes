@@ -9,7 +9,7 @@ class ArticleCard extends Component {
 
     if (this.props.isCompact) {
       return (
-        <div className="col-xs-12">
+        <div className="col-xs-12 no-gutter">
           <div className="article compact">
             <h1 className="title"><a href={url}>{this.props.title}</a></h1>
             <p className="date-published">{_getReadableDate(this.props.publishDate)}</p>
@@ -20,7 +20,7 @@ class ArticleCard extends Component {
     }
 
     return (
-      <div className="col-xs-12">
+      <div className="col-xs-12 no-gutter">
         <div className="article">
           <h1 className="title"><a href={url}>{this.props.title}</a></h1>
           {this.props.children}

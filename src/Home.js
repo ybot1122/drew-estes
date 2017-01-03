@@ -5,6 +5,8 @@ import ArticleCard from './ArticleCard';
 
 import ArticleMetadata from './articlemetadata.json';
 
+import patreonLogo from './images/patreon_logo.png';
+
 class Home extends Component {
   render() {
     const articleOne = ArticleMetadata['the-magic-marble-box'];
@@ -21,6 +23,20 @@ class Home extends Component {
             <p>The man shows you a box, which he tells you is full of marbles. He invites you to play a game where you must predict the percentages of the various marbles in the box. You can guess as many times as you want, but you can&apos;t remove the lid of the box to look inside &ndash; you can only take one handful of marbles at a time from the hole in the top, before putting them back to draw the next handful.</p>
             <p>Setting aside your reservations about listening to a guy who looks like your childhood nightmares and wants you to reach into a strange box, you decide to play. After all, he <span class="i">is</span> wearing a labcoat.</p>
           </ArticleCard>
+        </div>
+
+        <div className="row">
+          <div className="col-xs-12 col-sm-6 no-gutter">
+            <div className="article">
+              <h3>Join Mailing List</h3>
+            </div>
+          </div>
+          <div className="col-xs-12 col-sm-6 no-gutter">
+            <div className="article">
+              <h3>Support on Patreon</h3>
+              <img src={patreonLogo} alt="patreon logo" />
+            </div>
+          </div>
         </div>
       </div>
     );
