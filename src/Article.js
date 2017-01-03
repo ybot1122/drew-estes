@@ -57,7 +57,6 @@ class Article extends Component {
         }
         const children = this._parseHtmlTree(data[i].child);
         const props = Object.assign({}, data[i].attr, { key: i });
-        console.log(props);
 
         if (data[i].tag === 'blockquote') {
           result.push(React.createElement(BigQuote, props, children));
