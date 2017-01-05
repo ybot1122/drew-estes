@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import BigQuote from './BigQuote';
+import Loader from './Loader';
 
 import ArticleMetadata from './articlemetadata.json';
 
@@ -87,13 +88,15 @@ class Article extends Component {
       return (<div id="solo-article"><h1>Error loading content. Try refreshing.</h1></div>);
     }
 
+    const inner = (this.state.content) ? this._parseHtmlTree(this.state.content) : <Loader width={25} height={25} />
+
     return (
       <div id="solo-article">
         <h1>{this.state.metadata.title}</h1>
         <h3>{this.state.metadata.author}</h3>
         <h3>{_getReadableDate(this.state.metadata.published)}</h3>
         <div>
-          {this._parseHtmlTree(this.state.content)}
+          {inner}
         </div>
       </div>
     );

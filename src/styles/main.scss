@@ -105,6 +105,11 @@ body {
     hr {
       border-color: #aaa;
     }
+
+    .loader {
+      display: block;
+      margin: 30px auto;
+    }
   }
 
   #mailingform {
@@ -119,6 +124,17 @@ body {
     input {
       width: 100%;
       padding: 3px;
+    }
+
+    svg {
+      display: block;
+      margin: auto;
+    }
+
+    .err {
+      color: red;
+      font-weight: bold;
+      text-align: center;
     }
   }
 
