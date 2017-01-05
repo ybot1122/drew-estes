@@ -51,7 +51,13 @@ class MailingListForm extends Component {
     }
   }
 
-  _onSubmit() {
+  _onSubmit(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (this.state.formStatus === LOADING || this.state.formStatus === SUCCESS) {
+      return false;
+    }
+
     const httpRequest = new XMLHttpRequest();
     const name = this.nameInput.value;
     const email = this.emailInput.value;
@@ -106,7 +112,7 @@ class MailingListForm extends Component {
     const isDisabled = (this.state.formStatus === LOADING) ? true : false;
     const submitButton = (this.state.formStatus === LOADING)
       ? <Loader height={25} width={25} />
-      : <input onClick={this._onSubmit} type="submit" value="Subscribe!" />
+      : <input type="submit" value="Subscribe!" />
     const errorRow = (this.state.formStatus === ERROR)
       ? <tr className="err"><td colSpan="2">{this.state.errorMessage}</td></tr>
       : null;
@@ -114,7 +120,7 @@ class MailingListForm extends Component {
     return (
       <div id="mailingform" className="article">
         <h3>Join Mailing List</h3>
-        <form action="javascript:void(0);">
+        <form onSubmit={this._onSubmit}>
           <table>
             <tbody>
               <tr>
