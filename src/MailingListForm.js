@@ -54,13 +54,20 @@ class MailingListForm extends Component {
   _onSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
+
+    // if loading or already successful, do nothing
     if (this.state.formStatus === LOADING || this.state.formStatus === SUCCESS) {
       return false;
     }
 
-    const httpRequest = new XMLHttpRequest();
+    // if form data exists and did not change, do nothing
     const name = this.nameInput.value;
     const email = this.emailInput.value;
+    if (this.state.formData && this.state.formData.name === name && this.state.formData.email === email) {
+      return false;
+    }
+
+    const httpRequest = new XMLHttpRequest();
 
     if (!name) {
       this._onComplete({ title: 'Invalid params' }, true);
