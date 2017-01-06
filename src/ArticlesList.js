@@ -19,7 +19,33 @@ class ArticlesList extends Component {
       );
     }
     return (
-      <div className="container-fluid">{result}</div>
+      <div id="article-list" className="container-fluid">
+        <div className="row">
+          <div className="col-xs-12">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Sort By:</th>
+                  <th>Search For:</th>
+                </tr>
+                <tr>
+                  <td>
+                    <select>
+                      <option>Alphabetically</option>
+                      <option>Date (newest first)</option>
+                      <option>Date (oldest first)</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {result}
+      </div>
     );
   }
 }

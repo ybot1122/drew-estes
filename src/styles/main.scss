@@ -150,5 +150,24 @@ body {
       width: 100%;
     }
   }
+
+  #article-list {
+    table {
+      width: 100%;
+      text-align: left;
+
+      td, th {
+        padding: 5px;
+        width: 50%;
+      }
+
+      input, select {
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        padding: 2px;
+      }
+    }
+  }
 }
 

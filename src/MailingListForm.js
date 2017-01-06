@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
+import Store from './utils/stores/Store';
+import Dispatcher from './utils/dispatchers/Dispatcher';
 
 import Loader from './Loader';
 
-const UNSUBMITTED = 0;
-const LOADING = 1;
-const SUCCESS = 2;
-const ERROR = -1;
-
+import ACTIONTYPES from './utils/constants/ActionTypes';
+import STATUSES from './utils/constants/Statuses';
 const ENDPOINT = 'https://cbok150lka.execute-api.us-west-2.amazonaws.com/QuackRabbitStage/mailinglist';
-
 const validateEmail = function(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
@@ -19,19 +17,27 @@ class MailingListForm extends Component {
     super(props);
     this._onComplete = this._onComplete.bind(this);
     this._onSubmit = this._onSubmit.bind(this);
-    this.state = {
-      formStatus: UNSUBMITTED,
-      formData: {
-        name: null,
-        email: null
-      }
-    }
+    this._onStoreUpdate = this._onStoreUpdate.bind(this);
+    this.state = Store.getMailingListFormState();
+    console.log(this.state);
+  }
+
+  componentDidMount() {
+    Store.addListener(this._onStoreUpdate);
+  }
+
+  componentWillUnmount() {
+    Store.removeListener(this._onStoreUpdate);
+  }
+
+  _onStoreUpdate() {
+    this.setState(Store.getMailingListFormState());
   }
 
   _onComplete(response, isError = false) {
     if (!isError) {
-      this.setState({
-        formStatus: SUCCESS
+      Dispatcher.dispatch(ACTIONTYPES.UPDATE_MAILING_LIST_FORM, {
+        formStatus: STATUSES.SUCCESS
       });
     } else {
       let errMessage;
@@ -44,8 +50,8 @@ class MailingListForm extends Component {
       } else {
         errMessage = 'Unknown error occurred.';
       }
-      this.setState({
-        formStatus: ERROR,
+      Dispatcher.dispatch(ACTIONTYPES.UPDATE_MAILING_LIST_FORM, {
+        formStatus: STATUSES.ERROR,
         errorMessage: errMessage
       });
     }
@@ -56,7 +62,7 @@ class MailingListForm extends Component {
     e.stopPropagation();
 
     // if loading or already successful, do nothing
-    if (this.state.formStatus === LOADING || this.state.formStatus === SUCCESS) {
+    if (this.state.formStatus === STATUSES.LOADING || this.state.formStatus === STATUSES.SUCCESS) {
       return false;
     }
 
@@ -102,8 +108,8 @@ class MailingListForm extends Component {
       email_address: email
     }));
 
-    this.setState({
-      formStatus: LOADING,
+    Dispatcher.dispatch(ACTIONTYPES.UPDATE_MAILING_LIST_FORM, {
+      formStatus: STATUSES.LOADING,
       formData: {
         name: name,
         email: email
@@ -112,15 +118,15 @@ class MailingListForm extends Component {
   }
 
   render() {
-    if (this.state.formStatus === SUCCESS) {
+    if (this.state.formStatus === STATUSES.SUCCESS) {
       return (<div id="mailingform" className="article"><h3>Thanks for subscribing, {this.state.formData.name}!</h3></div>);
     }
 
-    const isDisabled = (this.state.formStatus === LOADING) ? true : false;
-    const submitButton = (this.state.formStatus === LOADING)
+    const isDisabled = (this.state.formStatus === STATUSES.LOADING) ? true : false;
+    const submitButton = (this.state.formStatus === STATUSES.LOADING)
       ? <Loader height={25} width={25} />
       : <input type="submit" value="Subscribe!" />
-    const errorRow = (this.state.formStatus === ERROR)
+    const errorRow = (this.state.formStatus === STATUSES.ERROR)
       ? <tr className="err"><td colSpan="2">{this.state.errorMessage}</td></tr>
       : null;
 
