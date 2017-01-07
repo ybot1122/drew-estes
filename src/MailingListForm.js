@@ -18,8 +18,7 @@ class MailingListForm extends Component {
     this._onComplete = this._onComplete.bind(this);
     this._onSubmit = this._onSubmit.bind(this);
     this._onStoreUpdate = this._onStoreUpdate.bind(this);
-    this.state = Store.getMailingListFormState();
-    console.log(this.state);
+    this.state = Store.getMailingListFormState(true);
   }
 
   componentDidMount() {

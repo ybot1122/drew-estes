@@ -6,6 +6,15 @@ import ArticleMetadata from './articlemetadata.json';
 import _orderedArticles from './utils/orderedArticles';
 
 class ArticlesList extends Component {
+
+  _sortByChanged(e) {
+
+  }
+
+  _searchForChanged(e) {
+
+  }
+
   render() {
     const data = _orderedArticles(ArticleMetadata);
     var result = [];
@@ -30,14 +39,14 @@ class ArticlesList extends Component {
                 </tr>
                 <tr>
                   <td>
-                    <select>
+                    <select onChange={this._sortByChanged}>
                       <option>Alphabetically</option>
                       <option>Date (newest first)</option>
                       <option>Date (oldest first)</option>
                     </select>
                   </td>
                   <td>
-                    <input type="text" />
+                    <input onChange={this._searchForChanged} type="text" />
                   </td>
                 </tr>
               </tbody>

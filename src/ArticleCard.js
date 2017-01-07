@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 
 import _getReadableDate from './utils/getReadableDate';
 
@@ -11,7 +12,7 @@ class ArticleCard extends Component {
       return (
         <div className="col-xs-12 no-gutter">
           <div className="article compact">
-            <h1 className="title"><a href={url}>{this.props.title}</a></h1>
+            <h1 className="title"><Link to={url}>{this.props.title}</Link></h1>
             <p className="date-published">{_getReadableDate(this.props.publishDate)}</p>
             {this.props.children}
           </div>
@@ -22,9 +23,9 @@ class ArticleCard extends Component {
     return (
       <div className="col-xs-12 no-gutter">
         <div className="article">
-          <h1 className="title"><a href={url}>{this.props.title}</a></h1>
+          <h1 className="title"><Link to={url}>{this.props.title}</Link></h1>
           {this.props.children}
-          <p className="read-more"><a href={url}>Read more&hellip;</a></p>
+          <p className="read-more"><Link to={url}>Read more&hellip;</Link></p>
           <p className="date-published">{_getReadableDate(this.props.publishDate)}</p>
         </div>
       </div>

@@ -21,6 +21,11 @@ class Store {
       },
       errMessage: null
     };
+
+    this.articleListState = {
+      sortBy: 1,
+      searchFor: null
+    }
   }
 
   addListener(callback) {
@@ -54,8 +59,25 @@ class Store {
   }
 
   // getters
-  getMailingListFormState() {
+  getMailingListFormState(isFresh) {
+    if (isFresh) {
+      if (this.mailingListFormState.formStatus !== STATUSES.SUCCESS) {
+        this.mailingListFormState = {
+          formStatus: STATUSES.UNSUBMITTED,
+          formData: {
+            name: null,
+            email: null
+          },
+          errMessage: null
+        }
+        this._emitChange();
+      }
+    }
     return this.mailingListFormState;
+  }
+
+  getArticleListState() {
+    return this.articleListState;
   }
 }
 
