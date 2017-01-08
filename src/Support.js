@@ -19,10 +19,10 @@ class Support extends Component {
               <table className="support-connect">
                 <tbody>
                   <tr>
-                    <td><a href="http://facebook.com"><img src={facebookLogo} alt="facebook logo" /></a></td>
-                    <td><a href="http://instagram.com"><img src={instagramLogo} alt="instagram logo" /></a></td>
-                    <td><a href="http://linkedin.com"><img src={linkedinLogo} alt="linkedin logo" /></a></td>
-                    <td><a href="http://medium.com"><img src={mediumLogo} alt="medium logo" /></a></td>
+                    <td><a href="https://www.facebook.com/drew.estes"><img src={facebookLogo} alt="facebook logo" /></a></td>
+                    <td><a href="https://www.instagram.com/drew_estes/"><img src={instagramLogo} alt="instagram logo" /></a></td>
+                    <td><a href="https://www.linkedin.com/in/drew-estes-a240aa65"><img src={linkedinLogo} alt="linkedin logo" /></a></td>
+                    <td><a href="https://medium.com/@drew_estes"><img src={mediumLogo} alt="medium logo" /></a></td>
                   </tr>
                 </tbody>
               </table>
