@@ -14,6 +14,13 @@ const ActionTypes = {
     } 
   **/
   UPDATE_MAILING_LIST_FORM      : 'UPDATE_MAILING_LIST_FORM',
+  /**
+    {
+      sortBy: <String> alphabetically | newest | oldest,
+      searchFor: <String>
+    }
+  **/
+  UPDATE_ARTICLE_LIST_SEARCH    : 'UPDATE_ARTICLE_LIST_SEARCH',
 };
 
 export default ActionTypes;

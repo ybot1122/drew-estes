@@ -23,8 +23,8 @@ class Store {
     };
 
     this.articleListState = {
-      sortBy: 1,
-      searchFor: null
+      sortBy: 'newest',
+      searchFor: ''
     }
   }
 
@@ -51,6 +51,10 @@ class Store {
     switch(actionType) {
       case ActionTypes.UPDATE_MAILING_LIST_FORM:
         this.mailingListFormState = Object.assign(this.mailingListFormState, payload);
+        this._emitChange();
+        break;
+      case ActionTypes.UPDATE_ARTICLE_LIST_SEARCH:
+        this.articleListState = Object.assign(this.articleListState, payload);
         this._emitChange();
         break;
       default:
