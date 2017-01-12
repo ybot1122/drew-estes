@@ -7,8 +7,8 @@ class Author extends Component {
     return (
         <div className="author-preview col-xs-12">
             <img src={drew} alt="author" className="author-image" />
-            <p>You should hear me stumble through an explanation when people ask me this in person. On a good day I can put a nice little box around what this site is all about, only to realize afterward that not everything fits.</p>
-            <p>In short, I don&apos;t really plan articles. I try to, but then I get distracted by a cool idea or question. Then I chase that idea or question down the rabbit hole of the Internet until it turns into an article.</p>
+            <p>Hi, I&apos;m Drew. And this is QuackRabbit. Here I explore ideas about people and society, and offer ways we can improve both ourselves and our communities. This involves letting go of the biases, habits, and misconceptions that hold us back. So whether it&apos;s through science and technology, media and politics, or psychology and human behavior, QuackRabbit exists to help you live a smarter, happier and healthier life.</p>
+            <p>Like what you read? Subscribe below and never miss an article. If you're feeling generous, support me on Patreon for as little as a dollar a month. It feeds my stomach as well as my motivation to write more.</p>
         </div>
       );
   }

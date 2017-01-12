@@ -7,7 +7,7 @@ class SupportPatreon extends Component {
     return (
       <div className="article">
         <h3>Support on Patreon</h3>
-        <img src={patreonLogo} alt="patreon logo" />
+        <a href="https://www.patreon.com/quackrabbit"><img id="patreon-logo" src={patreonLogo} alt="patreon logo" /></a>
       </div>
     );
   }

@@ -147,8 +147,13 @@ body {
 
     img {
       @include grow-shadow;
-      width: 100%;
     }
+  }
+
+  #patreon-logo {
+    @include grow-shadow;
+    display: block;
+    margin: 15px auto;
   }
 
   #article-list {
