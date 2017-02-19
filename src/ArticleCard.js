@@ -25,7 +25,7 @@ class ArticleCard extends Component {
         <div className="article">
           <h1 className="title"><Link to={url}>{this.props.title}</Link></h1>
           {this.props.children}
-          <p className="read-more"><Link to={url}>Read more&hellip;</Link></p>
+          <p className="read-more"><Link to={url}>0 Comments</Link><Link to={url}>Read more&hellip;</Link></p>
           <p className="date-published">{_getReadableDate(this.props.publishDate)}</p>
         </div>
       </div>

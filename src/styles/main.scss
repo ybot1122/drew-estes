@@ -60,6 +60,14 @@ body {
       display: inline-block;
     }
 
+    .read-more {
+      a:first-child {
+        padding-right: 5px;
+        margin-right: 5px;
+        border-right: 1px black solid;
+      }
+    }
+
     &:not(.compact) .date-published {
       float: right;
     }
