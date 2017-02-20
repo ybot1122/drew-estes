@@ -92,6 +92,7 @@ class ArticleContents extends Component {
 
     return (
       <div id="solo-article">
+        <span id="comments-quicklink"><a href="#article-comments">(0) Comments</a></span>
         <h1>{this.state.metadata.title}</h1>
         <h3>{this.state.metadata.author}</h3>
         <h3>{_getReadableDate(this.state.metadata.published)}</h3>
