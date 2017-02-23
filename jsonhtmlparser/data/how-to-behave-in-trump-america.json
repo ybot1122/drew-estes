@@ -3,7 +3,7 @@
     "node":"element",
     "tag":"img",
     "attr":{
-      "src":"images/how-to-behave-in-trump-america/hero.png"
+      "src":"images/articles/how-to-behave-in-trump-america/hero.png"
     }
   },
   {
@@ -179,7 +179,7 @@
     "node":"element",
     "tag":"img",
     "attr":{
-      "src":"images/how-to-behave-in-trump-america/chomsky.png"
+      "src":"images/articles/how-to-behave-in-trump-america/chomsky.png"
     }
   },
   {
@@ -499,7 +499,7 @@
     "node":"element",
     "tag":"img",
     "attr":{
-      "src":"images/how-to-behave-in-trump-america/swimming.png"
+      "src":"images/articles/how-to-behave-in-trump-america/swimming.png"
     }
   },
   {
