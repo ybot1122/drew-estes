@@ -70,5 +70,13 @@
     "url": "great-banyan-tree",
     "imageDir": "chapter1",
     "heroImg": "hero-hi.jpeg"
+  },
+  "how-to-behave-in-trump-america": {
+    "title": "How to Behave in Trump America",
+    "author": "Drew Estes",
+    "published": 1487818225000,
+    "url": "how-to-behave-in-trump-america",
+    "imageDir": "how-to-behave-in-trump-america",
+    "heroImg": "hero.png"
   }
 }
