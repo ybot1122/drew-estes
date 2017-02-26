@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ArticleCommentList extends Component {
   render() {
     return (
-      <div id="article-comments">
+      <div id="article-comments" style={{"display": "none"}}>
         <h2>Discussion</h2>
         <div className="discussion">
           <div className="discussion-author">Toby Liu</div>
