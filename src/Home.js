@@ -18,7 +18,8 @@ class Home extends Component {
 
         <div className="row">
           <ArticleCard title={articleOne.title} url={articleOne.url} publishDate={articleOne.published}>
-            <img style={{"maxHeight": "none"}} src="images/articles/how-to-behave-in-trump-america/hero.png" />
+            <h2 className="subtitle">{articleOne.subtitle}</h2>
+            <img style={{"maxHeight": "none"}} src="images/articles/how-to-behave-in-trump-america/hero.png" alt="Trump Behavior" />
             <div class="caption">Protesters march during the Women&apos;s March on Washington. Image Credit: Aaron P. Bernstein / Getty Images</div>
             <p>Sit down, America. You&apos;re sitting already? Okay good. It&apos;s time we pull our heads out of our collective asses.</p>
             <p>Yeah, we did it. Donald Trump is now the president of the United States. And he has put together one of the least educated administrations in modern history. Whether you&apos;re a woman, a minority, an immigrant, or really anything but an upper class straight white male, you already know you have cause for concern. No, I take that back &ndash; if you also happen to fall in the category of &ldquo;living on a planet affected by climate change,&rdquo; you should also be worried.</p>

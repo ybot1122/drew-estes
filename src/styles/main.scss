@@ -7,6 +7,10 @@
   padding: 0px 15px 5px 15px;
 }
 
+@mixin subtitle {
+
+}
+
 input, select {
   border: 1px #ccc solid;
   outline: none;
@@ -54,6 +58,10 @@ body {
 
     h3 {
       border-bottom: 1px #ccc solid;
+    }
+
+    .subtitle {
+      @include subtitle;
     }
 
     .read-more, .date-published {
@@ -116,6 +124,10 @@ body {
   #solo-article {
     @include inset;
     position: relative;
+
+    .subtitle {
+      @include subtitle;
+    }
 
     img {
       width: 100%;

@@ -89,10 +89,12 @@ class ArticleContents extends Component {
     }
 
     const inner = (this.state.content) ? this._parseHtmlTree(this.state.content) : <Loader width={25} height={25} />
+    const subtitle = (this.state.metadata.subtitle) ? <h2 className="subtitle">{this.state.metadata.subtitle}</h2> : null;
 
     return (
       <div id="solo-article">
         <h1>{this.state.metadata.title}</h1>
+        {subtitle}
         <h3>{this.state.metadata.author}</h3>
         <h3>{_getReadableDate(this.state.metadata.published)}</h3>
         <div>
