@@ -11,6 +11,12 @@
 
 }
 
+@mixin caption {
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
 input, select {
   border: 1px #ccc solid;
   outline: none;
@@ -60,6 +66,10 @@ body {
       border-bottom: 1px #ccc solid;
     }
 
+    .caption {
+      @include caption;
+    }
+
     .subtitle {
       @include subtitle;
     }
@@ -94,7 +104,6 @@ body {
       margin: auto;
       max-height: 200px;
       max-width: 100%;
-      margin-bottom: 20px;
     }
   }
 
@@ -134,9 +143,7 @@ body {
     }
 
     .caption {
-      text-align: center;
-      padding: 5px;
-      font-size: 12px;
+      @include caption;
     }
 
     hr {
