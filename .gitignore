@@ -17,3 +17,5 @@ src/styles/*.css
 src/styles/*.css.map
 .sass-cache
 backend/keys.json
+*.sublime-project
+*.sublime-workspace
