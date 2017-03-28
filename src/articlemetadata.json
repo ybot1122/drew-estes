@@ -79,5 +79,13 @@
     "url": "how-to-behave-in-trump-america",
     "imageDir": "how-to-behave-in-trump-america",
     "heroImg": "hero.png"
+  },
+  "vipassana-experience": {
+    "title": "Vipassana Experience",
+    "author": "Drew Estes",
+    "published": 1487818225001,
+    "url": "vipassana-experience",
+    "imageDir": "vipassana-experience",
+    "heroImg": "hero.jpg"
   }
 }
