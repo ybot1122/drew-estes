@@ -79,5 +79,13 @@
     "url": "how-to-behave-in-trump-america",
     "imageDir": "how-to-behave-in-trump-america",
     "heroImg": "hero.png"
+  },
+  "vipassana-experience": {
+    "title": "I Sat in Silence for 10 Days Straight and This is What I Learned",
+    "author": "Drew Estes",
+    "published": 1490935544122,
+    "url": "vipassana-experience",
+    "imageDir": "vipassana-experience",
+    "heroImg": "hero.jpg"
   }
 }
