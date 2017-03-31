@@ -2,7 +2,7 @@
 
 @mixin inset {
   background: #fff;
-  border: 1px #ddd solid;
+  border: 1px #F0D8D8 solid;
   margin: 10px 5px;
   padding: 0px 15px 5px 15px;
 }
@@ -27,10 +27,26 @@ input, select {
   }
 }
 
+a {
+  color: #2929ad;
+
+  &:hover, &:active, &:visited, &:focus {
+    text-decoration: none;
+  }
+
+  &:active, &:visited, &:focus {
+    color: #2929ad;
+  }
+
+  &:hover {
+    color: #181860;
+  }
+}
+
 body {
   font-size: 14px;
   font-family: Roboto;
-  background: #eee;
+  background: #F0F0F0;
 
 
   .bold, .b {
@@ -64,6 +80,10 @@ body {
 
     h3 {
       border-bottom: 1px #ccc solid;
+    }
+
+    .title {
+      font-size: 3em;
     }
 
     .caption {
@@ -163,11 +183,18 @@ body {
 
     h1 {
       font-size: 3em;
+      margin-bottom: 5px;
     }
 
     h2:not(.subtitle) {
       font-size: 2em;
       text-decoration: underline;
+    }
+
+    ul {
+      li {
+        margin-bottom: 15px;
+      }
     }
   }
 

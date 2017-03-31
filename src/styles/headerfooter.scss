@@ -4,7 +4,7 @@
   left: 0px;
   z-index: 100;
   padding: 10px 0px 10px 0px;
-  background: white;
+  background: linear-gradient(90deg, #F0F0F0, #fff 20%, #fff 80%, #F0F0F0);
 
   h1 {
     display: inline-block;
@@ -38,7 +38,7 @@
       color: #333333;
 
       &:hover {
-        color: #337ab7;
+        color: #181860;
       }
     }
   }
