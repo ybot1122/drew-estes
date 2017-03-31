@@ -9,7 +9,7 @@ import ArticleMetadata from './articlemetadata.json';
 
 class Home extends Component {
   render() {
-    const articleOne = ArticleMetadata['how-to-behave-in-trump-america'];
+    const articleOne = ArticleMetadata['vipassana-experience'];
     return (
       <div className="container-fluid">
         <div className="row">
@@ -19,11 +19,11 @@ class Home extends Component {
         <div className="row">
           <ArticleCard title={articleOne.title} url={articleOne.url} publishDate={articleOne.published}>
             <h2 className="subtitle">{articleOne.subtitle}</h2>
-            <img style={{"maxHeight": "none"}} src="images/articles/how-to-behave-in-trump-america/hero.png" alt="Trump Behavior" />
-            <div className="caption">Protesters march during the Women&apos;s March on Washington. Image Credit: Aaron P. Bernstein / Getty Images</div>
-            <p>Sit down, America. You&apos;re sitting already? Okay good. It&apos;s time we pull our heads out of our collective asses.</p>
-            <p>Yeah, we did it. Donald Trump is now the president of the United States. And he has put together one of the least educated administrations in modern history. Whether you&apos;re a woman, a minority, an immigrant, or really anything but an upper class straight white male, you already know you have cause for concern. No, I take that back &ndash; if you also happen to fall in the category of &ldquo;living on a planet affected by climate change,&rdquo; you should also be worried.</p>
-            <p>Two things are apparent now:</p>
+            <img style={{"maxHeight": "none"}} src="images/articles/vipassana-experience/hero.jpg" alt="Silence" />
+            <div className="caption">&ldquo;This will end in either enlightenment or insanity.&rdquo; (Image <a href="https://s-media-cache-ak0.pinimg.com/originals/52/4b/3e/524b3e8c3fd1b1a24c923827fe1c323c.jpg">source</a>)</div>
+            <p>If you&apos;re like most people, you try to avoid inactivity. The thought of sitting still with nothing to entertain you sounds unpleasant at best: you experience anything from a vague sense of unease to full-on boredom or anxiety in the absence of something to distract you, calm you, or stimulate your mind.</p>
+            <p>If this sounds accurate, than the thought of a meditation retreat &ndash; ten days without phones, music, movies, books, computers, beer, conversation, or any other distraction &ndash; probably sounds unthinkable. In recent months though, I learned more about Vipassana, or insight meditation, and felt intrigued by the chance to test my limits at such a retreat. The mental challenges and rewards offered by the experience sparked a curiosity that grew like a wildfire within me. So during a stay in northern Thailand I signed up before I could talk myself out of it.</p>
+            <p>Before we get into lessons from the experience however, let&apos;s make sure you know what you&apos;re getting yourself into.</p>
           </ArticleCard>
         </div>
 
