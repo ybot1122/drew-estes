@@ -83,7 +83,10 @@ body {
     }
 
     .title {
-      font-size: 3em;
+      font-size: 2em;
+      @media (min-width: 690px) {
+        font-size: 3em;
+      }
     }
 
     .caption {
