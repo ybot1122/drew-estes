@@ -8,9 +8,10 @@ class Header extends Component {
     return (
       <div id="header">
         <div className="logo-container">
-          <Link to="/" className="logo-link"><img id="logo" src={logo} alt="logo" /><h1>QuackRabbit</h1></Link>
+          <Link to="/" className="logo-link"><img id="logo" src={logo} alt="logo" /></Link>
         </div>
         <div className="nav-container">
+          <h1>QuackRabbit</h1>
           <Link to="/" className="nav-button">Home</Link>
           <Link to="/about" className="nav-button">About</Link>
           <Link to="/articles" className="nav-button">Articles</Link>
