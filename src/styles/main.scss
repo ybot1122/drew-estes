@@ -73,10 +73,12 @@ body {
       margin-bottom: 5px;
       margin-top: 5px;
     }
+    margin-bottom: 15px;
   }
 
   .article {
     @include inset;
+    position: relative;
 
     h3 {
       border-bottom: 1px #ccc solid;
@@ -84,6 +86,7 @@ body {
 
     .title {
       font-size: 2em;
+      margin-top: 30px;
       @media (min-width: 690px) {
         font-size: 3em;
       }
@@ -127,6 +130,19 @@ body {
       margin: auto;
       max-height: 200px;
       max-width: 100%;
+    }
+
+    #latest-article-badge {
+      position: absolute;
+      display: inline-block;
+      line-height: 1.5em;
+      font-size: 1.5em;
+      width: 200px;
+      background: white;
+      padding: 5px;
+      top: -20px;
+      text-align: center;
+      border: 1px #F0D8D8 solid;
     }
   }
 

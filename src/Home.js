@@ -18,6 +18,7 @@ class Home extends Component {
 
         <div className="row">
           <ArticleCard title={articleOne.title} url={articleOne.url} publishDate={articleOne.published}>
+            <div id="latest-article-badge">Latest Article</div>
             <h2 className="subtitle">{articleOne.subtitle}</h2>
             <img style={{"maxHeight": "none"}} src="images/articles/vipassana-experience/hero.jpg" alt="Silence" />
             <div className="caption">&ldquo;This will end in either enlightenment or insanity.&rdquo; (Image <a href="https://s-media-cache-ak0.pinimg.com/originals/52/4b/3e/524b3e8c3fd1b1a24c923827fe1c323c.jpg">source</a>)</div>
