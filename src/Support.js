@@ -4,7 +4,7 @@ import MailingListForm from './MailingListForm';
 import SupportPatreon from './SupportPatreon';
 
 import facebookLogo from './images/facebook_logo.png';
-import instagramLogo from './images/instagram_logo.png';
+const instagramLogo = 'https://raw.githubusercontent.com/ybot1122/drew-estes/version2/src/images/instagram_logo.png';
 import linkedinLogo from './images/linkedin_logo.png';
 import mediumLogo from './images/medium_logo.png';
 
