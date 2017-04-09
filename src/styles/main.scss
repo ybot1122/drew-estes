@@ -17,6 +17,18 @@
   font-size: 12px;
 }
 
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
 input, select {
   border: 1px #ccc solid;
   outline: none;
@@ -133,6 +145,8 @@ body {
     }
 
     #latest-article-badge {
+      @include box-shadow(2px, 2px, 1px, rgba(0, 0, 0, 0.2));
+
       position: absolute;
       display: inline-block;
       line-height: 1.5em;
