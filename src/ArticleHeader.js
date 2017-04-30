@@ -5,10 +5,10 @@ class ArticleHeader extends Component {
   render() {
     const subtitle = (this.props.metadata.subtitle) ? <h2 className="subtitle">{this.props.metadata.subtitle}</h2> : null;
     return (
-      <div className="article-header">
+      <div id="solo-article-header">
         <h1>{this.props.metadata.title}</h1>
         {subtitle}
-        <h3>{this.props.metadata.author}</h3>
+        <h3>{this.props.metadata.author} &ndash;</h3>
         <h3>{_getReadableDate(this.props.metadata.published)}</h3>
       </div>
     );
