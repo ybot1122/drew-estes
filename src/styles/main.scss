@@ -2,14 +2,14 @@
 
 @mixin inset {
   background: #fff;
-  border: 1px #F0D8D8 solid;
+  border: 1px #aaa solid;
   margin: 10px 0px;
   border-left: none;
   border-right: none;
   @media (min-width: 690px) {
     margin: 10px 15px;
-    border-left: 1px #F0D8D8 solid;
-    border-right: 1px #F0D8D8 solid;
+    border-left: 1px #aaa solid;
+    border-right: 1px #aaa solid;
   }
   padding: 0px 15px 5px 15px;
 }
@@ -195,6 +195,7 @@ body {
 
   #solo-article {
     @include inset;
+    padding-top: 15px;
     position: relative;
 
     .subtitle {
