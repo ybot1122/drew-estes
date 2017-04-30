@@ -620,20 +620,16 @@
       {
         "node": "text",
         "text": "To further mess up our thinking, we remember recent events better. That means the latest news has more influence on our opinions. So when stories of Donald Trump fill your newsfeed and TV, your brain says “oh, this guy must be doing pretty well,” regardless of how much you like him. I'll expand on the influence of social norms and conformity in my next post. "
-      },
-      {
-        "node": "element",
-        "tag": "h2",
-        "child": [
-          {
-            "node": "text",
-            "text": "Recap (TL;DR)"
-          }
-        ]
-      },
+      }
+    ]
+  },
+  {
+    "node": "element",
+    "tag": "h2",
+    "child": [
       {
         "node": "text",
-        "text": " "
+        "text": "Recap (TL;DR)"
       }
     ]
   },
@@ -1011,7 +1007,7 @@
             "node": "element",
             "tag": "a",
             "attr": {
-              "jref": "http://study.com/academy/lesson/availability-heuristic-examples-definition-quiz.html"
+              "href": "http://study.com/academy/lesson/availability-heuristic-examples-definition-quiz.html"
             },
             "child": [
               {
