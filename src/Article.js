@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import ArticleMetadata from './articlemetadata.json';
 import ArticleContents from './ArticleContents';
+import ArticleHeader from './ArticleHeader';
 import ArticleCommentList from './ArticleCommentList';
-import _getReadableDate from './utils/getReadableDate';
 
 class Article extends Component {
   constructor(props) {
@@ -49,14 +49,9 @@ class Article extends Component {
       return (<div id="solo-article"><h1>Error loading content. Try refreshing.</h1></div>);
     }
 
-    const subtitle = (this.state.metadata.subtitle) ? <h2 className="subtitle">{this.state.metadata.subtitle}</h2> : null;
-
     return (
       <div>
-        <h1>{this.state.metadata.title}</h1>
-        {subtitle}
-        <h3>{this.state.metadata.author}</h3>
-        <h3>{_getReadableDate(this.state.metadata.published)}</h3>
+        <ArticleHeader metadata={this.state.metadata} />
         <ArticleContents content={this.state.content} />
         <ArticleCommentList />
       </div>
