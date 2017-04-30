@@ -3,41 +3,10 @@ import React, { Component } from 'react';
 import BigQuote from './BigQuote';
 import Loader from './Loader';
 
-import ArticleMetadata from './articlemetadata.json';
-
-import _getReadableDate from './utils/getReadableDate';
-
 class ArticleContents extends Component {
   constructor(props) {
     super(props);
-    this._loadArticleContent = this._loadArticleContent.bind(this);
     this._parseHtmlTree = this._parseHtmlTree.bind(this);
-    this.state = {
-      content: null,
-      metadata: ArticleMetadata[this.props.params.articleTitle],
-      error: false
-    };
-  }
-
-  componentDidMount() {
-    if (this.state.metadata) {
-      this._loadArticleContent();
-    }
-  }
-
-  _loadArticleContent() {
-    const httpRequest = new XMLHttpRequest();
-    httpRequest.onreadystatechange = () => {
-      if (httpRequest.readyState === XMLHttpRequest.DONE) {
-        if (httpRequest.status === 200) {
-          this.setState({ content: JSON.parse(httpRequest.responseText) });
-        } else {
-          this.setState({ error: true });
-        }
-      }
-    };
-    httpRequest.open('GET', 'https://s3-us-west-2.amazonaws.com/quackrabbitarticles/' + this.props.params.articleTitle + '.json', true);
-    httpRequest.send(null);
   }
 
   _parseHtmlTree(data) {
@@ -78,25 +47,9 @@ class ArticleContents extends Component {
   }
 
   render() {
-    // article metadata not found
-    if (!this.state.metadata) {
-      return (<div id="solo-article"><h1>Error, article not found.</h1></div>);
-    }
-
-    // network error loading the content
-    if (this.state.error) {
-      return (<div id="solo-article"><h1>Error loading content. Try refreshing.</h1></div>);
-    }
-
-    const inner = (this.state.content) ? this._parseHtmlTree(this.state.content) : <Loader width={25} height={25} />
-    const subtitle = (this.state.metadata.subtitle) ? <h2 className="subtitle">{this.state.metadata.subtitle}</h2> : null;
-
+    const inner = (this.props.content) ? this._parseHtmlTree(this.props.content) : <Loader width={25} height={25} />
     return (
       <div id="solo-article">
-        <h1>{this.state.metadata.title}</h1>
-        {subtitle}
-        <h3>{this.state.metadata.author}</h3>
-        <h3>{_getReadableDate(this.state.metadata.published)}</h3>
         <div>
           {inner}
         </div>
@@ -106,7 +59,7 @@ class ArticleContents extends Component {
 }
 
 ArticleContents.propTypes = {
-  params: React.PropTypes.object.isRequired
+  content: React.PropTypes.array
 }
 
 export default ArticleContents;
