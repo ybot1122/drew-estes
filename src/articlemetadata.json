@@ -47,30 +47,6 @@
     "imageDir": "magic-marble-box",
     "heroImg": "hero.png"
   },
-  "taste-of-south-india": {
-    "title": "3 Month Recap - A Taste of South India",
-    "author": "Drew Estes",
-    "published": 1469170800000,
-    "url": "taste-of-south-india",
-    "imageDir": "chapter3",
-    "heroImg": "hero-hi.jpg"
-  },
-  "city-of-dawn": {
-    "title": "Chapter 2: The City of Dawn",
-    "author": "Drew Estes",
-    "published": 1462950000000,
-    "url": "city-of-dawn",
-    "imageDir": "chapter2",
-    "heroImg": "hero-hi.jpeg"
-  },
-  "great-banyan-tree": {
-    "title": "Chapter 1: Journey to The Great Banyan Tree",
-    "author": "Drew Estes",
-    "published": 1461740400000,
-    "url": "great-banyan-tree",
-    "imageDir": "chapter1",
-    "heroImg": "hero-hi.jpeg"
-  },
   "how-to-behave-in-trump-america": {
     "title": "How to Behave in Trump America",
     "subtitle": "My Conversation with Noam Chomsky",
