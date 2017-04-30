@@ -3,7 +3,14 @@
 @mixin inset {
   background: #fff;
   border: 1px #F0D8D8 solid;
-  margin: 10px 5px;
+  margin: 10px 0px;
+  border-left: none;
+  border-right: none;
+  @media (min-width: 690px) {
+    margin: 10px 15px;
+    border-left: 1px #F0D8D8 solid;
+    border-right: 1px #F0D8D8 solid;
+  }
   padding: 0px 15px 5px 15px;
 }
 
@@ -180,6 +187,9 @@ body {
     }
     .bio {
       text-align: left;
+    }
+    .article {
+      margin: 10px 5px;
     }
   }
 
