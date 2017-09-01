@@ -13,6 +13,10 @@
   h1 {
     margin: 0px;
     padding: 0px;
+    font-size: 2em;
+    @media (min-width: 690px) {
+      font-size: 3em;
+    }
   }
 
   #logo {
@@ -51,6 +55,10 @@
     text-align: center;   
     display: inline-block; 
     vertical-align: middle;
+
+    @media (min-width: 690px) {
+      margin-left: 10px;
+    }
   }
 }
 

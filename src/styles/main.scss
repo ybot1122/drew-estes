@@ -105,10 +105,6 @@ body {
 
     .title {
       font-size: 2em;
-      margin-top: 30px;
-      @media (min-width: 690px) {
-        font-size: 3em;
-      }
     }
 
     .caption {
@@ -130,8 +126,14 @@ body {
       }
     }
 
-    &:not(.compact) .date-published {
-      float: right;
+    &:not(.compact) {
+      .date-published {
+        float: right;
+      }
+
+      .title {
+        margin-top: 30px;
+      }
     }
 
     &.compact {
@@ -141,6 +143,7 @@ body {
       }
       .title {
         margin-bottom: 5px;
+        margin-top: 10px;
       }
     }
 
@@ -199,9 +202,6 @@ body {
     h1 {
       margin: 15px 0;
       font-size: 2em;
-      @media (min-width: 690px) {
-        font-size: 3em;
-      }
     }
 
     h2 {
