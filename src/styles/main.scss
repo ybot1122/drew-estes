@@ -6,12 +6,12 @@
   margin: 10px 0px;
   border-left: none;
   border-right: none;
+  padding: 0px 15px 5px 15px;
   @media (min-width: 690px) {
     margin: 10px 15px;
     border-left: 1px #aaa solid;
     border-right: 1px #aaa solid;
   }
-  padding: 0px 15px 5px 15px;
 }
 
 @mixin subtitle {
@@ -67,6 +67,26 @@ body {
   font-family: Roboto;
   background: #F0F0F0;
 
+  .mini-articles-grid {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 0 15px;
+
+    .mini-article {
+      color: black;
+
+      .date-published {
+        font-size: 0.75em;
+        bottom: 0;
+        font-style: italic;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100px;
+      }
+    }
+  }
 
   .bold, .b {
     font-weight: bold;

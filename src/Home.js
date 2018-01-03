@@ -7,6 +7,8 @@ import SupportPatreon from './SupportPatreon';
 
 import ArticleMetadata from './articlemetadata.json';
 
+import toby from './images/toby-hi.jpg';
+
 class Home extends Component {
   render() {
     const articleOne = ArticleMetadata['vipassana-experience'];
@@ -14,6 +16,32 @@ class Home extends Component {
       <div className="container-fluid">
         <div className="row">
           <Author />
+        </div>
+
+        <div className="mini-articles-grid">
+          <div className="row">
+            <div className="col-xs-6 mini-article">
+                <h3><a href="#">Duckling One</a></h3>
+                <p>Here is a quick intro the mini post</p>
+                <p className="date-published">Today at 6:40pm</p>
+            </div>
+            <div className="col-xs-6 mini-article">
+                <h3><a href="#">Here is a duckling post with a really long title, or tweet-like message</a></h3>
+                <p className="date-published">Yesterday at 2:02pm</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-xs-6 mini-article">
+                <h3><a href="#">This mini post has an image</a></h3>
+                <p><img src={toby} alt="toby liu" /></p>
+                <p className="date-published">December 30, 2017</p>
+            </div>
+            <div className="col-xs-6 mini-article">
+                <h3><a href="#">Duckling Four</a></h3>
+                <p>Here is a quick intro the mini post</p>
+                <p className="date-published">December 28, 2017</p>
+            </div>
+          </div>
         </div>
 
         <div className="row">
