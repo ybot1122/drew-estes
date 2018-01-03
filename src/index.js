@@ -14,6 +14,7 @@ import './styles/normalize.css';
 import './styles/grid.css';
 import './styles/main.css';
 import './styles/headerfooter.css';
+import './styles/modal.css';
 
 ReactDOM.render(
   <Router history={browserHistory}>

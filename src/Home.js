@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import ReactModal from 'react-modal';
 
 import Author from './Author';
 import ArticleCard from './ArticleCard';
 import MailingListForm from './MailingListForm';
 import SupportPatreon from './SupportPatreon';
-
 import ArticleMetadata from './articlemetadata.json';
 
 import toby from './images/toby-hi.jpg';
@@ -24,6 +24,14 @@ class Home extends Component {
                 <h3><a href="#">Duckling One</a></h3>
                 <p>Here is a quick intro the mini post</p>
                 <p className="date-published">Today at 6:40pm</p>
+                <ReactModal 
+                  isOpen={true}
+                  contentLabel="Minimal Modal Example"
+                  bodyOpenClassName="ReactModal__Body--open"
+                >
+                  <p>Here is a quick intro the mini post</p>
+                  <p className="date-published">Today at 6:40pm</p>
+                </ReactModal>
             </div>
             <div className="col-xs-6 mini-article">
                 <h3><a href="#">Here is a duckling post with a really long title, or tweet-like message</a></h3>

@@ -1,0 +1,13 @@
+body.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.ReactModal__Content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: white;
+  text-align: center;
+}
