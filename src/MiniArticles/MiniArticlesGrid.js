@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import MiniArticleModalView from './MiniArticleModalView';
-
-import ArticleMetadata from '../miniarticlemetadata.json';
+import parseHtmlTree from '../utils/parseHtmlTree';
+import MiniArticleMetadata from '../miniarticlemetadata.json';
 
 class MiniArticlesGrid extends Component {
   constructor(props) {
@@ -32,8 +32,7 @@ class MiniArticlesGrid extends Component {
                 <p>Here is a quick intro to the mini post</p>
                 <p className="date-published">Today at 6:40pm</p>
                 <MiniArticleModalView isOpen={this.state.activeMiniArticle === 1} onClose={this.toggleMiniArticleView(1)}>
-                  <p>Here is a quick intro the mini post</p>
-                  <p className="date-published">Today at 6:40pm</p>
+                  {parseHtmlTree(MiniArticleMetadata["how-to-win-an-argument"].data)}
                 </MiniArticleModalView>
             </div>
             <div className="col-xs-6 mini-article">
