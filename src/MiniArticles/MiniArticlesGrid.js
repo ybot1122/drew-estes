@@ -29,7 +29,7 @@ class MiniArticlesGrid extends Component {
           <div className="row">
             <div className="col-xs-6 mini-article">
                 <h3><a href="#" onClick={this.toggleMiniArticleView(1)}>Duckling One</a></h3>
-                <p>Here is a quick intro the mini post</p>
+                <p>Here is a quick intro to the mini post</p>
                 <p className="date-published">Today at 6:40pm</p>
                 <MiniArticleModalView isOpen={this.state.activeMiniArticle === 1} onClose={this.toggleMiniArticleView(1)}>
                   <p>Here is a quick intro the mini post</p>
