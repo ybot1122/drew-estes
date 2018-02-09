@@ -9,5 +9,22 @@ body.ReactModal__Body--open {
   right: 40px;
   bottom: 40px;
   background-color: white;
-  text-align: center;
+
+  #close-button, a#close-button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 50px;
+    margin-top: 41px;
+    color: silver;
+    font-size: 60px;
+
+    &:hover {
+      color: gray;
+    }
+  }
+
+  .mini-article-modal-header {
+    font-size: 2em;
+  }
 }

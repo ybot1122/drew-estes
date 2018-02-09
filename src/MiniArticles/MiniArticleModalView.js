@@ -9,8 +9,13 @@ class MiniArticleModalView extends Component {
         contentLabel="Tradition"
         bodyOpenClassName="ReactModal__Body--open"
       >
-        <a href="#" onClick={this.props.onClose}>Click here to exit</a>
-        {this.props.children}
+        <a href="#" id="close-button" onClick={this.props.onClose}>X</a>
+        <div className="mini-article-modal-header">
+          <h1>{this.props.title}</h1>
+        </div>
+        <div className="mini-article-modal-content">
+          {this.props.children}
+        </div>
       </ReactModal>
     );
   }
@@ -18,8 +23,9 @@ class MiniArticleModalView extends Component {
 
 MiniArticleModalView.propTypes = {
   isOpen: React.PropTypes.bool.isRequired,
-  children: React.PropTypes.element.isRequired,
+  children: React.PropTypes.array.isRequired,
   onClose: React.PropTypes.func.isRequired,
+  title: React.PropTypes.string.isRequired,
 };
 
 export default MiniArticleModalView;

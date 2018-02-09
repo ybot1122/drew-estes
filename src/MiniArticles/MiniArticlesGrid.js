@@ -39,11 +39,12 @@ class MiniArticlesGrid extends Component {
 
   renderMiniArticlesFromMetadata(ind) {
     const miniArticleData = MiniArticleMetadata[this.state.miniArticles[ind]];
+    if (!miniArticleData) return null;
     return (
       <div className="col-xs-6 mini-article">
         <h3><a href="#" onClick={this.toggleMiniArticleView(ind)}>{miniArticleData.title}</a></h3>
         <p className="date-published">{_getReadableDate(miniArticleData.published)}</p>
-        <MiniArticleModalView isOpen={this.state.activeMiniArticle === ind} onClose={this.toggleMiniArticleView(ind)}>
+        <MiniArticleModalView title={miniArticleData.title} isOpen={this.state.activeMiniArticle === ind} onClose={this.toggleMiniArticleView(ind)}>
           {parseHtmlTree(miniArticleData.data)}
         </MiniArticleModalView>
       </div>
