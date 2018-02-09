@@ -2,15 +2,29 @@ import React, { Component } from 'react';
 
 import MiniArticleModalView from './MiniArticleModalView';
 import parseHtmlTree from '../utils/parseHtmlTree';
+import _getReadableDate from '../utils/getReadableDate';
 import MiniArticleMetadata from '../miniarticlemetadata.json';
 
 class MiniArticlesGrid extends Component {
   constructor(props) {
     super(props);
     this.toggleMiniArticleView = this.toggleMiniArticleView.bind(this);
+    this.renderMiniArticlesFromMetadata = this.renderMiniArticlesFromMetadata.bind(this);
     this.state = {
       activeMiniArticle: -1,
+      miniArticles: this._getLatestFourMiniArticles(MiniArticleMetadata),
     };
+  }
+
+  _getLatestFourMiniArticles(metadata) {
+    const result = [];
+    for (const article in metadata) {
+      result.push(article);
+    }
+    result.sort((a, b) => {
+      return metadata[b].published - metadata[a].published;
+    });
+    return result.slice(0, 4);
   }
 
   toggleMiniArticleView(miniArticleNum) {
@@ -23,34 +37,29 @@ class MiniArticlesGrid extends Component {
     };
   }
 
+  renderMiniArticlesFromMetadata(ind) {
+    const miniArticleData = MiniArticleMetadata[this.state.miniArticles[ind]];
+    return (
+      <div className="col-xs-6 mini-article">
+        <h3><a href="#" onClick={this.toggleMiniArticleView(ind)}>{miniArticleData.title}</a></h3>
+        <p className="date-published">{_getReadableDate(miniArticleData.published)}</p>
+        <MiniArticleModalView isOpen={this.state.activeMiniArticle === ind} onClose={this.toggleMiniArticleView(ind)}>
+          {parseHtmlTree(miniArticleData.data)}
+        </MiniArticleModalView>
+      </div>
+    );
+  }
+
   render() {
     return (
         <div className="mini-articles-grid">
           <div className="row">
-            <div className="col-xs-6 mini-article">
-                <h3><a href="#" onClick={this.toggleMiniArticleView(1)}>Duckling One</a></h3>
-                <p>Here is a quick intro to the mini post</p>
-                <p className="date-published">Today at 6:40pm</p>
-                <MiniArticleModalView isOpen={this.state.activeMiniArticle === 1} onClose={this.toggleMiniArticleView(1)}>
-                  {parseHtmlTree(MiniArticleMetadata["how-to-win-an-argument"].data)}
-                </MiniArticleModalView>
-            </div>
-            <div className="col-xs-6 mini-article">
-                <h3><a href="#" onClick={this.toggleMiniArticleView(2)}>Here is a duckling post with a really long title, or tweet-like message</a></h3>
-                <p className="date-published">Yesterday at 2:02pm</p>
-            </div>
+            {this.renderMiniArticlesFromMetadata(0)}
+            {this.renderMiniArticlesFromMetadata(1)}
           </div>
           <div className="row">
-            <div className="col-xs-6 mini-article">
-                <h3><a href="#" onClick={this.toggleMiniArticleView(3)}>This mini post has an image</a></h3>
-                <p>Here is a quick intro the mini post</p>
-                <p className="date-published">December 30, 2017</p>
-            </div>
-            <div className="col-xs-6 mini-article">
-                <h3><a href="#" onClick={this.toggleMiniArticleView(4)}>Duckling Four</a></h3>
-                <p>Here is a quick intro the mini post</p>
-                <p className="date-published">December 28, 2017</p>
-            </div>
+            {this.renderMiniArticlesFromMetadata(2)}
+            {this.renderMiniArticlesFromMetadata(3)}
           </div>
         </div>
     );
