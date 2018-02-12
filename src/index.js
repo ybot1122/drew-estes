@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, IndexRedirect, browserHistory } from 'react-router'
 
 import App from './App';
 import Home from './Home';
@@ -25,6 +25,10 @@ ReactDOM.render(
       <Route path="articles">
         <IndexRoute component={ArticlesList} />
         <Route path=":articleTitle" component={Article} />
+      </Route>
+      <Route path="miniarticles">
+        <IndexRedirect to="/" />
+        <Route path=":miniArticleTitle" component={Home} />
       </Route>
       <Route path='*' component={NotFound} />
     </Route>
