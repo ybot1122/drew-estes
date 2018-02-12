@@ -8,6 +8,7 @@ class MiniArticleModalView extends Component {
         isOpen={this.props.isOpen}
         contentLabel="Tradition"
         bodyOpenClassName="ReactModal__Body--open"
+        closeTimeoutMS={300}
       >
         <a href="#" id="close-button" onClick={this.props.onClose}>X</a>
         <div className="mini-article-modal-header">
