@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, IndexRedirect, browserHistory } from 'react-router'
 
 import App from './App';
 import Home from './Home';
@@ -14,6 +14,7 @@ import './styles/normalize.css';
 import './styles/grid.css';
 import './styles/main.css';
 import './styles/headerfooter.css';
+import './styles/modal.css';
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -24,6 +25,10 @@ ReactDOM.render(
       <Route path="articles">
         <IndexRoute component={ArticlesList} />
         <Route path=":articleTitle" component={Article} />
+      </Route>
+      <Route path="miniarticles">
+        <IndexRedirect to="/" />
+        <Route path=":miniArticleTitle" component={Home} />
       </Route>
       <Route path='*' component={NotFound} />
     </Route>

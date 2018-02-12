@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
+import ReactModal from 'react-modal';
 
 import Author from './Author';
 import ArticleCard from './ArticleCard';
 import MailingListForm from './MailingListForm';
+import MiniArticlesGrid from './MiniArticles/MiniArticlesGrid';
 import SupportPatreon from './SupportPatreon';
-
 import ArticleMetadata from './articlemetadata.json';
 
 class Home extends Component {
+
+  componentWillMount() {
+    ReactModal.setAppElement('body');
+  }
+
   render() {
     const articleOne = ArticleMetadata['vipassana-experience'];
     return (
@@ -15,6 +21,8 @@ class Home extends Component {
         <div className="row">
           <Author />
         </div>
+
+        <MiniArticlesGrid initArticle={this.props.params && this.props.params.miniArticleTitle} />
 
         <div className="row">
           <ArticleCard title={articleOne.title} url={articleOne.url} publishDate={articleOne.published}>
@@ -39,6 +47,12 @@ class Home extends Component {
       </div>
     );
   }
+}
+
+Home.propTypes = {
+  params: React.PropTypes.shape({
+    miniArticleTitle: React.PropTypes.string,
+  }).isRequired,
 }
 
 export default Home;

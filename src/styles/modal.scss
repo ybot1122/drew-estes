@@ -1,0 +1,49 @@
+body.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.ReactModal__Content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: white;
+
+  #close-button, a#close-button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 50px;
+    margin-top: 41px;
+    color: silver;
+    font-size: 60px;
+
+    &:hover {
+      color: gray;
+    }
+  }
+
+  .mini-article-modal-header {
+    font-size: 2em;
+  }
+}
+
+.ReactModalPortal > * {
+    // When the modal is closed, overlay div has no css class
+    // This selector should be overridden by the `&--after-open` class below
+    opacity: 0;
+}
+
+.ReactModal__Overlay {
+  transition: opacity 300ms ease-in-out;
+  background: rgba(0, 0, 0, 0.15);
+
+  &--after-open {
+    opacity: 1;
+  }
+
+  &--before-close {
+    opacity: 0;
+  }
+}
