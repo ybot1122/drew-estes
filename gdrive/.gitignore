@@ -1,4 +1,4 @@
 .idea/
-article.html
+*.html
 *client_secret*
 client_secret.json
