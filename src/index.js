@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, IndexRedirect, browserHistory } from 'react-
 
 import App from './App';
 import Home from './Home';
+import Admin from './Admin';
 import About from './About';
 import ArticlesList from './ArticlesList';
 import Article from './Article';
@@ -30,6 +31,7 @@ ReactDOM.render(
         <IndexRedirect to="/" />
         <Route path=":miniArticleTitle" component={Home} />
       </Route>
+      <Route path="admin" component={Admin} />
       <Route path='*' component={NotFound} />
     </Route>
   </Router>,
