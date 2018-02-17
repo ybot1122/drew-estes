@@ -19,3 +19,4 @@ src/styles/*.css.map
 backend/keys.json
 *.sublime-project
 *.sublime-workspace
+**CREDENTIALS*
