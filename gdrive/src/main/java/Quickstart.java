@@ -9,12 +9,16 @@ import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.json.JsonFactory;
-import com.google.api.client.util.store.FileDataStoreFactory;
 
 import com.google.api.services.drive.DriveScopes;
-import com.google.api.services.drive.model.*;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.model.File;
+
+import com.amazonaws.services.lambda.runtime.Context; 
+import com.amazonaws.services.lambda.runtime.LambdaLogger;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.Bucket;
 
 import java.io.*;
 import java.util.Arrays;
@@ -22,19 +26,10 @@ import java.util.List;
 
 public class Quickstart {
     /** Application name. */
-    private static final String APPLICATION_NAME =
-            "QuackRabbit Article Publisher";
-
-    /** Directory to store user credentials for this application. */
-    private static final java.io.File DATA_STORE_DIR = new java.io.File(
-            System.getProperty("user.home"), ".credentials/drive-java-quickstart");
-
-    /** Global instance of the {@link FileDataStoreFactory}. */
-    private static FileDataStoreFactory DATA_STORE_FACTORY;
+    private static final String APPLICATION_NAME = "QuackRabbit Article Publisher";
 
     /** Global instance of the JSON factory. */
-    private static final JsonFactory JSON_FACTORY =
-            JacksonFactory.getDefaultInstance();
+    private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
 
     /** Global instance of the HTTP transport. */
     private static HttpTransport HTTP_TRANSPORT;
@@ -44,13 +39,18 @@ public class Quickstart {
      * If modifying these scopes, delete your previously saved credentials
      * at ~/.credentials/drive-java-quickstart
      */
-    private static final List<String> SCOPES =
-            Arrays.asList(DriveScopes.DRIVE_METADATA_READONLY);
+    private static final List<String> SCOPES = Arrays.asList(DriveScopes.DRIVE_METADATA_READONLY);
 
     static {
+        final AmazonS3 s3 = AmazonS3ClientBuilder.defaultClient();
+        List<Bucket> buckets = s3.listBuckets();
+        System.out.println("Your Amazon S3 buckets are:");
+        for (Bucket b : buckets) {
+            System.out.println("* " + b.getName());
+        }
+
         try {
             HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-            DATA_STORE_FACTORY = new FileDataStoreFactory(DATA_STORE_DIR);
         } catch (Throwable t) {
             t.printStackTrace();
             System.exit(1);
@@ -64,22 +64,17 @@ public class Quickstart {
      */
     public static Credential authorize() throws IOException {
         // Load client secrets.
-        InputStream in =
-                Quickstart.class.getResourceAsStream("/client_secret.json");
-        GoogleClientSecrets clientSecrets =
-                GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+        InputStream in = new ByteArrayInputStream(System.getenv("CREDS").getBytes());
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
 
         // Build flow and trigger user authorization request.
         GoogleAuthorizationCodeFlow flow =
                 new GoogleAuthorizationCodeFlow.Builder(
                         HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
-                        .setDataStoreFactory(DATA_STORE_FACTORY)
                         .setAccessType("offline")
                         .build();
         Credential credential = new AuthorizationCodeInstalledApp(
                 flow, new LocalServerReceiver()).authorize("user");
-        System.out.println(
-                "Credentials saved to " + DATA_STORE_DIR.getAbsolutePath());
         return credential;
     }
 
@@ -89,24 +84,25 @@ public class Quickstart {
      * @throws IOException
      */
     public static Drive getDriveService() throws IOException {
-        Credential credential = authorize();
+        Credential credential = authorize(); // TODO: eventually, eliminate this authorize() step and just use token obtained from clientside
         return new Drive.Builder(
                 HTTP_TRANSPORT, JSON_FACTORY, credential)
                 .setApplicationName(APPLICATION_NAME)
                 .build();
     }
 
-    public static void main(String[] args) throws IOException {
-        String fileId = "1kjrIpu3Yv0ToeZCFHA49LLSDAXSkQUBGvO7_yFpEzJ4";
+    public String myHandler(String fileId, Context context) throws IOException {
+        LambdaLogger logger = context.getLogger();
+        logger.log("received : " + fileId);
 
         // Build a new authorized API client service.
         Drive service = getDriveService();
 
         // Get the file by ID
         File result = service.files().get(fileId).execute();
-        System.out.println("Title: " + result.getName());
-        System.out.println("Description: " + result.getDescription());
-        System.out.println("MIME type: " + result.getMimeType());
+        logger.log("Title: " + result.getName());
+        logger.log("Description: " + result.getDescription());
+        logger.log("MIME type: " + result.getMimeType());
 
         // Download it as HTML
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -115,7 +111,12 @@ public class Quickstart {
         outputStream.writeTo(fileStream);
         outputStream.close();
         fileStream.close();
-        System.out.println("Downloaded html as " + fileId + ".html");
+        logger.log("Downloaded html as " + fileId + ".html");
+
+        return fileId;
     }
 
+    public static void main(String[] args) {
+        System.out.println("ran");
+    }
 }
