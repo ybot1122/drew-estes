@@ -100,7 +100,6 @@ class MailingListForm extends Component {
       }
     };
     httpRequest.open('POST', ENDPOINT, true);
-    //httpRequest.setRequestHeader('Access-Control-Allow-Origin', '*');
     httpRequest.setRequestHeader('Content-Type', 'application/json');
     httpRequest.send(JSON.stringify({
       name: name,

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { g_API_KEY, g_CLIENT_ID } from './utils/constants/CREDENTIALS';
+import { postPublisher } from './utils/api/postPublisher';
 
 const g_SCOPES = 'profile https://www.googleapis.com/auth/drive';
 const g_DISCOVER_DOCS = ['https://developers.google.com/drive/v3/reference/'];
@@ -58,6 +59,7 @@ class Admin extends Component {
       gapi.auth2.getAuthInstance().signIn().then(() => {
         const currGoogleUser = gapi.auth2.getAuthInstance().currentUser.get();
         gapi.auth2.getAuthInstance().currentUser.listen(this.updateSigninStatus);
+        console.log(currGoogleUser.getAuthResponse(true));
         this.setState({
           loginStatus: 2,
           googleUserData: {
@@ -93,14 +95,10 @@ class Admin extends Component {
 
   handlePublishSubmit() {
     this.setState({ publishRequestStatus: 1 });
-    setTimeout(() => {
-      const reqBody = {
-        token: this.state.googleUserData.authResponse,
-        docId: this.state.googleDocId,
-      };
-      this.setState({ publishRequestStatus: 2 });
-      console.log(reqBody);
-    }, 1000);
+    postPublisher(this.state.googleUserData.authResponse.access_token, this.state.googleDocId).then(
+      () => this.setState({ publishRequestStatus: 2 }),
+      () => this.setState({ publishRequestStatus: 3 })
+    );
   }
 
   render() {
@@ -113,7 +111,7 @@ class Admin extends Component {
           <h1>WELCOME {this.state.googleUserData.name}</h1>
           <p>
             Enter the ID of the Google Doc you want to publish:
-            <input type="text" value={this.state.googleDocId} onChange={(event) => this.setState({ googleDocId: event.value })} />
+            <input type="text" value={this.state.googleDocId} onChange={(event) => this.setState({ googleDocId: event.target.value })} />
             <input type="submit" value="Submit" onClick={this.handlePublishSubmit} />
           </p>
         </div>
