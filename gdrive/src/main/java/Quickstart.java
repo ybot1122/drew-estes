@@ -5,6 +5,7 @@ import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInsta
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
 import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.jackson2.JacksonFactory;
@@ -62,7 +63,8 @@ public class Quickstart {
      * @return an authorized Credential object.
      * @throws IOException
      */
-    public static Credential authorize() throws IOException {
+    public static Credential authorize(String accessToken) throws IOException {
+        /*
         // Load client secrets.
         InputStream in = new ByteArrayInputStream(System.getenv("CREDS").getBytes());
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
@@ -76,6 +78,10 @@ public class Quickstart {
         Credential credential = new AuthorizationCodeInstalledApp(
                 flow, new LocalServerReceiver()).authorize("user");
         return credential;
+        */
+
+        GoogleCredential cred = new GoogleCredential().setAccessToken(accessToken);
+        return cred;
     }
 
     /**
@@ -83,20 +89,23 @@ public class Quickstart {
      * @return an authorized Drive client service
      * @throws IOException
      */
-    public static Drive getDriveService() throws IOException {
-        Credential credential = authorize(); // TODO: eventually, eliminate this authorize() step and just use token obtained from clientside
+    public static Drive getDriveService(String accessToken) throws IOException {
+        Credential credential = authorize(accessToken);
         return new Drive.Builder(
                 HTTP_TRANSPORT, JSON_FACTORY, credential)
                 .setApplicationName(APPLICATION_NAME)
                 .build();
     }
 
-    public String myHandler(String fileId, Context context) throws IOException {
+    public ResponseClass myHandler(RequestClass req, Context context) throws IOException {
+        ResponseClass response = new ResponseClass(false);
+
+        String fileId = req.getDocId();
         LambdaLogger logger = context.getLogger();
         logger.log("received : " + fileId);
 
         // Build a new authorized API client service.
-        Drive service = getDriveService();
+        Drive service = getDriveService(req.getAccessToken());
 
         // Get the file by ID
         File result = service.files().get(fileId).execute();
@@ -113,7 +122,8 @@ public class Quickstart {
         fileStream.close();
         logger.log("Downloaded html as " + fileId + ".html");
 
-        return fileId;
+        response.setSuccessful(true);
+        return response;
     }
 
     public static void main(String[] args) {
