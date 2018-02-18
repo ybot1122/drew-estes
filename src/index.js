@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, IndexRedirect, browserHistory } from 'react-
 
 import App from './App';
 import Home from './Home';
-import Admin from './Admin';
+import Admin from './Admin/Admin';
 import About from './About';
 import ArticlesList from './ArticlesList';
 import Article from './Article';
