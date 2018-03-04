@@ -3,6 +3,7 @@ import ReactModal from 'react-modal';
 
 import Author from './Author';
 import HeroHeadline from './ArticlePreviews/HeroHeadline';
+import ArticlesLinkFeed from './ArticlePreviews/ArticlesLinkFeed';
 import MailingListForm from './MailingListForm';
 import MiniArticlesGrid from './MiniArticles/MiniArticlesGrid';
 import SupportPatreon from './SupportPatreon';
@@ -31,7 +32,21 @@ class Home extends Component {
         </div>
 
         <div className="row">
-          <Author />
+          <div className="col-xs-12 no-gutter">
+          </div>
+        </div>
+
+
+        <div className="row">
+          <div className="col-xs-0 col-sm-4 no-gutter">
+            <Author />
+          </div>
+          <div className="col-xs-8 col-md-4 no-gutter">
+            <ArticlesLinkFeed />
+          </div>
+          <div className="col-md-4 no-gutter">
+
+          </div>
         </div>
 
         <MiniArticlesGrid initArticle={this.props.params && this.props.params.miniArticleTitle} />

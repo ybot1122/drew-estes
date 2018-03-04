@@ -7,6 +7,7 @@ import ArticleCard from './ArticleCard';
 import ArticleMetadata from './articlemetadata.json';
 
 import ACTIONTYPES from './utils/constants/ActionTypes';
+import objectToArray from './utils/objectToArray';
 
 class ArticlesList extends Component {
 
@@ -44,14 +45,7 @@ class ArticlesList extends Component {
 
   _returnSortedAndFilteredData() {
     const data = ArticleMetadata;
-    const result = [];
-    for (let key in data) {
-      if (data.hasOwnProperty(key)) {
-        if (!this.state.searchFor || data[key].title.toLowerCase().includes(this.state.searchFor.toLowerCase())) {
-          result.push(data[key]); 
-        }
-      }
-    }
+    const result = objectToArray(data);
 
     if (result.length === 0) {
       return <h1>Sorry, can't find any articles containing: {this.state.searchFor}</h1>;

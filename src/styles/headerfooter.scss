@@ -65,10 +65,8 @@
     text-align: center;   
     display: inline-block; 
     vertical-align: middle;
-    font-weight: bold;
     @include for-desktop-up {
       margin: 10px auto 0px 10px;
-      font-weight: normal;
     }
   }
 }
