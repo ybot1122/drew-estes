@@ -85,30 +85,6 @@ class ArticlesList extends Component {
     const result = this._returnSortedAndFilteredData();
     return (
       <div id="article-list" className="container-fluid">
-        <div className="row">
-          <div className="col-xs-12">
-            <table>
-              <tbody>
-                <tr>
-                  <th>Sort By:</th>
-                  <th>Search For:</th>
-                </tr>
-                <tr>
-                  <td>
-                    <select onChange={this._sortByChanged} value={this.state.sortBy}>
-                      <option value="alphabetically">Alphabetically</option>
-                      <option value="newest">Date (newest first)</option>
-                      <option value="oldest">Date (oldest first)</option>
-                    </select>
-                  </td>
-                  <td>
-                    <input onChange={this._searchForChanged} type="text" value={this.state.searchFor} />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
         {result}
       </div>
     );

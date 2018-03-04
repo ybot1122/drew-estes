@@ -79,6 +79,7 @@ class MiniArticlesGrid extends Component {
   render() {
     return (
         <div className="mini-articles-grid">
+          <h2>MiniArticles</h2>
           {this.renderSoloArticle()}
           <div className="row">
             {this.renderMiniArticlesFromMetadata(0)}

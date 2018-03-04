@@ -1,14 +1,23 @@
 @import '../_shared';
 
 .articleslinkfeed--outer {
+  margin: 20px 5px 0 10px;
+
   .articleslinkfeed--inner {
-    margin-left: 5px;
 
     .lineitem {
+      display: block;
+      height: 50px;
+
       .lineitem--date {
         font-size: 0.5em;
         font-weight: bold;
         font-family: 'Playfair Display';
+        display: none;
+
+        @include for-desktop-up {
+          display: inline-block;
+        }
       }
     }
   }

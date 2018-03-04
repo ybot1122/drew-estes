@@ -33,9 +33,12 @@ body {
   background: #F0F0F0;
 
   .mini-articles-grid {
-    margin-bottom: 30px;
-    background: #fff;
+    margin: 0 10px 30px 10px;
     padding: 0 15px;
+
+    h2 {
+      text-align: center;
+    }
 
     .mini-article {
       color: black;
@@ -65,18 +68,6 @@ body {
     padding-top: 0;
     padding-bottom: 20px;
     margin: auto;
-  }
-
-  .author-preview {
-    .author-image {
-      border-radius: 100%;
-      width: 100px;
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 5px;
-      margin-top: 5px;
-    }
-    margin-bottom: 15px;
   }
 
   .article {

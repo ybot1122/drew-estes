@@ -1,0 +1,19 @@
+@import '_shared';
+
+.author-preview {
+  margin: 30px 15px;
+  line-height: 1.5em;
+
+  .author-image {
+    border-radius: 100%;
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .cta {
+    display: none;
+  }
+}

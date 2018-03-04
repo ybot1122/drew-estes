@@ -9,8 +9,9 @@ import '../styles/ArticlePreviews/ArticlesLinkFeed.css';
 
 class ArticlesLinkFeed extends Component {
   render() {
-    const articles = objectToArray(ArticleMetadata);
-    articles.sort((a, b) => a.published - b.published);
+    const articles = objectToArray(ArticleMetadata)
+      .sort((a, b) => b.published - a.published)
+      .slice(1, 6);
 
     const result = [];
     articles.forEach((a, ind) => {
