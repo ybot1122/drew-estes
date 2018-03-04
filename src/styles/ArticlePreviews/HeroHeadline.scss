@@ -1,0 +1,52 @@
+@import '../_shared';
+
+.heroheadline--outer {
+
+  .heroheadline--inner {
+
+    .title--container {
+      font-size: 2em;
+      margin: 0;
+      padding: 0;
+      height: 90vh;
+      min-height: 400px;
+      background-size: cover;
+      background-position: bottom left;
+      @include for-desktop-up {
+        height: 400px;
+        font-size: 3em;
+      }
+
+      .title--text {
+        text-align: left;
+        padding: 0 0 0 10px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90%;
+
+        @include for-desktop-up {
+          max-width: 690px;
+          margin: 0 auto;
+        }
+
+        .title--text-author {
+          font-size: 0.5em;
+          text-align: right;
+          color: gray;
+          font-weight: bold;
+        }
+
+        a {
+          font-family: 'Playfair Display', Roboto, Arial;
+          color: black;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
