@@ -1,32 +1,31 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import objectToArray from '../utils/objectToArray';
+import getReadableDate from '../utils/getReadableDate';
 
 import ArticleMetadata from '../articlemetadata.json';
-import MiniArticleMetadata from '../miniarticlemetadata.json';
 
 import '../styles/ArticlePreviews/ArticlesLinkFeed.css';
 
 class ArticlesLinkFeed extends Component {
   render() {
-    const mergedMetaData = {};
-    Object.assign(mergedMetaData, ArticleMetadata, MiniArticleMetadata);
-    console.log(mergedMetaData);
-    const articles = objectToArray(mergedMetaData);
+    const articles = objectToArray(ArticleMetadata);
     articles.sort((a, b) => a.published - b.published);
 
     const result = [];
     articles.forEach((a, ind) => {
-      result.push(<li key={ind}>{a.title}</li>);
+      result.push(
+        <li className="lineitem" key={ind}>
+          <Link to={`/articles/${a.url}`}>{a.title}</Link> <span className="lineitem--date">{getReadableDate(a.published)}</span>
+        </li>
+      );
     });
 
     return (
       <div className="articleslinkfeed--outer">
-        <div className="articleslinkfeed--inner">
-          <ul>
-            {result}
-          </ul>
-        </div>
+        <ul className="articleslinkfeed--inner">
+          {result}
+        </ul>
       </div>
     );
   }

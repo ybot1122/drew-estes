@@ -31,25 +31,20 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-xs-12 no-gutter">
-          </div>
-        </div>
-
 
         <div className="row">
-          <div className="col-xs-0 col-sm-4 no-gutter">
-            <Author />
-          </div>
-          <div className="col-xs-8 col-md-4 no-gutter">
+          <div className="col-xs-12 col-md-4 col-md-push-4 no-gutter">
             <ArticlesLinkFeed />
           </div>
-          <div className="col-md-4 no-gutter">
-
+          <div className="col-xs-12 col-md-4 col-md-push-4 no-gutter">
+            <h2>MiniArticles</h2>
+            <MiniArticlesGrid initArticle={this.props.params && this.props.params.miniArticleTitle} />
+          </div>
+          <div className="col-xs-12 col-md-4 col-md-pull-8 no-gutter">
+            <Author />
           </div>
         </div>
 
-        <MiniArticlesGrid initArticle={this.props.params && this.props.params.miniArticleTitle} />
 
         <div className="row">
           <div className="col-xs-12 col-sm-6 no-gutter">
