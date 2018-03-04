@@ -11,6 +11,7 @@
       height: 400px;
       font-size: 3em; } }
   .heroheadline--outer .heroheadline--inner .title--container .title--text {
+    font-family: 'Playfair Display', Roboto, Arial;
     text-align: left;
     padding: 0 0 0 10px;
     position: relative;
@@ -27,7 +28,6 @@
       color: gray;
       font-weight: bold; }
     .heroheadline--outer .heroheadline--inner .title--container .title--text a {
-      font-family: 'Playfair Display', Roboto, Arial;
       color: black;
       text-decoration: underline; }
       .heroheadline--outer .heroheadline--inner .title--container .title--text a:hover {
