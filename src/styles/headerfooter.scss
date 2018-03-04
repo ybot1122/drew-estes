@@ -1,28 +1,37 @@
+@import '_shared';
+
 #header {
   width: 100%;
   top: 0px;
   left: 0px;
   z-index: 100;
-  padding: 10px 0px 10px 0px;
   background-color: #fff;
   text-align: center;
-  @media (min-width: 690px) {
+  padding: 3px 0 0 0;
+  @include for-desktop-up {
     background: linear-gradient(90deg, #F0F0F0, #fff 20%, #fff 80%, #F0F0F0);
+    padding: 10px 0px 10px 0px;
   }
 
   h1 {
+    display: none;
     margin: 0px;
     padding: 0px;
     font-size: 2em;
-    @media (min-width: 690px) {
+    @include for-desktop-up {
+      display: block;
       font-size: 3em;
     }
   }
 
   #logo {
-    width: 150px;
+    display: inline-block;
+    width: 50px;
     margin: 0px;
     padding: 0px;
+    @include for-desktop-up {
+      width: 150px;
+    }
   }
 
   .nav-button {
@@ -51,13 +60,14 @@
   }
 
   .nav-container {
-    margin: 10px auto 0px auto;
+    margin: 0 auto 0 5px;
     text-align: center;   
     display: inline-block; 
     vertical-align: middle;
-
-    @media (min-width: 690px) {
-      margin-left: 10px;
+    font-weight: bold;
+    @include for-desktop-up {
+      margin: 10px auto 0px 10px;
+      font-weight: normal;
     }
   }
 }
