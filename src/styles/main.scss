@@ -1,40 +1,5 @@
 @import '_grow-shadow';
-
-@mixin inset {
-  background: #fff;
-  border: 1px #aaa solid;
-  margin: 10px 0px;
-  border-left: none;
-  border-right: none;
-  padding: 0px 15px 5px 15px;
-  @media (min-width: 690px) {
-    margin: 10px 15px;
-    border-left: 1px #aaa solid;
-    border-right: 1px #aaa solid;
-  }
-}
-
-@mixin subtitle {
-
-}
-
-@mixin caption {
-  text-align: center;
-  padding: 5px;
-  font-size: 12px;
-}
-
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
-  @if $inset {
-    -webkit-box-shadow:inset $top $left $blur $color;
-    -moz-box-shadow:inset $top $left $blur $color;
-    box-shadow:inset $top $left $blur $color;
-  } @else {
-    -webkit-box-shadow: $top $left $blur $color;
-    -moz-box-shadow: $top $left $blur $color;
-    box-shadow: $top $left $blur $color;
-  }
-}
+@import '_shared';
 
 input, select {
   border: 1px #ccc solid;
@@ -227,7 +192,7 @@ body {
     h2 {
       margin: 5px 0;
       font-size: 1em;
-      @media (min-width: 690px) {
+      @include for-desktop-up {
         font-size: 1.5em;
       }
     }
@@ -237,7 +202,7 @@ body {
       display: inline-block;
       font-size: 1em;
       color: #999;
-      @media (min-width: 690px) {
+      @include for-desktop-up {
         font-size: 1.5em;
       }
       &:first-of-type {

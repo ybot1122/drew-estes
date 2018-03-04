@@ -1,0 +1,41 @@
+// shared mixins and variables
+
+@mixin for-desktop-up {
+  @media only screen and (min-width: 690px) { @content; }
+}
+
+@mixin inset {
+  background: #fff;
+  border: 1px #aaa solid;
+  margin: 10px 0px;
+  border-left: none;
+  border-right: none;
+  padding: 0px 15px 5px 15px;
+  @include for-desktop-up {
+    margin: 10px 15px;
+    border-left: 1px #aaa solid;
+    border-right: 1px #aaa solid;
+  }
+}
+
+@mixin subtitle {
+
+}
+
+@mixin caption {
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
