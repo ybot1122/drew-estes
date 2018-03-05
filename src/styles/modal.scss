@@ -4,22 +4,43 @@ body.ReactModal__Body--open {
   overflow: hidden;
 }
 
-.ReactModal__Content {
+.ReactModal__Body--miniarticles {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 70px 20px 20px 20px;
   background-color: white;
 
-  #close-button, a#close-button {
+  #close-button {
     position: fixed;
-    right: 0;
     top: 0;
-    margin-right: 50px;
-    margin-top: 41px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0;
     color: silver;
-    font-size: 60px;
+    font-size: 0.75em;
+    cursor: pointer;
+    text-align: center;
+    background: white;
+    color: black;
+    border-bottom: 3px black solid;
+
+    .close-button--site {
+      font-weight: bold;
+    }
+
+    img {
+      display: inline-block;
+      width: 35px;
+      margin: 5px;
+    }
 
     &:hover {
       color: gray;
