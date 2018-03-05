@@ -37,11 +37,17 @@ body {
     padding: 0 15px;
 
     h2 {
+      font-weight: normal;
       text-align: center;
     }
 
     .mini-article {
       color: black;
+      margin: 20px 0;
+
+      a {
+        font-weight: normal;
+      }
 
       .date-published {
         font-size: 0.75em;

@@ -33,13 +33,10 @@ class Home extends Component {
 
 
         <div className="row">
-          <div className="col-xs-12 col-md-4 no-gutter">
+          <div className="col-xs-12 col-md-8 no-gutter">
             <Author />
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-4 no-gutter">
-            <ArticlesLinkFeed />
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4 no-gutter">
+          <div className="col-xs-12 col-sm-4 no-gutter">
             <MiniArticlesGrid initArticle={this.props.params && this.props.params.miniArticleTitle} />
           </div>
         </div>
