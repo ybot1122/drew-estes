@@ -7,6 +7,7 @@ import ArticleCard from './ArticleCard';
 import ArticleMetadata from './articlemetadata.json';
 
 import ACTIONTYPES from './utils/constants/ActionTypes';
+import objectToArray from './utils/objectToArray';
 
 class ArticlesList extends Component {
 
@@ -44,14 +45,7 @@ class ArticlesList extends Component {
 
   _returnSortedAndFilteredData() {
     const data = ArticleMetadata;
-    const result = [];
-    for (let key in data) {
-      if (data.hasOwnProperty(key)) {
-        if (!this.state.searchFor || data[key].title.toLowerCase().includes(this.state.searchFor.toLowerCase())) {
-          result.push(data[key]); 
-        }
-      }
-    }
+    const result = objectToArray(data);
 
     if (result.length === 0) {
       return <h1>Sorry, can't find any articles containing: {this.state.searchFor}</h1>;
@@ -91,30 +85,6 @@ class ArticlesList extends Component {
     const result = this._returnSortedAndFilteredData();
     return (
       <div id="article-list" className="container-fluid">
-        <div className="row">
-          <div className="col-xs-12">
-            <table>
-              <tbody>
-                <tr>
-                  <th>Sort By:</th>
-                  <th>Search For:</th>
-                </tr>
-                <tr>
-                  <td>
-                    <select onChange={this._sortByChanged} value={this.state.sortBy}>
-                      <option value="alphabetically">Alphabetically</option>
-                      <option value="newest">Date (newest first)</option>
-                      <option value="oldest">Date (oldest first)</option>
-                    </select>
-                  </td>
-                  <td>
-                    <input onChange={this._searchForChanged} type="text" value={this.state.searchFor} />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
         {result}
       </div>
     );

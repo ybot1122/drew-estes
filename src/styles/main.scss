@@ -1,40 +1,5 @@
 @import '_grow-shadow';
-
-@mixin inset {
-  background: #fff;
-  border: 1px #aaa solid;
-  margin: 10px 0px;
-  border-left: none;
-  border-right: none;
-  padding: 0px 15px 5px 15px;
-  @media (min-width: 690px) {
-    margin: 10px 15px;
-    border-left: 1px #aaa solid;
-    border-right: 1px #aaa solid;
-  }
-}
-
-@mixin subtitle {
-
-}
-
-@mixin caption {
-  text-align: center;
-  padding: 5px;
-  font-size: 12px;
-}
-
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
-  @if $inset {
-    -webkit-box-shadow:inset $top $left $blur $color;
-    -moz-box-shadow:inset $top $left $blur $color;
-    box-shadow:inset $top $left $blur $color;
-  } @else {
-    -webkit-box-shadow: $top $left $blur $color;
-    -moz-box-shadow: $top $left $blur $color;
-    box-shadow: $top $left $blur $color;
-  }
-}
+@import '_shared';
 
 input, select {
   border: 1px #ccc solid;
@@ -64,16 +29,25 @@ a {
 
 body {
   font-size: 14px;
-  font-family: Roboto;
+  font-family: Raleway, Arial;
   background: #F0F0F0;
 
   .mini-articles-grid {
-    margin-bottom: 30px;
-    background: #fff;
+    margin: 0 10px 30px 10px;
     padding: 0 15px;
+
+    h2 {
+      font-weight: normal;
+      text-align: center;
+    }
 
     .mini-article {
       color: black;
+      margin: 20px 0;
+
+      a {
+        font-weight: normal;
+      }
 
       .date-published {
         font-size: 0.75em;
@@ -97,22 +71,9 @@ body {
   }
 
   #main {
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 20px;
-    max-width: 800px;
     margin: auto;
-  }
-
-  .author-preview {
-    .author-image {
-      border-radius: 100%;
-      width: 100px;
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 5px;
-      margin-top: 5px;
-    }
-    margin-bottom: 15px;
   }
 
   .article {
@@ -227,7 +188,7 @@ body {
     h2 {
       margin: 5px 0;
       font-size: 1em;
-      @media (min-width: 690px) {
+      @include for-desktop-up {
         font-size: 1.5em;
       }
     }
@@ -237,7 +198,7 @@ body {
       display: inline-block;
       font-size: 1em;
       color: #999;
-      @media (min-width: 690px) {
+      @include for-desktop-up {
         font-size: 1.5em;
       }
       &:first-of-type {
