@@ -46,7 +46,7 @@ class MiniArticlesGrid extends Component {
     if (!miniArticleData) return null;
     return (
       <div className="col-xs-6 mini-article">
-        <h3><Link to={`/miniarticles/${miniArticleData.title.toLowerCase()}`}>{miniArticleData.title}</Link></h3>
+        <h3><Link to={`${miniArticleData.url}`}>{miniArticleData.title}</Link></h3>
         <p className="date-published">{_getReadableDate(miniArticleData.published)}</p>
         <MiniArticleModalView title={miniArticleData.title} isOpen={this.state.activeMiniArticle === ind} onClose={this.toggleMiniArticleView(ind)}>
           {parseHtmlTree(miniArticleData.data)}

@@ -25,6 +25,10 @@ ReactDOM.render(
       <Route path="articles">
         <IndexRoute component={ArticlesList} />
         <Route path=":articleTitle" component={Article} />
+        <Route path="miniarticles">
+          <IndexRedirect to="/" />
+          <Route path=":miniArticleTitle" component={Home} />
+        </Route>
       </Route>
       <Route path="miniarticles">
         <IndexRedirect to="/" />

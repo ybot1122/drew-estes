@@ -50,6 +50,14 @@ body.ReactModal__Body--open {
   .mini-article-modal-header {
     font-size: 2em;
   }
+
+  .mini-article-modal-content {
+    img {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+    }
+  }
 }
 
 .ReactModalPortal > * {
