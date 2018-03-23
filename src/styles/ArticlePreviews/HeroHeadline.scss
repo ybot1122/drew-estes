@@ -11,7 +11,7 @@
       height: 90vh;
       min-height: 400px;
       background-size: cover;
-      background-position: bottom left;
+      background-position: top center;
       @include for-desktop-up {
         height: 400px;
         font-size: 3em;
@@ -19,12 +19,15 @@
 
       .title--text {
         font-family: 'Playfair Display', Roboto, Arial;
-        text-align: left;
+        text-align: center;
+        text-transform: uppercase;
         padding: 0 0 0 10px;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        width: 90%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        font-weight: bold;
 
         @include for-desktop-up {
           max-width: 690px;
@@ -33,13 +36,14 @@
 
         .title--text-author {
           font-size: 0.5em;
-          text-align: right;
-          color: gray;
-          font-weight: bold;
+          color: white;
+          font-weight: normal;
+          text-transform: capitalize;
+          padding: 0 15px 5px 15px;
         }
 
         a {
-          color: black;
+          color: white;
           text-decoration: underline;
 
           &:hover {

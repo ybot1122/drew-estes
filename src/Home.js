@@ -8,6 +8,7 @@ import MailingListForm from './MailingListForm';
 import MiniArticlesGrid from './MiniArticles/MiniArticlesGrid';
 import SupportPatreon from './SupportPatreon';
 import ArticleMetadata from './articlemetadata.json';
+import MiniArticleMetadata from './miniarticlemetadata.json';
 
 class Home extends Component {
 
@@ -16,7 +17,7 @@ class Home extends Component {
   }
 
   render() {
-    const articleOne = ArticleMetadata['vipassana-experience'];
+    const articleOne = MiniArticleMetadata['blinded-by-power'];
     const { title, url, author, heroImg, imageDir } = articleOne;
     return (
       <div className="container-fluid">
