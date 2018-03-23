@@ -11,6 +11,13 @@
     },
     {
         "node":"element",
+        "tag":"img",
+        "attr":{
+            "src":"images/articles/miniarticles/blinded-by-power/hero.png"
+        }
+    },
+    {
+        "node":"element",
         "tag":"p",
         "child":[
             {

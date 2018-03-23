@@ -19,3 +19,5 @@ src/styles/*.css.map
 backend/keys.json
 *.sublime-project
 *.sublime-workspace
+gdrive/**
+**CREDENTIALS.js
