@@ -32,36 +32,6 @@ body {
   font-family: Raleway, Arial;
   background: #F0F0F0;
 
-  .mini-articles-grid {
-    margin: 0 10px 30px 10px;
-    padding: 0 15px;
-
-    h2 {
-      font-weight: normal;
-      text-align: center;
-    }
-
-    .mini-article {
-      color: black;
-      margin: 20px 0;
-
-      a {
-        font-weight: normal;
-      }
-
-      .date-published {
-        font-size: 0.75em;
-        bottom: 0;
-        font-style: italic;
-      }
-
-      img {
-        max-width: 100%;
-        max-height: 100px;
-      }
-    }
-  }
-
   .bold, .b {
     font-weight: bold;
   }

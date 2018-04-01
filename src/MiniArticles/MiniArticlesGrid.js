@@ -6,6 +6,8 @@ import parseHtmlTree from '../utils/parseHtmlTree';
 import _getReadableDate from '../utils/getReadableDate';
 import MiniArticleMetadata from '../miniarticlemetadata.json';
 
+import '../styles/MiniArticles/miniArticlesGrid.css';
+
 class MiniArticlesGrid extends Component {
   constructor(props) {
     super(props);
@@ -80,6 +82,7 @@ class MiniArticlesGrid extends Component {
     return (
         <div className="mini-articles-grid">
           {this.renderSoloArticle()}
+          <h4>MiniArticles</h4>
           <div className="row">
             {this.renderMiniArticlesFromMetadata(0)}
             {this.renderMiniArticlesFromMetadata(1)}

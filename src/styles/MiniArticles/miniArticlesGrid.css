@@ -1,0 +1,21 @@
+.mini-articles-grid {
+  margin: 0 10px;
+  padding: 0 15px; }
+  .mini-articles-grid h2 {
+    font-weight: normal;
+    text-align: center; }
+  .mini-articles-grid h4 {
+    margin: 0;
+    padding: 0; }
+  .mini-articles-grid .mini-article {
+    color: black;
+    margin: 20px 0; }
+    .mini-articles-grid .mini-article a {
+      font-weight: normal; }
+    .mini-articles-grid .mini-article .date-published {
+      font-size: 0.75em;
+      bottom: 0;
+      font-style: italic; }
+    .mini-articles-grid .mini-article img {
+      max-width: 100%;
+      max-height: 100px; }
