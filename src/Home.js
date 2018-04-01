@@ -3,11 +3,9 @@ import ReactModal from 'react-modal';
 
 import Author from './Author';
 import HeroHeadline from './ArticlePreviews/HeroHeadline';
-import ArticlesLinkFeed from './ArticlePreviews/ArticlesLinkFeed';
 import MailingListForm from './MailingListForm';
 import MiniArticlesGrid from './MiniArticles/MiniArticlesGrid';
 import SupportPatreon from './SupportPatreon';
-import ArticleMetadata from './articlemetadata.json';
 import MiniArticleMetadata from './miniarticlemetadata.json';
 
 class Home extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactModal from 'react-modal';
-import { Link } from 'react-router';
 
 import logo from'../images/logo_simple.jpg';
 
