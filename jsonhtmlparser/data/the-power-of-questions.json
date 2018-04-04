@@ -3,11 +3,7 @@
     "node": "element",
     "tag": "img",
     "attr": {
-      "src": "images/articles/power-of-questions/hero-hi.jpg",
-      "style": [
-        "margin-bottom:",
-        "30px"
-      ]
+      "src": "images/articles/power-of-questions/hero-hi.jpg"
     }
   },
   {
