@@ -87,7 +87,9 @@ class MiniArticlesGrid extends Component {
       if (miniArticleData && miniArticleData.data && miniArticleData.title) {
         return (
           <MiniArticleModalView title={miniArticleData.title} isOpen={true} onClose={() => browserHistory.push('/')}>
-            {parseHtmlTree(miniArticleData.data)}
+            <div className="mini-article-container">
+              {parseHtmlTree(miniArticleData.data)}
+            </div>
           </MiniArticleModalView>
         );
       } else {

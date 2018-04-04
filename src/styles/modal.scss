@@ -15,6 +15,15 @@ body.ReactModal__Body--open {
   padding: 70px 20px 20px 20px;
   background-color: white;
 
+  .mini-article-container {
+    max-width: 770px;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
   #close-button {
     position: fixed;
     top: 0;
