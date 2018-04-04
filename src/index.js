@@ -17,7 +17,7 @@ import './styles/headerfooter.css';
 import './styles/modal.css';
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="about" component={About} />
