@@ -32,7 +32,7 @@ class Home extends Component {
 
 
         <div className="row">
-          <div className="col-xs-12 col-md-8 no-gutter">
+          <div className="col-xs-12 col-sm-8 no-gutter">
             <Author />
           </div>
           <div className="col-xs-12 col-sm-4 no-gutter">

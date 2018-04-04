@@ -4,14 +4,37 @@
   margin: 0 10px;
   padding: 0 15px;
 
+  @include for-desktop-up {
+    margin-top: 30px;
+  }
+
   h2 {
     font-weight: normal;
     text-align: center;
   }
 
+  h3 {
+    margin: 0;
+  }
+
   h4 {
     margin: 0;
     padding: 0;
+  }
+
+  .more-to-read {
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .new-banner {
+    color: green;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    position: absolute;
+    top: -14px;
   }
 
   .mini-article {
