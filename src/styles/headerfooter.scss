@@ -17,11 +17,10 @@
     display: none;
     margin: 0px;
     padding: 0px;
-    font-size: 2em;
     font-weight: normal;
     @include for-desktop-up {
       display: block;
-      font-size: 3em;
+      font-size: 1.5em;
     }
   }
 
@@ -31,7 +30,7 @@
     margin: 0px;
     padding: 0px;
     @include for-desktop-up {
-      width: 150px;
+      width: 75px;
     }
   }
 
@@ -61,6 +60,7 @@
   }
 
   .nav-container {
+    font-family: 'Lato', Arial;
     margin: 0 auto 0 5px;
     text-align: center;   
     display: inline-block; 
