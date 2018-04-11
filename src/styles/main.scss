@@ -28,9 +28,13 @@ a {
 }
 
 body {
-  font-size: 14px;
-  font-family: Raleway, Arial;
+  font-size: 18px;
+  font-family: Georgia, Arial;
   background: #F0F0F0;
+
+  h1, h2, h3, h4 {
+    font-family: 'Lato', Arial;
+  }
 
   .bold, .b {
     font-weight: bold;
@@ -149,28 +153,27 @@ body {
 
   #solo-article-header {
     margin: 0px 30px;
+    text-align: center;
+    font-weight: bold;
+
+    p {
+      font-family: Georgia;
+    }
 
     h1 {
       margin: 15px 0;
-      font-size: 2em;
+      font-size: 1.78em;
     }
 
     h2 {
       margin: 5px 0;
-      font-size: 1em;
-      @include for-desktop-up {
-        font-size: 1.5em;
-      }
+      font-size: 1.33em;
     }
 
     h3 {
       margin: 0 0 15px 0;
       display: inline-block;
       font-size: 1em;
-      color: #999;
-      @include for-desktop-up {
-        font-size: 1.5em;
-      }
       &:first-of-type {
         padding-right: 5px;
       }
@@ -182,8 +185,8 @@ body {
   }
 
   #solo-article {
-    @include inset;
-    padding-top: 15px;
+    font-size: 18px;
+    margin: 10px 15px;
     position: relative;
 
     img {
@@ -210,8 +213,7 @@ body {
     }
 
     h2 {
-      font-size: 2em;
-      text-decoration: underline;
+      font-size: 1.33em;
     }
 
     ul {

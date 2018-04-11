@@ -17,10 +17,11 @@
     padding: 0;
     text-align: center; }
   .mini-articles-grid .new-banner {
+    font-family: 'Lato', Arial;
     color: green;
     margin: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 0.75em;
     position: absolute;
     top: -14px; }
   .mini-articles-grid .mini-article {
