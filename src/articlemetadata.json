@@ -63,5 +63,13 @@
     "url": "vipassana-experience",
     "imageDir": "vipassana-experience",
     "heroImg": "hero.jpg"
+  },
+  "what-me-too-means-for-men": {
+    "title": "What #MeToo Means For Men",
+    "author": "Drew Estes",
+    "published": 1508421600000,
+    "url": "what-me-too-means-for-men",
+    "imageDir": "what-me-too-means-for-men",
+    "heroImg": "hero.jpg"
   }
 }
