@@ -49,9 +49,6 @@ class MiniArticlesGrid extends Component {
 
   renderMiniArticlesFromMetadata(ind) {
     let newBanner = null;
-    if (ind === 0) {
-      newBanner = (<p className="new-banner">LATEST</p>);
-    }
     const miniArticleData = MiniArticleMetadata[this.state.miniArticles[ind]];
     if (!miniArticleData) return null;
     return (
@@ -112,12 +109,6 @@ class MiniArticlesGrid extends Component {
             {this.renderMiniArticlesFromMetadata(0)}
             {this.renderMiniArticlesFromMetadata(1)}
           </div>
-          <h4>Full Articles</h4>
-          <div className="row">
-            {this.renderFullArticlesFromMetadata(0)}
-            {this.renderFullArticlesFromMetadata(1)}
-          </div>
-          <h4 className="more-to-read"><Link to="/articles">read all {this.state.totalArticles} articles</Link></h4>
         </div>
     );
   }
