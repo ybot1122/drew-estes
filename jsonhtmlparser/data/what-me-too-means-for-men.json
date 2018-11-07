@@ -1,0 +1,228 @@
+[
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"In light of all the #MeToo posts and the coverage of Harvey Weinstein, I hope by now everyone has started to see just how vast this problem is. As men, we need to better educate ourselves and learn how to help."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"img",
+        "attr":{
+            "src":"images/articles/what-me-too-means-for-men/hero.jpg"
+        }
+    },
+    {
+        "node":"element",
+        "tag":"div",
+        "attr":{
+            "class":"caption"
+        },
+        "child":[
+            {
+                "node":"text",
+                "text":"Millions of people shared this across Twitter and Facebook in just a few days"
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"Our society offers us a steady progression of things to learn and unlearn about what it means to be a man in today's society. This process introduces plenty of conflicting messages, and has helped me understand just how blind we can be to things happening all around us. Like the fact that I was already eighteen when someone finally explained the specifics of why most women avoid walking alone at night. This is but one small example of the ignorance and naivety men often have about women's lives, and the things we can do to make a difference."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "attr":{
+            "class":"b"
+        },
+        "child":[
+            {
+                "node":"text",
+                "text":"It's dangerous to assume you're doing everything right in practice just because you support an idea in theory."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"From a young age, society sets the expectations for what it means to be masculine and feminine, and how men and women should behave around each other. Young men learn to associate their masculinity in part with their ability to have sex. They learn to think they “deserve” sex for certain good behaviors. They learn to believe that if a woman comes to their room or their bed, it implies she “wants it.” They learn that if she seems interested but changes her mind, she's a “bitch” or a “tease.” The list goes on."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"And when I say “society” sets these expectations, it may seem tempting to place responsibility on some vague, unspecified group of others. But that's part of the issue: we are society. Our actions have consequences. Our words have influence. The efforts we make now, the receptiveness we practice to hear others and to examine our own behaviors with an intent to change for the better – these practices make a difference."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"h2",
+        "child":[
+            {
+                "node":"text",
+                "text":"Progress is Everyone's Responsibility"
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"In my attempts to better understand this problem, I've spoken to countless women who never thought to explain the harassment they face regularly because they assumed men already knew. But I've also spoken to countless men – hell, I've been one of them – who heard complaints but didn't grasp their significance. That's because this kind of empathy, the kind where you make a sincere effort to understand the life of another person, is a habit we must learn, not a skill we are born with."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"Too often, women feel they can't speak up about the examples of harassment, abuse, or assault in their lives. And too often, when they try to, men dismiss it. We say they're being dramatic, or they're overreacting, or misinterpreting things."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"This is part of the problem."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"On the flipside, there's still a stigma as a man to even mention I've been pressured into sexual situations, but this doesn't mean I haven't harbored the same misguided attitudes that add to the problem. It's a constant practice to reevaluate the beliefs and misconceptions we carry about what constitutes respectful speech and behavior. The problem with being wrong is that it feels like being right, until the truth is too obvious to overlook."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"To guys who still feel that feminism and women pushing for equity is some kind of attack on men: I get it. The loudest voices are too often the least rational, and that can give us a skewed idea of what a community stands for."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"But this isn't about blaming our gender or defending it. It's about recognizing that when at least half of our population feels regularly unsafe around the other half, something needs to change. Sure, not all men are guilty, but all women feel the effects of those who are."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"Perhaps start with the understanding that humans are still evolving. It's easy to forget sometimes that we're still just hairless apes who learned how to use tools and share memes. Our society allows us to tackle problems by bringing them into public discourse and cooperating to solve them. That means we need to work on this as a single team if we want to be a country that follows through on its promise of liberty and justice for all."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"h2",
+        "child":[
+            {
+                "node":"text",
+                "text":"So where do you start?"
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"If nothing else, we need to hold each other accountable, to be more vocal when someone contributes to this culture of abuse and sexism. If you want to solve this problem, learn to cut it at its roots. Problematic behaviors stem from learned mindsets. They grow worse when we as communities reinforce dangerous beliefs or allow them to go unchecked."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"That means no more moments when your friend makes a sexist joke and no one pauses to say “hey, that's not cool” at risk of ruffling some feathers."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"It means you shouldn't assume someone is lying or misinterpreting something when they talk about harassment or assault. Too many people assume false reporting of sexual assault cases are the norm, when in reality they make up "
+            },
+            {
+                "node":"element",
+                "tag":"a",
+                "attr":{
+                    "href":"https://www.nsvrc.org/publications/articles/false-reports-moving-beyond-issue-successfully-investigate-and-prosecute-non-s"
+                },
+                "child":[
+                    {
+                        "node":"text",
+                        "text":"as little as 2–8%"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"The moments when you have the ability to discourage these mindsets won't always be obvious, and they won't usually be easy. You might not even see the effects of your actions firsthand."
+            }
+        ]
+    },
+    {
+        "node":"element",
+        "tag":"p",
+        "child":[
+            {
+                "node":"text",
+                "text":"But what if you draw attention to problems as they arise? What if you challenge counterproductive attitudes when you see them? If you set aside what is easy in order to do what is right, and it helps just one person – is that not worth it?"
+            }
+        ]
+    }
+]
