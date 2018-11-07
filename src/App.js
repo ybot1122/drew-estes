@@ -15,7 +15,7 @@ class App extends Component {
           {this.props.children}
         </div>
         <div id="footer">
-          &copy; QuackRabbit 2017
+          &copy; QuackRabbit 2019
         </div>
       </div>
     );
